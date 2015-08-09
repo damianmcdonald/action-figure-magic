@@ -1,0 +1,84 @@
+{
+    "apis": [
+        {
+            "directive": "Get",
+            "registeredApis": [
+                {
+                    "displayName": "Welcome Api",
+                    "displayUrl": "/restmagic/welcome",
+                    "httpMethod": "GET",
+                    "produces": "text/html",
+                    "dataMode": "Inline",
+                    "serverMode": "Singular",
+                    "responseData": "Map(singular -> <h1>Hello World</h1>)",
+                    "apiType": "Simple Rest",
+                    "paramName": "None",
+                    "id": "MPnUFK1XLz_1438545538717"
+                },
+                {
+                    "displayName": "Hello World Api",
+                    "displayUrl": "/restmagic/hello",
+                    "httpMethod": "GET",
+                    "produces": "application/json",
+                    "dataMode": "Inline",
+                    "serverMode": "Singular",
+                    "responseData": "Map(singular -> { 'response': 'Merhaba Dunya' })",
+                    "apiType": "Simple Rest",
+                    "paramName": "None",
+                    "id": "U615GH1Tje_1438545538738"
+                }
+            ]
+        },
+        {
+            "directive": "Put",
+            "registeredApis": [
+                {
+                    "displayName": "Hello World Api Put",
+                    "displayUrl": "/restmagic/hello/put",
+                    "httpMethod": "PUT",
+                    "produces": "application/json",
+                    "dataMode": "Inline",
+                    "serverMode": "Singular",
+                    "responseData": "Map(singular -> { 'response': 'Merhaba Dunya' })",
+                    "apiType": "Simple Rest",
+                    "paramName": "None",
+                    "id": "YA8VcCGg5W_1438545538738"
+                }
+            ]
+        },
+        {
+            "directive": "Delete",
+            "registeredApis": [
+                {
+                    "displayName": "Hello World Api Delete",
+                    "displayUrl": "/restmagic/hello/delete",
+                    "httpMethod": "DELETE",
+                    "produces": "application/json",
+                    "dataMode": "Inline",
+                    "serverMode": "Singular",
+                    "responseData": "Map(singular -> { 'response': 'Merhaba Dunya' })",
+                    "apiType": "Simple Rest",
+                    "paramName": "None",
+                    "id": "9oNWfVccYr_1438545538739"
+                }
+            ]
+        },
+        {
+            "directive": "Post",
+            "registeredApis": [
+                {
+                    "displayName": "Hello World Api Post",
+                    "displayUrl": "/restmagic/hello/post",
+                    "httpMethod": "POST",
+                    "produces": "application/json",
+                    "dataMode": "Inline",
+                    "serverMode": "Singular",
+                    "responseData": "Map(singular -> { 'response': 'Merhaba Dunya' })",
+                    "apiType": "Simple Rest",
+                    "paramName": "None",
+                    "id": "oFWIc5yLuP_1438545538738"
+                }
+            ]
+        }
+    ]
+}

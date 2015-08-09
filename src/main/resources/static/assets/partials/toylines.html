@@ -1,0 +1,169 @@
+<section>
+
+  <ol class="breadcrumb">
+    <li><a href="#/toylines">Toylines</a></li>
+  </ol>
+
+  <div ng-controller="ToyLinesController">
+
+    <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)" dismiss-on-timeout="10000">{{alert.msg}}</alert>
+
+    <div class="row">
+      <div class="col-md-10">
+       <p class="lead">If you're an eighties baby, <em>you played</em> with one of these toylines!</p>
+      </div>
+      <div class="col-md-2 text-right">
+        <button class="btn btn-success" type="submit" ng-click="open('add', {})"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Add new toyline</button>
+      </div>
+    </div><!-- /row -->
+
+    <div ng-repeat="toyline in toylines" ng-switch on="$index % 3">
+
+      <div class="row">
+
+        <div class="col-md-4" ng-switch-when="0">
+          <div class="thumbnail">
+            <a ng-href="#/characters/{{toylines[$index].id}}"><img ng-src="{{toylines[$index].image}}" style="min-height:350px;height:350px;"></a>
+            <div class="caption">
+              <h3>{{toylines[$index].name}} <small>{{toylines[$index].manufacturer}}</small></h3>
+              <div>
+                <a href="#/characters/{{toylines[$index].id}}" class="btn btn-default" role="button"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> More</a>
+                <button class="btn btn-warning" type="submit" ng-click="open('edit', toylines[$index])"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</button>
+                <button class="btn btn-danger" type="submit" ng-click="open('delete', toylines[$index])"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete</button>
+                <a href="/action-figure-magic/toylines/download/{{toylines[$index].id}}" class="btn btn-info" role="button"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <span ng-show="toylines[$index+1]">
+          <div class="col-md-4" ng-switch-when="0">
+            <div class="thumbnail">
+             <a ng-href="#/characters/{{toylines[$index+1].id}}"><img ng-src="{{toylines[$index+1].image}}" style="min-height:350px;height:350px;"></a>
+              <div class="caption">
+                <h3>{{toylines[$index+1].name}} <small>{{toylines[$index+1].manufacturer}}</small></h3>
+                <div>
+                  <a href="#/characters/{{toylines[$index+1].id}}" class="btn btn-default" role="button"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> More</a>
+                  <button class="btn btn-warning" type="submit" ng-click="open('edit', toylines[$index+1])"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</button>
+                  <button class="btn btn-danger" type="submit" ng-click="open('delete', toylines[$index+1])"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete</button>
+                  <a href="/action-figure-magic/toylines/download/{{toylines[$index+1].id}}" class="btn btn-info" role="button"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </span>
+
+        <span ng-show="toylines[$index+2]">
+          <div class="col-md-4" ng-switch-when="0">
+            <div class="thumbnail">
+             <a ng-href="#/characters/{{toylines[$index+2].id}}"><img ng-src="{{toylines[$index+2].image}}" style="min-height:350px;height:350px;"></a>
+             <div class="caption">
+                <h3>{{toylines[$index+2].name}} <small>{{toylines[$index+2].manufacturer}}</small></h3>
+                <div>
+                  <a href="#/characters/{{toylines[$index+2].id}}" class="btn btn-default" role="button"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> More</a>
+                  <button class="btn btn-warning" type="submit" ng-click="open('edit', toylines[$index+2])"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</button>
+                  <button class="btn btn-danger" type="submit" ng-click="open('delete', toylines[$index+2])"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete</button>
+                  <a href="/action-figure-magic/toylines/download/{{toylines[$index+2].id}}" class="btn btn-info" role="button"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </span>
+
+      </div><!-- /row -->
+
+    </div><!-- /ng-repeat -->
+
+    <script type="text/ng-template" id="modalContent.html">
+
+      <div ng-switch on="toyline.mode">
+        <div ng-switch-when="edit">
+          <div class="modal-header">
+            <h3 class="modal-title">Edit -- {{toyline.manufacturer}}'s {{toyline.name}}</h3>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="form-group required" id="toylineManufacturerFormGroup">
+                  <label for="toylineManufacturer" class="control-label">Toyline manufacturer</label>
+                  <input type="text" class="form-control" id="toylineManufacturer" ng-model="toyline.manufacturer">
+                  <span id="toylineManufacturerIcon" class="glyphicon glyphicon-remove form-control-feedback hide" aria-hidden="true"></span>
+                </div>
+                <div class="form-group required" id="toylineNameFormGroup">
+                  <label for="toylineName" class="control-label">Toyline name</label>
+                  <input type="text" class="form-control" id="toylineName" ng-model="toyline.name">
+                  <span id="toylineNameIcon" class="glyphicon glyphicon-remove form-control-feedback hide" aria-hidden="true"></span>
+                </div>
+                <div class="form-group" id="toylineImageFormGroup">
+                  <label for="toylineImageFile">Toyline image</label>
+                  <input type="file" class="form-control" id="toylineImageFile" accept="image/*" onchange="handleFileSelect('toylineImageFile', 'modalImage')">
+                  <p class="help-block">The toy line image should be of type; jpg, png or gif</p>
+                  </div>
+                </div>
+                <div class="col-md-7 text-center">
+                  <div class="thumbnail">
+                    <img id="modalImage" ng-src="{{toyline.image}}" style="min-height:350px;height:350px;" />
+                  </div>
+                </div>
+              </div>
+            </div><!-- /modal-body -->
+          <div class="modal-footer">
+            <button class="btn btn-warning" ng-click="ok()">Edit</button>
+            <button class="btn btn-default" ng-click="cancel()">Cancel</button>
+          </div>
+        </div><!-- /ng-switch-when="edit" -->
+        <div ng-switch-when="add">
+          <div class="modal-header">
+            <h3 class="modal-title">Add new toyline</h3>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="form-group required" id="toylineManufacturerFormGroup">
+                  <label for="toylineManufacturer" class="control-label">Toyline manufacturer</label>
+                  <input type="text" class="form-control" id="toylineManufacturer" ng-model="toyline.manufacturer">
+                  <span id="toylineManufacturerIcon" class="glyphicon glyphicon-remove form-control-feedback hide" aria-hidden="true"></span>
+                </div>
+                <div class="form-group required" id="toylineNameFormGroup">
+                  <label for="toylineName" class="control-label">Toyline name</label>
+                  <input type="text" class="form-control" id="toylineName" ng-model="toyline.name" placeholder="Toyline name">
+                  <span id="toylineNameIcon" class="glyphicon glyphicon-remove form-control-feedback hide" aria-hidden="true"></span>
+                </div>
+                <div class="form-group required" id="toylineImageFormGroup">
+                  <label for="toylineImageFile" class="control-label">Toyline image</label>
+                  <input type="file" class="form-control" id="toylineImageFile" accept="image/*" onchange="handleFileSelect('toylineImageFile', 'modalImage')">
+                  <span id="toylineImageIcon" class="glyphicon glyphicon-remove form-control-feedback hide" aria-hidden="true"></span>
+                  <p class="help-block">The toy line image should be of type; jpg, png or gif</p>
+                </div>
+              </div>
+              <div class="col-md-7 text-center">
+                <div class="thumbnail">
+                  <img id="modalImage" ng-src="{{toyline.image}}" style="min-height:350px;height:350px;" />
+                </div>
+              </div>
+            </div><!-- /row -->
+          </div><!-- /modal.body -->
+          <div class="modal-footer">
+            <button class="btn btn-success" ng-click="ok()">Add</button>
+            <button class="btn btn-default" ng-click="cancel()">Cancel</button>
+          </div>
+        </div><!-- /ng-switch-when="add" -->
+        <div ng-switch-when="delete">
+          <div class="modal-header">
+            <h3 class="modal-title">Delete -- {{toyline.manufacturer}}'s {{toyline.name}}</h3>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure that you want to delete toyline: {{toyline.manufacturer}}'s {{toyline.name}}?
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" ng-click="ok()">Delete</button>
+            <button class="btn btn-default" ng-click="cancel()">Cancel</button>
+          </div>
+        </div><!-- /ng-switch-when="delete" -->
+      </div><!-- /ng-switch on="toyline.mode" -->
+
+    </script>
+
+  </div><!-- /ng-controller -->
+
+</section>

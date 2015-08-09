@@ -1,0 +1,40 @@
+{
+	"toylines" : [
+		{
+			"id": 1,
+			"manufacturer": "Kenner",
+			"name": "Star Wars",
+			"image": "assets/images/toylines/starwars-cover.jpg"
+		},
+		{
+			"id": 2,
+			"manufacturer": "Mattel",
+			"name": "Masters of the Universe",
+			"image": "assets/images/toylines/motu-cover.png"
+		},
+		{
+			"id": 3,
+			"manufacturer": "Hasbro",
+			"name": "Transformers",
+			"image": "assets/images/toylines/transformers-cover.jpg"
+		},
+		{
+			"id": 4,
+			"manufacturer": "Kenner",
+			"name": "M.A.S.K.",
+			"image": "assets/images/toylines/mask-cover.jpg"
+		},
+		{
+			"id": 5,
+			"manufacturer": "Hasbro",
+			"name": "G.I. JOE",
+			"image": "assets/images/toylines/gi-joe-cover.png"
+		},
+		{
+			"id": 6,
+			"manufacturer": "Playmates",
+			"name": "TMNT",
+			"image": "assets/images/toylines/tmnt-cover.jpg"
+		}
+	]
+}

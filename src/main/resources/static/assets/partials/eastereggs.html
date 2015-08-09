@@ -1,0 +1,57 @@
+<section>
+
+  <ol class="breadcrumb">
+    <li><a href="#/toylines">Toylines</a></li>
+    <li><a href="#/eastereggs">Easter Eggs</a></li>
+  </ol>
+
+  <div ng-controller="EasterEggsController">
+    <div class="row">
+      <div class="col-md-10">
+        <h3>Authorized user</h3>
+        <h3>Remember some of these poor country cousin toylines of the 80's? <small>... still awesome though!</small></h3>
+      </div>
+    </div><!-- /row -->
+
+    <div ng-repeat="toyline in toylines" ng-switch on="$index % 3">
+
+     <div class="row">
+      
+        <div class="col-md-4" ng-switch-when="0">
+          <div class="thumbnail">
+            <img ng-src="{{toylines[$index].image}}" style="min-height:350px;height:350px;">
+            <div class="caption">
+              <h3>{{toylines[$index].name}} <small>{{toylines[$index].manufacturer}}</small></h3>
+            </div>
+          </div>
+        </div>
+
+        <span ng-show="toylines[$index+1]">
+          <div class="col-md-4" ng-switch-when="0">
+            <div class="thumbnail">
+               <img ng-src="{{toylines[$index+1].image}}" style="min-height:350px;height:350px;">
+               <div class="caption">
+                <h3>{{toylines[$index+1].name}} <small>{{toylines[$index+1].manufacturer}}</small></h3>
+              </div>
+            </div>
+          </div>
+        </span>
+
+      <span ng-show="toylines[$index+2]">
+        <div class="col-md-4" ng-switch-when="0">
+          <div class="thumbnail">
+             <img ng-src="{{toylines[$index+2].image}}" style="min-height:350px;height:350px;">
+             <div class="caption">
+              <h3>{{toylines[$index+2].name}} <small>{{toylines[$index+2].manufacturer}}</small></h3>
+            </div>
+          </div>
+        </div>
+      </span>
+
+     </div><!-- /row -->
+
+    </div><!-- /ng-repeat -->
+
+  </div><!-- /ng-controller -->
+
+</section>

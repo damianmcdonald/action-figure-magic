@@ -1,0 +1,40 @@
+{
+	"toylines" : [
+		{
+			"id": 7,
+			"manufacturer": "Panosh Place",
+			"name": "Voltron",
+			"image": "assets/images/eastereggs/voltron-cover.jpg"
+		},
+		{
+			"id": 8,
+			"manufacturer": "LJN",
+			"name": "Tundercats",
+			"image": "assets/images/eastereggs/thundercats-cover.jpg"
+		},
+		{
+			"id": 9,
+			"manufacturer": "Kenner",
+			"name": "The Real Ghostbusters",
+			"image": "assets/images/eastereggs/ghostbusters-cover.jpg"
+		},
+		{
+			"id": 10,
+			"manufacturer": "Kenner",
+			"name": "Centurions",
+			"image": "assets/images/eastereggs/centurions-cover.jpg"
+		},
+		{
+			"id": 11,
+			"manufacturer": "Kenner",
+			"name": "Silverhawks",
+			"image": "assets/images/eastereggs/silverhawks-cover.jpg"
+		},
+		{
+			"id": 12,
+			"manufacturer": "Kenner",
+			"name": "Indiana Jones",
+			"image": "assets/images/eastereggs/indiana-jones-cover.jpg"
+		}
+	]
+}

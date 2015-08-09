@@ -1,0 +1,189 @@
+{	
+	"id": 5,
+	"toyline": "Hasbro's G.I. JOE",
+	"credits": "http://www.yojoe.com",
+	"factions": 
+	{ 
+		"heroes": 
+		{
+			"name": "Joe's", 
+			"image": "assets/images/characters/gi-joe/factions/joes.png" 
+		},
+		"villains": 
+		{ 	
+			"name": "Cobra", 
+			"image": "assets/images/characters/gi-joe/factions/cobra.png" 
+		}
+	},
+	"description": "In 1964, Hasbro created G.I. Joe - the world's first Action Figure. An instant success, he captured the imagination of boys around the world. Over the next 14 years, G.I. Joe evolved and changed. In 1982, G.I. Joe came out in a new 3 3/4\" scale, reimagined as an elite military unit dedicated to defending freedom against the evil Cobra organization. It is this incarnation of G.I. Joe that has evolved over the years into the toy line we know and love today.",
+	"characters" : [
+		{
+			"id": 97,
+			"name": "Duke",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/duke.jpg",
+			"description": "When Duke is in command, he bellows his orders like that of a seasoned general. The troops follow him without question. He is capable of assessing situations and come up with quick solutions. Even high-ranking officers who know him well respect him and would even listen to his orders. And to think that he is only an enlisted man is to underestimate him. Duke graduated with top honors at Fort Benning's Airborne School. He joined US Special Forces and saw action in Southeast Asia. Some time later, he was transferred to the G.I. Joe Team. Duke turned down an officer's position in that he does not believe an officer's job is to let others take the risks and then take the blame in the event of a catastrophe."
+		},
+		{
+			"id": 98,
+			"name": "Baroness",
+			"isHero": false,
+			"image": "assets/images/characters/gi-joe/baroness.jpg",
+			"description": "The Baroness serves as the Cobra's intelligence officer and lieutenant to Cobra Commander. She is a dark, sensual femme fatale whose beauty is matched only by her ruthlessness. She is the child of a pair of wealthy European aristocrats who made sure their daughter got what she wanted. Somehow along the way as she grew up, she joined a group of student radicals then moving on to extremists and, finally, into the ranks of Cobra. Along with the Commander and Destro, she is part of the ruling Cobra Triumvirate. She is privy to the secrets of both men, especially Destro with whom she shows a special interest. Her loyalty is divided to both men and would not hesitate to play them against each other."
+		},
+		{
+			"id": 99,
+			"name": "Snake Eyes",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/snake-eyes.jpg",
+			"description": "One of the few mysterious and the more dangerous members of the G.I. Joe Team, Snake-Eyes served as a recon ranger in the jungles of Southeast Asia. All that can be said after that stint is he went on a long sabbatical, most believe it was in Japan. Some say he was training with the same ninja clan that begat Storm Shadow. We know his fighting skills have become more efficient and deadly. Rumors surfaced that when he was recruited into the Joe Team by Hawk, he was hunting rabbits at the time... with his bare hands."
+		},
+		{
+			"id": 100,
+			"name": "Cobra",
+			"isHero": false,
+			"image": "assets/images/characters/gi-joe/cobra.jpg",
+			"description": "Before Cobra started to have more specialized personnel, there were the Cobra Troopers. These men served as the basic infantrymen of Cobra. Each man swore absolute loyalty to Cobra Commander. While serving as the infantrymen of the organization, they are also cross-trained to be proficient in least two other support skills. The lot of what makes up the Trooper forces are mercenaries, criminals and people who are angry at the world who have taken up Cobra's offer of wealth and power."
+		},
+		{
+			"id": 101,
+			"name": "Cobra Commander",
+			"isHero": false,
+			"image": "assets/images/characters/gi-joe/cobra-commander.jpg",
+			"description": "Not much is known of the background of the man many call the Cobra Commander. What we can only tell is how he works and how he thinks. We know that he has deliberately started political and social conflict in a number of areas. He has amassed an army by recruiting displaced people, promising them money, power and a chance to get back at the world that hurt them. In return, he demands that they swear absolute loyalty to his cause. What is his cause? World domination. Cobra Commander does not delude himself by justifying his actions as matters of principles or glory. He knows he does it for control and power. He is ruthless, hatred-personified and totally obsessed. A meticulous person, he likes to personally oversee vital projects himself, even engaging in military combat himself on occasion."
+		},
+		{
+			"id": 102,
+			"name": "Destro",
+			"isHero": false,
+			"image": "assets/images/characters/gi-joe/destro.jpg",
+			"description": "Destro is one of the most cunning foes the Joe Team has ever faced. He is the power behind M.A.R.S. (Military Armament Research Syndicate), one of the largest manufacturer of state-of-the-art weapons. His business is fueled by inciting unstable countries to wage wars against each other and then getting them to purchase weapons from him. To him, war is simply man's expression of his most natural state. It is the perfect example of where the fittest survive and where many technological advances are made. His biggest client, thus far, is Cobra with whom he maintains an alliance of convenience. Despite being a manipulative person, Destro maintains a sense of honor and actually respects the Joe Team for their skills and expertise, if not their motivation. The silver mask Destro wears is his most distinctive feature. It is forged from Beryllium steel. For centuries, the Destro clan designed and sold weapons. In an incident dating back to the English Civil War, an ancestor of his was caught selling weapons to both sides. He was forced to wear a steel mask for his crimes (neither side were willing to execute him because they still wanted his weapons). Rather than taking it as a sign of shame, the Destro clan turned it into a symbol of pride. The patriarchs passed it down as tradition from father to son for over 20 generations."
+		},
+	    {
+			"id": 103,
+			"name": "Stalker",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/stalker.jpg",
+			"description": "You would never have thought but before Stalker joined the Army he was the leader of a large street gang in Detroit. Life in the gang tempered him into a ferocious fighter and a leader capable of controlling rambunctious men. Life in a gang disillusioned Stalker but the skills he learned, he brought with him in the Army and became one of the most trusted men tasked with leading squads in their missions. Stalker is a graduate from Monterey's Army Languages School, Fort Holabird's Intelligence School and Fort Bening's Ranger School. His fluency in a variety of languages (including French, Arabic and Swahili) means he is a hard man to fool."
+		},
+		{
+			"id": 104,
+			"name": "Quick Kick",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/quick-kick.jpg",
+			"description": "Quick Kick had his odds stacked against him. He found difficulty being accepted by either the Japanese or Korean community because of his mixed blood. He would have had a passion for basketball if only he wasn't being turned down for his height. However, there was one thing he found out he could be good at. With his can-do attitude, Quick Kick excelled in many martial arts forms. He has earned black belts in many of them that you will find it hard to track of which ones he has yet to fully master. He is a top contender in Tae Kwon Do, Go Ju Ryo, Southern Praying Mantis Kung-Fu, Tai-Chi Sword, Zen Sword and Wing-Chun fighting arts. There are few places where mastery of the martial arts is prized. Hollywood is one of them. With his resumé, Quick Kick easily found work as a stuntman. The US Army didn't fail to notice him. He was recruited on the spot. With his skills and that same can-do attitude that got him through life, it didn't take long to get him inducted into the Joe Team."
+		},
+		{
+			"id": 105,
+			"name": "Flint",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/flint.jpg",
+			"description": "Flint is a classic example of a great, respected field leader. He is capable of making thorough tactical plans and executing them to a perfect tee. A natural leader who inspires his men to victory and credited with the success of several rescue missions in hostile territories. He is trained in many military skills including airborne, HALO jumping, ranger, helicopter piloting and is a Special Forces man. With all those attributes, it would not have occurred to many that Flint was a Rhodes scholar and has a degree in English literature. The life of an academe held little meaning for him and promptly got bored. Joining the military was the adventure he was looking for. But all that literary pursuit didn't go to waste. The same tenacity and concentration he used to get through his scholarly struggles is what ultimately got him through his many trainings. He brings the same scholarly approach in laying out tactics and strategies."
+		},
+		{
+			"id": 106,
+			"name": "Sergeant Slaughter",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/sgt-slaughter.jpg",
+			"description": "When you think of tough, you think of Sgt. Slaughter. The man is muscle strong and extremely mean. In the ranks of the Joe Team, the Sarge has garnered many tales of exaggeration in his career to the point where he is credited with superhuman feats. His personal mission is to beat all trainees into examples of military perfection. While every Joe member can qualify for drill instructor, the Sarge fits the role to a tee. He can drill trainees into the ground for 72 hours before he breaks a sweat. He likes to march over their backs and spewing out verbal brutalities while they do finger push ups. If they can survive him, they're good enough for the Joe Team. Slaughter is also qualified to drive many of the Joes' ground vehicles. He treats them just as he would any new recruit, he often pushes them past their very limits of their performance and specification. As such, only few vehicles would earn his approval. Because, as he believes, no one is going to give you a break in the battlefield. They say, 'If it's not as tough as he is, he doesn't want it.'"
+		},
+		{
+			"id": 107,
+			"name": "Gung-Ho",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/gung-ho.jpg",
+			"description": "Gung-Ho is described as the most craziest and scariest jarhead to come out from Parris Island. His esprit-de-corps attitude is infectious especially when he gets out and fights Cobra forces head on, man-to-man. Born on the bayou, Gung-Ho was part of a large Cajun clan. He earned the reputation as a tough brawler and knife-fighter in New Orleans. He joined the Marines at age 18 and graduated top of class in Parris Island. A proud Marine through-and-through, he isn't shy about exhibiting that huge USMC tattoo on his chest."
+		},
+		{
+			"id": 108,
+			"name": "Storm Shadow",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/storm-shadow.jpg",
+			"description": "Storm Shadow is best known as the Cobra Commander's ninja bodyguard and assassin. He can trace his lineage through thirty generations of assassins. He is a classic character study in conflict. Storm Shadow's primary reason for joining the evil Cobra organization is borne not out of greed but a need for vengeance. The Commander has attained his loyalty on the promise of eventually revealing the identity of his uncle's killer. His swords brother, Snake Eyes finally convinced him to let go of revenge and even has joined the Joe Team, engaging in many missions and adventures. However, on a routine mission, he was captured by Cobra and brainwashed into their service once more. Now, Snake Eyes and Storm Shadow find themselves at odds once more."
+		},
+		{
+			"id": 109,
+			"name": "Laser Viper",
+			"isHero": false,
+			"image": "assets/images/characters/gi-joe/laser-viper.jpg",
+			"description": "Laser weapons are only effective at relatively short ranges because of the amount of energy lost through atmospheric dissipation. Therefore, a LASER-VIPER's primary function on the battlefield is 'target illumination' for H.E.A.T. VIPERS and AERO-VIPERS. The Laser-Viper places his beam on the target, then squeezes off a heat-seeking, anti-tank missile or guided bomb that 'rides' the beam to destroy the target. 'Don't underestimate the Laser-Vipers. You might get the impression that all they do is shine flashlights and spot targets, but that's not the case. These guys can sit well outside the range of your weapons and drop a world of hurt down on your head within seconds! If you're lucky enough to sneak in close to get a shot at them, you're also close enough for them to make it overly hot for you!'"
+		},
+		{
+			"id": 110,
+			"name": "Flash",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/flash.jpg",
+			"description": "If you were to talk to Flash, you could describe him as a scientist. He is very methodical in his work and wouldn't let failures get in his way of acquiring solutions. When he sets out to work, he often uses logic to come to a conclusion. He has an unshakable belief in the order of the universe and everyone and everything has a role. Flash specializes in many aspects of electronic technology and capable of field repair. He also has an impressive knowledge in computer technology, advanced circuitry, analog and digital electronics."
+		},
+		{
+			"id": 111,
+			"name": "Rock 'N Roll",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/rock-n-roll.jpg",
+			"description": "It has been said that the sound of machine gun fire is music to Rock 'n Roll's ears. Back when in his teenage years in Malibu, he was a surfer, pro weight lifter. He played bass guitar in a local rock band with a particular affinity for British heavy metal. Accustomed to loud, amplified noises, being the Joe Team's machine gunner was a natural for him. He graduated top of class in Advanced Infantry Training School. Rock 'n Roll is one of the easiest people to get along with. He brings a sense of camaraderie and genuinely cares for his teammates. While he can be a raging bull, he is definitely someone you want on your side."
+		},
+		{
+			"id": 112,
+			"name": "Scarlett",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/scarlett.jpg",
+			"description": "Scarlett is an extremely talented woman. She is already a gifted martial artist owing to growing up to a family of black belts. Her father and three brothers are all martial arts instructors. She got her black belt by age 15. She eventually joined the Army and entered into all sorts of training she could get into, finally excelling into intelligence work. She stands as the only member of the Joe Team who has duties that are kept confidential from the rest of the team. Despite all her deadly skills and serious work, she still manages to have a sense of humor."
+		},
+		{
+			"id": 113,
+			"name": "Short Fuze",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/short-fuze.jpg",
+			"description": "Short-Fuze comes from a military family. His father and grandfather both became career top sergeants. He followed in their footsteps and joined the Army. However, he does have a short temper and very sensitive on things said about him. This earned him the codename he sports now. The one thing that calms his temper is his love for abstract mathematics. He can mentally calculate artillery azimuths and plot trajectories. This amazing ability has helped the Joe Team win many battles."
+		},
+		{
+			"id": 114,
+			"name": "Doc",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/doc.jpg",
+			"description": "Doc is an avowed pacifist but never backed down from a challenge. When he heard about the G.I. Joe Team, he enlisted in the Army hoping to be on the team. He was told that the Army made no such deals. That didn't stop Doc. He went on with his training and did all he can to get on the Joe Team. It is his belief that the Joe Team is the country's best weapon against terror and that even they need a man who's willing to go into the field when the going gets rough and the chips are down and patch them back up. Doc is not just any medic. He actually got his degree from Harvard Medical School and completed his residency at John Hopkins. He also did all the training that would get him to any field as possible. To that end, he's airborne qualified, had mountaineering experience and desert training. There's no place he wouldn't go."
+		},
+		{
+			"id": 115,
+			"name": "Grand Slam",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/grand-slam.jpg",
+			"description": "Grand Slam has a life-long fascination with technology born out of his love for science fiction stories and comic books. He also has a passion for ancient artillery and one of his hobbies involved miniature recreations of catapults, trebuchets and cannons. It is also a hobby that got him in trouble on occasion with those less patient with his practical jokes, he hurled small stones and papers with these working miniatures. Nevertheless, he became an expert in calculating distance and trajectories, the necessary elements in artillery work. He studied electronics engineering before enlisting. One of his primary reasons for joining the military was that it was one organization that is always on the forefront of technology. While a science geek at heart, he is also very much a man of action as he has become an expert with operating the H.A.L. laser cannon and flying around with the J.U.M.P. jet pack."
+		},
+		{
+			"id": 116,
+			"name": "Roadblock",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/roadblock.jpg",
+			"description": "Within the heart of a man lies the desire to become a gourmet chef. You wouldn't know that by looking at Roadblock. With his size and brawn, he can carry a .50 Browning machine gun with accompanying 50 lbs. ammo and still endure the powerful recoils. That fact alone is enough to scare the enemy. In actuality, he's one of the most amiable members of the Joe Team and a great source of camarederie. Aside from his impressive strength, he could take your K-rations and whip up something more appetizing. Roadblock was setting to go to France's Escoffier School by working as a bouncer until a recruiter convinced him the Army can train him just as well. He was appalled by the menu and preparation techniques in the Army kitchen that he requested a transfer. And that is how Roadblock got into infantry."
+		},
+		{
+			"id": 117,
+			"name": "Zartan",
+			"isHero": false,
+			"image": "assets/images/characters/gi-joe/zartan.jpg",
+			"description": "One of the more eerie operatives in the employ of Cobra, Zartan unnerves both colleagues and opponents alike with his ability to alter his appearance and blend in with the environment. As a master of disguise, he has employed both practical and technological means of deceit, utilizing makeup and holographs. In addition to disguise, he is an expert in ventriloquism, a versatile linguist and escape artist. Zartan is a difficult man to capture and hold as he has shown to be proficient in several martial arts, some of which are believed to be derived from ninja. Cunning and intelligent, Zartan is the complete opposite of the band of biker miscreants he leads, the Dreadnoks who tend to rely on brute force."
+		},
+		{
+			"id": 118,
+			"name": "Airtight",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/airtight.jpg",
+			"description": "Airtight was one of a group of prospective Joes who were tested in the Nevada desert by Lady Jaye. During the course of the test his propensity for collecting scorpions was revealed. When the group came under attack from Cobra, using new mutant plant spores, Airtight's chemical knowledge proved essential, using battery acid to destroy the spores."
+		},
+		{
+			"id": 119,
+			"name": "Lady Jaye",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/lady-jaye.jpg",
+			"description": "Lady Jaye is a gifted linguist as well as an accomplished actress and mime artist. She has participated in or led many undercover missions for the Joe Team. She is a believer in the saying that 'less is more.' That is why when she puts on a disguise, she eschews complicated makeup and rubber masks. Instead, she becomes the object of her disguise, right down to movement and mannerisms, even right down to the dialect and accent. It also helps that her genes help her pass for a number of European and Middle Eastern natives. Lady Jaye is educated in Bryn Mawr and Trinity College, Dublin. Aside from Airborne and Ranger training, she is skilled in cryptological linguistics, signals intelligence, and electronic interception analysis. She is just as equally adept at infantry field work and quite enjoys the grunt duty."
+		},
+		{
+			"id": 120,
+			"name": "Tele-Vipers",
+			"isHero": false,
+			"image": "assets/images/characters/gi-joe/tele-vipers.jpg",
+			"description": "Tele-Vipers get to have the latest technology in radio telecommunications. Apart from the standard modular radio pack, their gear includes a automatic frequency hopper, cryptography unit, and jamming/anti-jamming equipment. Their helmets come equipped with high-resolution earphones and they get to use dual microphones. That may all be impressive and all but do they get any respect? The helmet's visor is capable of giving LED readouts that's triggered by a computer pack installed onto their radio gear. That readout is visible to anyone he's infront of is a source of jokes for other Cobras."
+		}
+	]
+}

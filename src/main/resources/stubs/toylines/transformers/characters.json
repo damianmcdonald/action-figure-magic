@@ -1,0 +1,189 @@
+{	
+	"id": 3,
+	"toyline": "Hasbro's Transformers",
+	"credits": "http://www.seibertron.com",
+	"factions": 
+	{ 
+		"heroes": 
+		{
+			"name": "Autobots", 
+			"image": "assets/images/characters/transformers/factions/autobots.png"
+		},
+		"villains": 
+		{ 	
+			"name": "Decepticons", 
+			"image": "assets/images/characters/transformers/factions/decepticons.png" 
+		}
+	},
+	"description": "The premise behind the Transformers toyline is that an individual toy's parts can be shifted about to change it from a vehicle, a device, or an animal, to a robot action figure and back again. The taglines\"More Than Meets The Eye\" and \"Robots In Disguise\" reflect this ability.",
+	"characters" : [
+		{
+			"id": 49,
+			"name": "Optimus Prime",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/optimus-prime.jpg",
+			"description": "Optimus Prime is the awe-inspiring leader of the Autobot forces. Selfless and endlessly courageous, he is the complete opposite of his mortal enemy Megatron. Originally a mere civilian, he was chosen by the Matrix to command, the first in a number of heavy burdens he has been forced to bear. Another is his bringing of the Transformers' conflict to Earth. Every casualty, human or Cybertronian, weighs heavily on his spark. He does not show this side to his soldiers, and he never succumbs to despair. The Autobots need a decisive, charismatic leader, and that is what he gives them."
+		},
+		{
+			"id": 50,
+			"name": "Bumblebee",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/bumblebee.jpg",
+			"description": "Bumblebee is the Autobots little brother.  He's small, eager and at times can be a bit of a smart-mouth.  Yet for all his wisecracks, he obviously idolizes the bigger robots, especially Optimus and Prowl.  He is useful as a messenger and a spy; he can go where other vehicles would not dare because he does not look threatening.  And his relatively small size occasionally enables him to use routes not available to the others.   More than anything, Bumblebee wants to be accepted, and this sometimes causes him to take chances he shouldn't."
+		},
+		{
+			"id": 51,
+			"name": "Starscream",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/starscream.jpg",
+			"description": "Starscream makes no secret of his ambition to overthrow Megatron as Decepticon Leader.  He is ruthless, cold blooded and cruel.  In that sense the two rivals are very much alike.  But he has a vain side that clearly distinguished him.  He considers himself the most sophisticated and handsome of Deceptions.  He exudes a high class urbane air that provides a certain irony to his murderous tendencies.  He looks down at Megatron for being antiquated in his military strategy.  Starscream believes the Decepticons should rely more on guile and speed rather than brute, destructive force to defeat the Autobots.   Megatron overlooks the potential threat Starscream represents for one very good reason:  Starscream is very good at his job."
+		},
+		{
+			"id": 52,
+			"name": "Soundwave",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/soundwave.jpg",
+			"description": "It's said that Soundwave can hear a fly sneeze.  It's also said that beneath his smooth-talking, affable surface beats the generator coil of a  blackmailer. Those who know these facts about him are careful about what they say within earshot of him.  Soundwave is the ultimate opportunist & will use anything he can to advance his status in the eyes of Megatron.  He doesn't worry about what others think of him because he knows he's nearly indispensable.   Although they all despise him, other Decepticons pretend to like him rather than get on his bad side.  As Rumble explains, 'Soundwave always has the last laugh.'"
+		},
+		{
+			"id": 53,
+			"name": "Megatron",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/megatron.jpg",
+			"description": "Love compassion, mercy are words that have no meaning for Megatron.  He has risen to the leadership of the Deceptions by a combination of brute strength, military cunning, ruthlessness, and terror.  On Cybertron he was commanding general in charge of all military operations against the Autobots, who referred to him as 'The Slag Maker.'  It was a title of fear, a title of respect, a title Megatron relished. His banishment to Earth has only made him more bitter and  more evil minded, if that's possible.  He aches to return to Cybertron and complete his  mission of eradicating the Autobots.  But while on Earth he is dedicated to eliminating those Autobots marooned here with him and his plans go far beyond that.  He realizes the Earth is a huge stockpile of metal and Energon resources and means to possess it all, with the aid of his fellow Deceptions.  But his plans go even further, plans so grandiose even his fellow Deceptions are unaware:  Megatron intends to enslave the entire human race, control Cybertron and be the uncontested ruler of the universe."
+		},
+		{
+			"id": 54,
+			"name": "Grimlock",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/grimlock.jpg",
+			"description": "The most fearsome and powerful of the Dinobots, Grimlock would gladly usurp Optimus Prime's role as Autobot Commander if he thought he could get away with it. For now, he's happy to tear into the enemy Decepticons whenever he can to wait for a more opportune moment to try for the leadership.  He can be cold and merciless, and shows contempt for the weak, such as humans and even some fellow Autobots. But he is a valiant warrior and his actions command respect from all who are witness to them, both friend and foe."
+		},
+	    {
+			"id": 55,
+			"name": "Devestator",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/devestator.jpg",
+			"description": "Awesome and terrifying, Devastator is the bizarre result of the six Constructicons -Scrapper, Scavenger, Bonecrusher, Hook, Long Haul and Mixmaster- joining together to form a single giant robot. He is ungainly and plodding, but he is also brutality in its purest form- a mechanical being whose sole purpose is to crush and destroy all that stands in its path. Devastator's mind is truly unique and his own, a melding together of his six components, but it also represents a compromise: his thoughts are limited to what the six can agree upon. The  carrying out of any complex thoughts is severely impeded by their competing minds.  Thus, Devastator is seemingly a creature of almost pure instinct- usually he acts before he can fully contemplate the consequences of his actions. These actions are usually simple, direct and extremely violent."
+		},
+		{
+			"id": 56,
+			"name": "Ratchet",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/ratchet.jpg",
+			"description": "Ratchet was known as the best tool-and-die man on Cybertron.  In his work area bay, he can fashion anything from a pin to a cruise missile and repair most of the Autobots and their specific parts, given the right materials.  His rough language and manners belie his gentle touch on the operating assembly table.  He knows how to have a  good time despite his involvement in a combat group.  'When does the party begin?' is his usual query after he's completed patching up his latest fallen comrade.  He's prone to giving his leader, Optimus Prime, a lot more back talk than the other Autobots, but does his job as well as anyone."
+		},
+		{
+			"id": 57,
+			"name": "Shockwave",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/shockwave.jpg",
+			"description": "Of all the Decepticons, Shockwave's method of operation is most characterized by the cold, brutal efficiency one would expect of a purely mechanical being.  He enters every battle not with the bloodlust of his comrades, but with a scientist's approach to solving a problem.  The problem is always the same: How can he use his abilities to most effectively eliminate the greatest number of his enemies, the Autobots?  All to often he finds the answer.  He seeks Megatron's position of supremacy over the Decepticons not because his ego demands it, but because his logic circuits dictate it.  He feels Megatron's all consuming passion for conquest only hinders its achievement.  With smug certainty Shockwave believes the reins of Decepticon power will inevitably be his-after all, he reasons, it's only logical."
+		},
+		{
+			"id": 58,
+			"name": "Sideswipe",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/sideswipe.jpg",
+			"description": "Although nearly as capable as his twin brother Sunstreaker in the combat arts, Sideswipe is far less cold blooded about it.  He thoroughly relishes engaging an opponent in a fight to the finish, and will use any dirty underhanded tactic he can think of to come out on top.  Back on his home world of Cybertron this conduct extended itself to the rest of his lifestyle: getting what he can out of life, enjoying it to the fullest, and cheating to get the rest.  His exile to Earth hasn't changed his behavior, just his cause -now instead of doing everything for himself he does it for the sake of freedom for all.  Personal safety takes a backseat to his reckless, but brave actions."
+		},
+		{
+			"id": 59,
+			"name": "Galvatron",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/galvatron.jpg",
+			"description": "Galvatron is the new name and identity for Megatron when his remains are metamorphosized by Unicron.  Galvatron is Megatron to the ultimate degree, more evil, more powerful, and even  less subject to emotion or decency.  Through the powers of Unicron, Galvatron's own powers are augmented continuously so that his strength becomes so vast that his arrogance and confidence are boundless. As long as Unicron exists, Galvatron is invincible, but Galvatron's conceit and greed for dominance are so great he even plots against Unicron and hopes to retain his new might without him."
+		},
+		{
+			"id": 60,
+			"name": "Hot Rod",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/hot-rod.jpg",
+			"description": "Hot Rod is the all-American boy Autobot.  Not too sweet, not too sharp, not too snotty... not a goodie-goodie, but basically a typical adolescent who has dreams of doing great stuff and being as heroic and important as Optimus Prime and other famous and revered top Autobots.  He tends to follow rules until they bug him and he sometime learns, to his regret, that disobeying wasn't exactly smart.  And he often acts without thinking in an effort to do the right thing and this gets him and sometimes his friends in trouble.  But he's not afraid when trouble does arrive and is a brave an honorable fighter and friend.  He is especially close to Kup, the grizzled ole mentor of an Autobot, although he sometimes resents hearing hiw 'wise-ole' advise.  He also likes Spike's son Daniel a lot.  In a way, Hot Rod is big brother to Daniel -a role model and Hot Rod knows it and takes the responsibility seriously.  In robot or automotive mode, Hot Rod is sometimes hot-headed, but always a well meaning, admirable 'lad' and popular with all who know him."
+		},
+		{
+			"id": 61,
+			"name": "Jazz",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/jazz.jpg",
+			"description": "Jazz would be cruising down Bourbon Street in New Orleans or be double parked outside a cellar club in Greenwich Village soaking up the local sounds if he weren't in the middle of a war.  He's a confirmed Earthen culture junkie -he can talk fluently about ballet or break-dancing (although he prefers the latter) and he's always on the lookout for more stuff to turn on to.  His knowledge of Earthen ways and his easy adaptability to Earthen environments make him the indispensable right-hand man of his commander, Optimus Prime.    He's often given the most dangerous assignments, and with characteristic coolness, usually pulls them off using something out of his seemingly bottomless bag of tricks.  He'd rather dazzle you with style than accomplish a mission the easy way."
+		},
+		{
+			"id": 62,
+			"name": "Ironhide",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/ironhide.jpg",
+			"description": "'Go chew on a microchip,' is Ironhide's calling card.  Never the sort who likes to be told what to do, he prefers action to words.  He refers to what he considers excessive talking as 'leaking lubricant.'  He's the oldest Autobot, probably the toughest, most battle tested and certainly the orneriest.  Due to his defensive capabilities, he is usually in charge of safekeeping anything or anyone of importance, and sort of acts as Commander Optimus Prime's personal bodyguard.  His gruff exterior hides his kind inner soul; his concern for the protection of life, whether mechanical or biochemical, extends to the lowliest gasketoid or smallest sparrow."
+		},
+		{
+			"id": 63,
+			"name": "Cyclonus",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/cyclonus.jpg",
+			"description": "Cyclonus is a huge and emotionless air-warrior reprogrammed and rebuilt from parts of dead Decepticons by Unicron. Like Galvatron, he derives vast resources of power and energy through Unicron and so can draw on strength in direct proportion to its need -always being able to become stronger than his opponents because of his access to the infinite reservoir of power that Unicron wields. A dedicated destructor, Cyclonus transforms into a multi-engine jet fighter, augmented by an incendiary bomb attack. Upon his creation he had little personality and no interests other than conquests for the sake of Unicron.  However, he is also similiar to Galvatron in that everything changed for him after the events of TF movie. Cyclonus personality began to shine through becoming the Decepticon's second in command.  Cyclonus became a Decepticon of compassion and honor, reveling in opportunities to combat 'worthy foes.'  While dedicated to the Decepticon cause he must spend much of his time as the liason between Galvatron and the Decepticon ranks; a task he does not enjoy but does for the sake of the Decepticon empire he hopes to restore."
+		},
+		{
+			"id": 64,
+			"name": "Cliffjumper",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/cliffjumper.jpg",
+			"description": " 'Let me at 'em' is Cliffjumper's usual response when the Autobots embark on a mission .   His eagerness and daring have no equal among the Autobots.  Optimus Prime knows this gung-ho trait is an expression of Cliffjumper's burning desire for vengeance on the Decepticons.  Although he takes his work very seriously, Cliffjumper is full of good natured bravado while he's doing it.  He doesn't actively dislike Earth, but he considers  its rough, uneven terrain a hindrance to his effectiveness, and too often is carelessly destructive.  Often he is on the receiving end of a lecture from Optimus on caution and the protection of Earthen property."
+		},
+		{
+			"id": 65,
+			"name": "Bonecrusher",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/bonecrusher.jpg",
+			"description": "A rubble-strewn wasteland is Bonecrusher's idea of a beautiful landscape.  Rare is the edifice that he feels is better off left standing. For him demolition is not merely a job- it is a performance. He loves to show off for his comrades. And Megatron realizes that the fear and terror sowed by this Constructicon's wild ways are bonus by-products that can only help theDecepticon conquest of Earth's resources.  Bonecrusher's attitude about the worldaround him can best be summed up by his personal credo: 'Everything is dust- or it will be when I get through with it!'"
+		},
+		{
+			"id": 66,
+			"name": "Thundercracker",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/thundercracker.jpg",
+			"description": "Soaring swiftly through the clouds, Thundercracker gazes with scorn on the creatures below.   He is utterly contemptuous of anything that cannot lift itself off the ground and claim the sky.  Occasionally, he expresses that contempt by diving and striking,   leaving flame and destruction as he again speeds upward.  Yet he is not totally convinced of the cause that he serves.  Only the words of his Decepticon companions about the rightness of their cause, the destiny of conquest that is their birth right, convince him to go on.  He is persuaded because he wants to be persuaded. Without  a sense of purpose, Thundercracker would find his life unbearable."
+		},
+		{
+			"id": 67,
+			"name": "Wheeljack",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/wheeljack.jpg",
+			"description": "'That guy can build a neutron bomb out of a wristwatch and a rusty can,' says Blue Streak, and that's not far from the truth.  As well as the Ark fashioned the Autobots, Wheeljack is always coming up with ways to improve them, particularly their weaponry.   His knack for creating wild new gadgets has earned him a 'mad scientist' reputation and their deadly effectiveness has earned him the respect of friends and enemies alike.  He is also the Autobot most adept at driving while in his automobile mode and has pulled off tricks that Hollywood stunt drivers haven't  even dreamed of yet.  He fully enjoys showing off when the opportunity presents itself."
+		},
+		{
+			"id": 68,
+			"name": "Prowl",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/prowl.jpg",
+			"description": "He is quiet, competent, and loyal, but perhaps his most valuable trait is his almost endless patience.  Once Prowl is assigned a task, he will keep at it until it is accomplished.  He works with proven facts, not imagination or guesses.  If he has any doubts, he will radio Optimus Prime his commander, before proceeding.  He hates doubts in any form and he strives to make everything he encounters reasonable and logical.  He believes it only when he can explain it.  On a personal level he is friendly, but not too sociable.  He's a listener, not a talker, unless someone says something unreasonable.  Then he will demand an explanation."
+		},
+		{
+			"id": 69,
+			"name": "Shrapnel",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/shrapnel.jpg",
+			"description": "The crackling sound of fused body parts short-circuiting is a sure sign of Shrapnel's work… and is music to his audio modules. In fact, whether he's scrambling microchips or shattering an armored torso, it is the noise of war, the scream of his victim that Shrapnel considers the true rewards of his work. He relishes these sounds much the same way an actor relishes applause. And he's not shy about showing his own evil glee-the piercing battle cry of this loathsome Insecticon can be heard up to 8 miles away."
+		},
+		{
+			"id": 70,
+			"name": "Bombshell",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/bombshell.jpg",
+			"description": "Whether it refers to a robot's or a human's, Bombshell's credo carries the same awful meaning –once he sinks his stinger into someone's head, it's unlikely that that someone will ever think for himself again. His ability to turn foes into helpless accomplices makes this Insecticon one of the Decepticon Leader Megatron's favorites. And bombshell's interest I his victim doesn't end with mere control of his mind: Given his cruel sense of humor, Bombshell finds nothing more entertaining than to have his unwilling followers perform embarrassing and debasing acts, an amusement he eagerly shares with his evil comrades."
+		},
+		{
+			"id": 71,
+			"name": "Swoop",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/swoop.jpg",
+			"description": "Making a spectacular decent from the sky, Swoop watches with unhidden glee as his enemies scatter in terror before his looming presence.  And that's just the way he likes it because he knows fear is a more effective weapon than any equipment he carries. Fear is also his greatest friend. His ability to cause it in others is the sole comfort he derives from what's generally considered the most horrifying form of the Dinobots. Even his comrades shy away form him. And that's is Swoop's tragedy. Four million years ago, when the Ark adapted his Autobot body to resemble that of a pterodactyl's, he gladly accepted the disguise as his contribution to the Autobot cause. Little did he know back then that the good natured, kind mechanoid that he was-and still is-would be disguised as well."
+		},
+		{
+			"id": 72,
+			"name": "Snarl",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/snarl.jpg",
+			"description": " An Autobot of few words and fewer opinions, Snarl grudgingly follows the orders of Dinobot leader Grimlock and leaves the thinking to others. He's generally unhappy and a loner and his uncommunicative nature only adds to his feelings of isolation. Only the thrill of battle can elevate his spirits. In fact, few of his comrades experience the joyous heights that Snarl attains while locked in mortal combat. But for him war is an all too brief respite from the twin devils that haunt his miserable existence: the ungainly dinosaur form the Ark has bestowed upon him and the knowledge he may never see his beloved Cybertron again."
+		}
+	]
+}

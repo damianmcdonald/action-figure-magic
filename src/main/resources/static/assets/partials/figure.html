@@ -1,0 +1,45 @@
+<section>
+
+  <ol class="breadcrumb">
+    <li><a href="#/toylines">Toylines</a></li>
+    <li><a ng-href="#/characters/{{figure.toylineId}}">{{figure.toylineName}}</a></li>
+    <li><a ng-href="#/figures/{{figure.id}}">{{figure.name}}</a></li>
+  </ol>
+
+  <div ng-controller="FigureController">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 rounded-corners">
+          <table class="table table-striped">
+            <tr>
+              <td><strong>Figure</strong>:</td>
+              <td>{{figure.name}}</td>
+            </tr>
+            <tr>
+              <td><strong>Good Guy?</strong>:</td>
+              <td>
+                <div ng-switch on="figure.isHero">
+                  <div ng-switch-when="true">
+                    Yes Sir!!
+                  </div>
+                  <div ng-switch-default>
+                    No Way!!!
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Description</strong>:</td>
+              <td>{{figure.description}}</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-7">
+          <img ng-src="{{figure.image}}" class="img-thumbnail">
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /ng-controller -->
+
+
+</section>

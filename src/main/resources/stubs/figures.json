@@ -1,0 +1,1159 @@
+{
+	"figures": [
+		{
+			"id": 1,
+			"toylineId": 1,
+			"name": "Luke Skywalker",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/luke-skywalker.jpg",
+			"description": "Luke Skywalker was a Tatooine farmboy who rose from humble beginnings to become one of the greatest Jedi the galaxy has ever known. Along with his friends Princess Leia and Han Solo, Luke battled the evil Empire, discovered the truth of his parentage, and ended the tyranny of the Sith."
+		},
+		{
+			"id": 2,
+			"toylineId": 1,
+			"name": "Han Solo",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/han-solo.jpg",
+			"description": "Smuggler. Scoundrel. Hero. Han Solo, captain of the Millennium Falcon, was one of the great leaders of the Rebel Alliance. He and his co-pilot Chewbacca came to believe in the cause of galactic freedom, joining Luke Skywalker and Princess Leia Organa in the fight against the Empire."
+		},
+		{
+			"id": 3,
+			"toylineId": 1,
+			"name": "Darth Vader",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/darth-vader.jpg",
+			"description": "Once a heroic Jedi Knight, Darth Vader was seduced by the dark side of the Force, became a Sith Lord, and led the Empire's eradication of the Jedi Order. He remained in service of the Emperor -- the evil Darth Sidious -- for decades, enforcing his Master's will and seeking to crush the fledgling Rebel Alliance. But there was still good in him…"
+		},
+		{
+			"id": 4,
+			"toylineId": 1,
+			"name": "Chewbacca",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/chewbacca.jpg",
+			"description": "A legendary Wookiee warrior and Han Solo's co-pilot aboard the Millennium Falcon, Chewbacca was part of a core group of Rebels who restored freedom to the galaxy. Known for his short temper and accuracy with a bowcaster, Chewie also has a big heart -- and is unwavering in his loyalty to his friends."
+		},
+		{
+			"id": 5,
+			"toylineId": 1,
+			"name": "Imperial Stormtrooper",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/stormtrooper.jpg",
+			"description": "Stormtroopers are elite shock troops fanatically loyal to the Empire and impossible to sway from the Imperial cause. They wear imposing white armor, which offers a wide range of survival equipment and temperature controls to allow the soldiers to survive in almost any environment. Stormtroopers wield blaster rifles and pistols with great skill, and attack in hordes to overwhelm their enemies. Along with standard Stormtroopers, the Empire has organized several specialized units, including snowtroopers and scout troopers."
+		},
+		{
+			"id": 6,
+			"toylineId": 1,
+			"name": "Artoo-Detoo (R2-D2)",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/r2d2.jpg",
+			"description": "A resourceful astromech droid, R2-D2 served Padmé Amidala, Anakin Skywalker and Luke Skywalker in turn, showing great bravery in rescuing his masters and their friends from many perils. A skilled starship mechanic and fighter pilot's assistant, he formed an unlikely but enduring friendship with the fussy protocol droid C-3PO."
+		},
+	    {
+			"id": 7,
+			"toylineId": 1,
+			"name": "Emperor Palpatine",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/emperor.jpg",
+			"description": "Scheming, powerful, and evil to the core, Darth Sidious restored the Sith and destroyed the Jedi Order. Living a double life, Sidious was in fact Palpatine, a Naboo Senator and phantom menace. He slowly manipulated the political system of the Galactic Republic until he was named Supreme Chancellor -- and eventually Emperor -- ruling the galaxy through fear and tyranny."
+		},
+		{
+			"id": 8,
+			"toylineId": 1,
+			"name": "Princess Leia Organa",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/leia.jpg",
+			"description": "Princess Leia Organa was one of the Rebel Alliance's greatest leaders, fearless on the battlefield and dedicated to ending the tyranny of the Empire. Daughter of Padmé Amidala and Anakin Skywalker, sister of Luke Skywalker, and with a soft spot for scoundrels, Leia ranks among the galaxy's great heroes."
+		},
+		{
+			"id": 9,
+			"toylineId": 1,
+			"name": "See-Threepio (C-3PO)",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/c3p0.jpg",
+			"description": "C-3PO is a droid programmed for etiquette and protocol, built by the heroic Jedi Anakin Skywalker, and a constant companion to astromech R2-D2. Over the years, he was involved in some of the galaxy's most defining moments and thrilling battles -- and is fluent in over six million forms of communication."
+		},
+		{
+			"id": 10,
+			"toylineId": 1,
+			"name": "Imperial TIE Fighter Pilot",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/tie-pilot.jpg",
+			"description": "Imperial pilots relied on lightning-quick reflexes and fearlessness to survive tours of duty against the Empire's enemies, as TIE fighters were lightly armored and lacked shields. Only the very best pilots earned their wings as fighter aces."
+		},
+		{
+			"id": 11,
+			"toylineId": 1,
+			"name": "Yoda",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/yoda.jpg",
+			"description": "Yoda was a legendary Jedi Master and stronger than most in his connection with the Force. Small in size but wise and powerful, he trained Jedi for over 800 years, playing integral roles in the Clone Wars, the instruction of Luke Skywalker, and unlocking the path to immortality."
+		},
+		{
+			"id": 12,
+			"toylineId": 1,
+			"name": "Ben (Obi-Wan) Kenobi",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/obi-wan.jpg",
+			"description": "A legendary Jedi Master, Obi-Wan Kenobi was a noble man and gifted in the ways of the Force. He trained Anakin Skywalker, served as a general in the Republic Army during the Clone Wars, and guided Luke Skywalker as a mentor."
+		},
+		{
+			"id": 13,
+			"toylineId": 1,
+			"name": "Boba Fett",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/boba-fett.jpg",
+			"description": "With his customized Mandalorian armor, deadly weaponry, and silent demeanor, Boba Fett was one of the most feared bounty hunters in the galaxy. A genetic clone of his father, bounty hunter Jango Fett, Boba learned combat and martial skills from a young age. Over the course of his career, which included contracts for the Empire and the criminal underworld, he became a legend."
+		},
+		{
+			"id": 14,
+			"toylineId": 1,
+			"name": "AT-AT Driver",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/at-at-driver.jpg",
+			"description": "The Empire's combat drivers are trained to handle everything in the Imperial ground arsenal, but AT-AT pilots see themselves as elite, controlling their massive four-footed assault vehicles in combat against rebel targets. AT-AT pilots obeyed General Veers's orders during the Empire's advance on Hoth's Echo Base, destroying numerous snowspeeders and blasting apart the rebels' ground defenses."
+		},
+		{
+			"id": 15,
+			"toylineId": 1,
+			"name": "Bossk (Bounty Hunter)",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/bossk.jpg",
+			"description": "One of the most feared bounty hunters of the galaxy, Bossk used his natural Trandoshan hunting instincts to capture his prey. During the Clone Wars, the red-eyed reptilian partnered with Aurra Sing, Castas and young Boba Fett. Bossk didn't care much for vendettas or politics. He was in it to get paid. After a brief stint in a Republic prison, Bossk continued his partnership with Fett, becoming a bodyguard to the teen bounty hunter. Decades later, Bossk answered Darth Vader's call to capture the Millennium Falcon after the Battle of Hoth, an assignment that put him in direct competition with Boba."
+		},
+		{
+			"id": 16,
+			"toylineId": 1,
+			"name": "IG-88 (Bounty Hunter)",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/ig88.jpg",
+			"description": "Many people in the galaxy fear droids, what with the memories of the Clone Wars still fresh in their minds. Far more terrifying than battle droids were assassin droids, independently programmed mechanical killers that had no masters. IG-88 is a battered chrome war droid who has become a bounty hunter, and answered Darth Vader's call to capture the Millennium Falcon during the events surrounding the Battle of Hoth."
+		},
+		{
+			"id": 17,
+			"toylineId": 1,
+			"name": "Lando Calrissian",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/lando.jpg",
+			"description": "Once a smooth-talking smuggler, Lando Calrissian changed from a get-rich-quick schemer to a selfless leader in the fight against the Empire. From adventures with the Ghost crew of rebels to the attack on Death Star II, his quick wit and daring proved to be invaluable."
+		},
+		{
+			"id": 18,
+			"toylineId": 1,
+			"name": "Imperial Stormtrooper (Hoth Battle Gear)",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/snowtrooper.jpg",
+			"description": "Snowtroopers are stormtroopers trained for operations in arctic conditions and equipped with specialized gear to protect them against cold. When deployed, snowtroopers wear breath heaters and protective hoods, insulated suits and belt capes, rugged boots, heating units and survival backpacks. During the Battle of Hoth, snowtroopers under General Veers' command were deployed from AT-AT Walkers and quickly and ruthlessly took control of Echo Base."
+		},
+		{
+			"id": 19,
+			"toylineId": 1,
+			"name": "Admiral Ackbar",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/ackbar.jpg",
+			"description": "A veteran commander, Ackbar led the defense of his oceanic home world, Mon Cala, during the Clone Wars, and the Rebel cruiser assault of the Battle of Endor during the war against the Empire. A Mon Calamari, Ackbar and his people manned the distinctive warships supplied to the Rebellion by that aquatic culture. Beyond the qualifications of his great skills and sterling character, Ackbar was a symbol to the rest of the galaxy that the Alliance is fighting for everyone, no matter what their background or origin. The Empire, in contrast, routinely subjugated non-humans."
+		},
+		{
+			"id": 20,
+			"toylineId": 1,
+			"name": "Biker Scout",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/biker-scout.jpg",
+			"description": "Scout troopers were lightly armored compared with other stormtroopers, which allowed them to move more quickly and easily in a range of environments. They were also trained for more independence and adaptability than most Imperial troops. The Empire used scout troopers for a range of missions, including reconnaissance and infiltration. On Endor, scout troopers riding speeder bikes patrolled the forests, guarding against threats to the shield generator protecting the second Death Star during its construction in orbit above the moon."
+		},
+		{
+			"id": 21,
+			"toylineId": 1,
+			"name": "Emperor's Royal Guard",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/royal-guard.jpg",
+			"description": "Resplendent in crimson robes and armor, the Imperial Royal Guard protected the Emperor. Secrecy shrouded the Guard, with rumors abounding about the sentinels' backgrounds and combat capabilities."
+		},
+		{
+			"id": 22,
+			"toylineId": 1,
+			"name": "Gamorrean Guard",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/gamorrean-guard.jpg",
+			"description": "Burly, pig-like brutes who favored axes and other primitive weapons, Gamorreans were often used as muscle by Hutts and other underworld kingpins. Jabba the Hutt employed a gang of intimidating Gamorreans to guard his palace on Tatooine."
+		},
+		{
+			"id": 23,
+			"toylineId": 1,
+			"name": "Nien Nunb",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/nien-numb.jpg",
+			"description": "Nien Nunb is a small, jowled, mouse-eyed native of Sullust, the world that served as the staging area for the Alliance Fleet prior to the Battle of Endor. Nunb was co-pilot to Lando Calrissian aboard the Millennium Falcon during that historic event. Many of his fellow Sullustans also served as Alliance starfighter pilots in the battle. Nunb spoke the liquid, chattering tongue of the Sullustans, a language Lando understood."
+		},
+		{
+			"id": 24,
+			"toylineId": 1,
+			"name": "Wicket W. Warrick",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/wicket.jpg",
+			"description": "Wicket W. Warrick was the brave young Ewok who willingly joined the Rebellion and aided in the battle against the Empire on the forest moon of Endor. Even before he encountered the Rebels, Wicket had devised methods for defeating the Imperial machines, plans which were implemented after the Ewok befriended Princess Leia and recruited his tribe to the Alliance's cause. During the Battle of Endor, Wicket fought valiantly alongside his new allies."
+		},
+		{
+			"id": 25,
+			"toylineId": 2,
+			"name": "He-Man",
+			"isHero": true,
+			"image": "assets/images/characters/motu/he-man.jpg",
+			"description": "A direct descendent of the legendary King Grayskull, Prince Adam of Eternia was chosen to protect his ancestor's Power Sword from evil. At first he used a techno vest with a built-in force field to fight evil, but Adam has since learned to combine both halves of the Power Sword, using it to channel the energy of the Elders and become He-Man, the most powerful man in the universe! He guards the safety of all Eternia along side the heroic Masters of the Universe."
+		},
+		{
+			"id": 26,
+			"toylineId": 2,
+			"name": "Skeletor",
+			"isHero": false,
+			"image": "assets/images/characters/motu/skeletor.png",
+			"description": "Mortally wounded in battle with his half-brother Captain Randor, Keldor turned to his dark-arts master Hordak to save his life. Hordak merged Keldor with an extra-dimensional being Demo-Man from Despondos, Keldor was forever changed into Skeletor, Overlord of Evil! He gathered together many of Eternia's greatest outcasts and evil warriors in his quest to gain entry into Castle Grayskull and obtain what he believes is the universe's ultimate power source."
+		},
+		{
+			"id": 27,
+			"toylineId": 2,
+			"name": "Battle Cat",
+			"isHero": true,
+			"image": "assets/images/characters/motu/battle-cat.jpg",
+			"description": "A member of the Green Tiger Tribe, Cringer was saved from a Parek-Narr attack by a young Prince Adam and afterwards became his devoted companion for life. He assisted Adam during his quest to unite both halves of the Power Sword of He and afterwards was enhanced by it's power to become Battle Cat the fighting tiger of He-Man. Cringer is one of only a handful of allies who knows Adam's secret and fights alongside the other Masters of the Universe, carrying He-Man into battle against the forces of evil."
+		},
+		{
+			"id": 28,
+			"toylineId": 2,
+			"name": "Beast Man",
+			"isHero": false,
+			"image": "assets/images/characters/motu/beast-man.jpg",
+			"description": "After being banished from his home in the Vine Jungle, the Beast Man named Raqquill Rqazz joined up with a young alchemist named Keldor during a skirmish in the Berserker Islands. Like others of his race, Rqazz has the ability to control beasts and monsters. He currently uses this particular talent as chief henchmen to Skeletor, the Overlord of Evil."
+		},
+		{
+			"id": 29,
+			"toylineId": 2,
+			"name": "Hordak",
+			"isHero": false,
+			"image": "assets/images/characters/motu/hordak.jpg",
+			"description": "Second born heir to the Horde Empire, Hec-Tor Kur arrived on the planet Eternia while battling the cosmic warrior He-Ro. Taking the name Hordak, he raised an army and challenged the Snake Men for rule over the planet. And although he defeated King Hssss, Grayskull, leader of the free people of Eternia succeeded in banishing him to the dimension of Despondos. It was there that centuries later Hordak contacted a young alchemist named Keldor and began teaching him the ways of the dark arts in exchange for freedom from his extra-dimensional prison."
+		},
+		{
+			"id": 30,
+			"toylineId": 2,
+			"name": "Man-AT-Arms",
+			"isHero": true,
+			"image": "assets/images/characters/motu/man-at-arms.jpg",
+			"description": "For two centuries, the Eternian weapons master and combat instructor to the royal family has been called the 'Man-At-Arms.' Trained by the renowned tactician Dekker and a veteran of the Great Unrest, Duncan was asked by King Randor to step into this position and fortify his guard with an elite strike force, which he named The Masters of the Universe. In addition to his skills in combat, Duncan is also a great inventor and helped construct an electronic version of the Power Sword for Adam to use until he could unite both halves of the sword of King Grayskull. Man-At-Arms and his adopted daughter Teela often scout the borders of Eternia for signs of lurking evil."
+		},
+	    {
+			"id": 31,
+			"toylineId": 2,
+			"name": "Man-E-Faces",
+			"isHero": true,
+			"image": "assets/images/characters/motu/man-e-faces.png",
+			"description": "Perhaps the greatest actor on Eternia, Perkaedo, the Master of Disguise, performed before King Randor and Queen Marlena at Prince Adam's 18th birthday celebration. It was here that he drank a magic potion, created by Skeletor, that transformed him into a terrible monster with great strength loyal only to evil. With the help of He-Man and the Sorceress, Perkaedo was cured from this transformation, but the process left him forever split between not just two, but three personalities. He now uses his powers to protect justice in his greatest role, as Man-E-Faces, the man who is three warriors in one--fighting as a human, robot, or monster."
+		},
+		{
+			"id": 32,
+			"toylineId": 2,
+			"name": "Leech",
+			"isHero": false,
+			"image": "assets/images/characters/motu/leech.jpg",
+			"description": "A Slebetor Slug-man from deep in the Lake of Gnarl, Leech was called from the depths by a magic spell of Hordak to bolster his forces against King Grayskull and the Snake Men during the Great Wars. Mindwiped by Hordak's lead witch, Leech became a loyal member of his Horde Army, using his magically enhanced energy-draining powers to suck enemies of their strength. He later played a key role in the Horde's fight against the Great Rebellion after Hordak claimed Etheria as a new homeworld during their banishment in Despondos. When called upon in battle, Leech sucks the power from his enemies!"
+		},
+		{
+			"id": 33,
+			"toylineId": 2,
+			"name": "Mer-Man",
+			"isHero": false,
+			"image": "assets/images/characters/motu/mer-man.jpg",
+			"description": "Ruler of the undersea realms of Eternia, Mer-Man was forced to serve in the armies of Skeletor after his kingdom was destroyed in a battle with rival ocean clans. His allegiance with Skeletor brings him to the surface world more often then he would like. Lurking deep beneath the sea of Rakash, Mer-Man awaits the evil call to arms of Skeletor!"
+		},
+		{
+			"id": 34,
+			"toylineId": 2,
+			"name": "Modulok",
+			"isHero": false,
+			"image": "assets/images/characters/motu/modulok.jpg",
+			"description": "An evil scientist from the Tri-Solar system, Galen Nycroff was incarcerated in Prison Starr for scientific crimes against the galaxy. While awaiting execution, he constructed a device which allowed him to divide his body into pieces, with each part endowed with his own evil consciousness. Slipping out of prison in a series of crates, he was delivered to Horde World where he reassembled himself finding he could now mix and match his parts in a thousand different ways. His skills were observed by Horde leaders and Nycroff became chief technician for Commander Kur, traveling with him to Eternia on their quest to vanquish He-Ro. Nycroff was banished along with the rest of the in invading Horde army to Despondos, serving his leader with his evil inventions."
+		},
+		{
+			"id": 35,
+			"toylineId": 2,
+			"name": "Orko",
+			"isHero": true,
+			"image": "assets/images/characters/motu/orko.jpg",
+			"description": "After the rise of the Horde Empire, evil again outweighed the forces of good in the five dimensions. So in every generation a Cosmic Warrior was recruited by the Overlords of Trolla to fight against evil. Each was given the Sword of He, a weapon infused with the Power of the Universe. They were also assigned a Trollan guide to watch over and advise them in their quests. On the planet of Eternia, after five centuries of being split in two, the Trollan Power Sword was at long last joined and bequeathed to an heir worthy of it's power - Prince Adam of the royal household. Orko, a member of the Trollan magical elite, was assigned to watch over Adam. Although he was a powerful Mage on Trolla, the hidden mystic properties of Eternia turned his magic into little more than entertaining tricks, which he uses to entertain his friends and remain undercover."
+		},
+		{
+			"id": 36,
+			"toylineId": 2,
+			"name": "Ram-Man",
+			"isHero": true,
+			"image": "assets/images/characters/motu/ram-man.png",
+			"description": "Growing up just outside the Vine Jungle, Krass' village was always under threat from the savage Beastmen. During a particularly brutal attack, he donned his family's ancient mystical armor that magically absorbs raw force. Using it to ram into his enemies and drive their attack earned Krass the nickname 'Ram Man'. These actions were quickly detected by Skeletor who recruited him in a scheme to ram through the Jaw Bridge of Castle Grayskull. Realizing the error of his ways after seeing Skeletor attack He-Man, Ram Man switched sides, helping to defeat the Evil Lord of Destruction and save the Castle. He soon became a core member of the Masters of the Universe, using his iron-like body as a battering ram against evil!"
+		},
+		{
+			"id": 37,
+			"toylineId": 2,
+			"name": "Panthor",
+			"isHero": false,
+			"image": "assets/images/characters/motu/panthor.jpg",
+			"description": "During his exile from Eternos Palace Keldor saved a young dylinx cub from a hunter's pit in the Corridors of Lithos. The cub remained fiercely loyal to Keldor, who named him Panthor after a tribal story his Gar mother told him as a child. The purple skinned feline stayed with Keldor even after he was transformed into the Lord of Destruction by Hordak's magic. Finding a new home in Snake Mountain, Panthor is forever at his master's side, carrying him into battle or curled up at the feet of Skeletor's throne, loyally growling at any who disagree with the Overlord of Evil."
+		},
+		{
+			"id": 38,
+			"toylineId": 2,
+			"name": "Snake Mountain",
+			"isHero": false,
+			"image": "assets/images/characters/motu/snake-mountain.png",
+			"description": "Snake Mountain is a location in the He-Man series, located on the planet of Eternia. It is located on the Dark Hemisphere of Eternia and is home to the villainous, skull-faced Skeletor. It is later revealed to have once been home to the Snake Men. Its defining feature is its snake-like shape, hence the name."
+		},
+		{
+			"id": 39,
+			"toylineId": 2,
+			"name": "Teela",
+			"isHero": true,
+			"image": "assets/images/characters/motu/teela.jpg",
+			"description": "The adoptive daughter of Duncan, the current Man-At-Arms, Teela grew upon the palace of King Randor. Trained from an early age in the ways of battle, at 18 she became Captain of the Guard, leading Randor's troops and acting as a defector member of the Masters of the Universe. She has yet to become aware of her true heritage as the magically cloned daughter, and heir to, the Sorceress of Castle Grayskull. She carries the staff of Ka which was once used by the Snake Men in their epic battles against the Horde and King Grayskull during the Great Wars. Teela uses her magical staff to track her foes every move."
+		},
+		{
+			"id": 40,
+			"toylineId": 2,
+			"name": "Castle Grayskull",
+			"isHero": false,
+			"image": "assets/images/characters/motu/castle-grayskull.jpg",
+			"description": "Long Ago, in ages past at the end of the Great Wars the Cosmic Warrior He-Ro joined forces with King Grayskull. Their combined might became a beacon of hope, bringing together the greatest warriors from across Preternia. Together, this band of warriors became the first Masters of the Universe, fighting against the Horde and Snake Men invaders. Heroically sacrificing himself to save King Grayskull's life, He-Ro passed his magical sword to the King, ensuring only those with great strength, courage, wisdom, and compassion would wield the sword of He. To safeguard the sword's power source and protect the Kingdom, King Grayskull ordered a great fortress erected. With the help of the giants, this mighty fortress was constructed first from a single enchanted stone, which was sculpted into a giant Power Skull. Later, towers and walls were erected around the Skull Stone and the fortress was protected by the magic of the Elders. After the King's death, his fortress would remain, fading from memory into legend, but always protecting the hidden power of the Universe and the secrets of Eternia from evil."
+		},
+		{
+			"id": 41,
+			"toylineId": 2,
+			"name": "Evil-Lyn",
+			"isHero": false,
+			"image": "assets/images/characters/motu/evil-lyn.jpg",
+			"description": "Raised alone by her father in the ruins of Zalesia, Evelyn left her home in a fit of teenage rebellion. Taking the name Evil-Lyn, she travelled Eternia learning from many of its great masters the ways of magic and the dark arts. While searching for new ways to increase her power, she met and fell in love with an ambitious alchemist named Keldor, and agreed to join his cause. After Keldor was transformed into Skeletor, he lost all emotional attachments to Evil-Lyn, and she began to scheme against him. In a series of miscalculations, she helped release both King Hssss and Hordak from their inter-dimensional prisons. Evil-Lyn uses her crystal ball to foresee the evil future!"
+		},
+		{
+			"id": 42,
+			"toylineId": 2,
+			"name": "Faker",
+			"isHero": false,
+			"image": "assets/images/characters/motu/faker.png",
+			"description": "Originally built by Man-At-Arms to cover for He-Man when Prince Adam is needed, Faker was abandoned in the royal junkyard after his first mission and salvaged by the evil warrior Tri-Klops. At the request of Skeletor, Faker was reprogrammed to replace He-Man and convince the people of Eternia that He-Man had betrayed King Randor and turned to evil."
+		},
+		{
+			"id": 43,
+			"toylineId": 2,
+			"name": "King Randor",
+			"isHero": true,
+			"image": "assets/images/characters/motu/king-randor.png",
+			"description": "King Miro's second born son, Randor came of age during the Great Unrest, a time when conflict returned to Eternia following the Count Marzo Uprisings and the subsequent betrayal by his half brother Keldor. After the disappearance of his father, Randor was appointed captain of the guard and lead Miro's troops in battle against Keldor's growing rebellion. Randor eventually ended the battles by fatally wounding Keldor and locking his evil warriors behind the mystic wall. For this act he was appointed King by the Council of Elders. King Randor raises his staff exulting his rule over Eternia!"
+		},
+		{
+			"id": 44,
+			"toylineId": 2,
+			"name": "Mekaneck",
+			"isHero": true,
+			"image": "assets/images/characters/motu/mekaneck.jpg",
+			"description": "Injured in the Battle of Avion during the Great Unrest, Orius was brought by Duncan to Castle Grayskull where he was healed by the Sorceress. The magic spell replaced his neck with an ever-expanding mechanical construction made of microscopic nanites. By increasing or decreasing the number of nanites in his body, Orius gained the ability to grow his neck to almost unlimited length. Taking the code name Mekaneck, he served the royal household as a loyal member of the Masters of the Universe, using his amazing periscope neck to spy on the evil enemy."
+		},
+		{
+			"id": 45,
+			"toylineId": 2,
+			"name": "Mantenna",
+			"isHero": false,
+			"image": "assets/images/characters/motu/mantenna.jpg",
+			"description": "A Rebrunk Nurus from Phelibio IX, Mantenna has the frightening ability to see and hear over great distances with his highly sensitive ears and periscope screeners. He can do more than just see with those wide eyes, he can fire a variety of horrible beams from them as well including paralysis beams, stun beams and laser waves. Mantenna is also an agile scout and often goes out well ahead of his Horde companions to make sure their way is clear for meandering, pillaging and the like. Since he is no slouch in the combat area either Mantenna rarely needs assistance on his scouting missions. He uses his antenna eyes to spy on the enemy!"
+		},
+		{
+			"id": 46,
+			"toylineId": 2,
+			"name": "Moss Man",
+			"isHero": true,
+			"image": "assets/images/characters/motu/moss-man.jpg",
+			"description": "Thought of for many centuries to be an urban legend, the creature called 'moss Man' was in fact an ancient Eternian nature god and ally to King Grayskull. During the rise of Skeletor and the subsequent battles with the Snake Men and Horde invaders, Moss Man often joined forces with the Masters of the Universe helping to protect freedom for all forms of life. He was instrumental in helping them win the Second Ultimate Battleground using his powers over plant life and his 'fur' of forest green to fool and frustrate his wicked foes!"
+		},
+		{
+			"id": 47,
+			"toylineId": 2,
+			"name": "Prince Adam",
+			"isHero": true,
+			"image": "assets/images/characters/motu/prince-adam.jpg",
+			"description": "Thought of for many centuries to be an urban legend, the creature called 'moss Man' was in fact an ancient Eternian nature god and ally to King Grayskull. During the rise of Skeletor and the subsequent battles with the Snake Men and Horde invaders, Moss Man often joined forces with the Masters of the Universe helping to protect freedom for all forms of life. He was instrumental in helping them win the Second Ultimate Battleground using his powers over plant life and his 'fur' of forest green to fool and frustrate his wicked foes!"
+		},
+		{
+			"id": 48,
+			"toylineId": 2,
+			"name": "Snout Spout",
+			"isHero": true,
+			"image": "assets/images/characters/motu/snout-spout.jpg",
+			"description": "A peasant from Etheria, Jaxton was one of three athletes abducted by Hordak and cast into his experimentation matrix. There, like the others, Jaxton was grafted with cybernetic parts giving him both amazing powers and a bizarre form. After crossing through a Laser gate to Eternia with the Evil Horde, Snout Spout escaped and joined with the renegade Masters of the Universe. Self-conscious about his appearance, and called 'Snout Spout' for his abilities to blast water from his cybernetic trunk, Jaxton often feels that everyone is always laughing at him. But when the Snake Men slither out and enemies attack, Snout Spout blasts them back with a super jet spray!"
+		},
+		{
+			"id": 49,
+			"toylineId": 3,
+			"name": "Optimus Prime",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/optimus-prime.jpg",
+			"description": "Optimus Prime is the awe-inspiring leader of the Autobot forces. Selfless and endlessly courageous, he is the complete opposite of his mortal enemy Megatron. Originally a mere civilian, he was chosen by the Matrix to command, the first in a number of heavy burdens he has been forced to bear. Another is his bringing of the Transformers' conflict to Earth. Every casualty, human or Cybertronian, weighs heavily on his spark. He does not show this side to his soldiers, and he never succumbs to despair. The Autobots need a decisive, charismatic leader, and that is what he gives them."
+		},
+		{
+			"id": 50,
+			"toylineId": 3,
+			"name": "Bumblebee",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/bumblebee.jpg",
+			"description": "Bumblebee is the Autobots little brother. He's small, eager and at times can be a bit of a smart-mouth. Yet for all his wisecracks, he obviously idolizes the bigger robots, especially Optimus and Prowl. He is useful as a messenger and a spy; he can go where other vehicles would not dare because he does not look threatening. And his relatively small size occasionally enables him to use routes not available to the others. More than anything, Bumblebee wants to be accepted, and this sometimes causes him to take chances he shouldn't."
+		},
+		{
+			"id": 51,
+			"toylineId": 3,
+			"name": "Starscream",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/starscream.jpg",
+			"description": "Starscream makes no secret of his ambition to overthrow Megatron as Decepticon Leader. He is ruthless, cold blooded and cruel. In that sense the two rivals are very much alike. But he has a vain side that clearly distinguished him. He considers himself the most sophisticated and handsome of Deceptions. He exudes a high class urbane air that provides a certain irony to his murderous tendencies. He looks down at Megatron for being antiquated in his military strategy. Starscream believes the Decepticons should rely more on guile and speed rather than brute, destructive force to defeat the Autobots. Megatron overlooks the potential threat Starscream represents for one very good reason: Starscream is very good at his job."
+		},
+		{
+			"id": 52,
+			"toylineId": 3,
+			"name": "Soundwave",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/soundwave.jpg",
+			"description": "It's said that Soundwave can hear a fly sneeze. It's also said that beneath his smooth-talking, affable surface beats the generator coil of a  blackmailer. Those who know these facts about him are careful about what they say within earshot of him. Soundwave is the ultimate opportunist & will use anything he can to advance his status in the eyes of Megatron. He doesn't worry about what others think of him because he knows he's nearly indispensable. Although they all despise him, other Decepticons pretend to like him rather than get on his bad side. As Rumble explains, 'Soundwave always has the last laugh.'"
+		},
+		{
+			"id": 53,
+			"toylineId": 3,
+			"name": "Megatron",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/megatron.jpg",
+			"description": "Love compassion, mercy are words that have no meaning for Megatron. He has risen to the leadership of the Deceptions by a combination of brute strength, military cunning, ruthlessness, and terror. On Cybertron he was commanding general in charge of all military operations against the Autobots, who referred to him as 'The Slag Maker.' It was a title of fear, a title of respect, a title Megatron relished. His banishment to Earth has only made him more bitter and  more evil minded, if that's possible. He aches to return to Cybertron and complete his  mission of eradicating the Autobots. But while on Earth he is dedicated to eliminating those Autobots marooned here with him and his plans go far beyond that. He realizes the Earth is a huge stockpile of metal and Energon resources and means to possess it all, with the aid of his fellow Deceptions. But his plans go even further, plans so grandiose even his fellow Deceptions are unaware: Megatron intends to enslave the entire human race, control Cybertron and be the uncontested ruler of the universe."
+		},
+		{
+			"id": 54,
+			"toylineId": 3,
+			"name": "Grimlock",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/grimlock.jpg",
+			"description": "The most fearsome and powerful of the Dinobots, Grimlock would gladly usurp Optimus Prime's role as Autobot Commander if he thought he could get away with it. For now, he's happy to tear into the enemy Decepticons whenever he can to wait for a more opportune moment to try for the leadership. He can be cold and merciless, and shows contempt for the weak, such as humans and even some fellow Autobots. But he is a valiant warrior and his actions command respect from all who are witness to them, both friend and foe."
+		},
+	    {
+			"id": 55,
+			"toylineId": 3,
+			"name": "Devestator",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/devestator.jpg",
+			"description": "Awesome and terrifying, Devastator is the bizarre result of the six Constructicons -Scrapper, Scavenger, Bonecrusher, Hook, Long Haul and Mixmaster- joining together to form a single giant robot. He is ungainly and plodding, but he is also brutality in its purest form- a mechanical being whose sole purpose is to crush and destroy all that stands in its path. Devastator's mind is truly unique and his own, a melding together of his six components, but it also represents a compromise: his thoughts are limited to what the six can agree upon. The carrying out of any complex thoughts is severely impeded by their competing minds. Thus, Devastator is seemingly a creature of almost pure instinct- usually he acts before he can fully contemplate the consequences of his actions. These actions are usually simple, direct and extremely violent."
+		},
+		{
+			"id": 56,
+			"toylineId": 3,
+			"name": "Ratchet",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/ratchet.jpg",
+			"description": "Ratchet was known as the best tool-and-die man on Cybertron. In his work area bay, he can fashion anything from a pin to a cruise missile and repair most of the Autobots and their specific parts, given the right materials. His rough language and manners belie his gentle touch on the operating assembly table. He knows how to have a  good time despite his involvement in a combat group. 'When does the party begin?' is his usual query after he's completed patching up his latest fallen comrade. He's prone to giving his leader, Optimus Prime, a lot more back talk than the other Autobots, but does his job as well as anyone."
+		},
+		{
+			"id": 57,
+			"toylineId": 3,
+			"name": "Shockwave",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/shockwave.jpg",
+			"description": "Of all the Decepticons, Shockwave's method of operation is most characterized by the cold, brutal efficiency one would expect of a purely mechanical being. He enters every battle not with the bloodlust of his comrades, but with a scientist's approach to solving a problem. The problem is always the same: How can he use his abilities to most effectively eliminate the greatest number of his enemies, the Autobots?  All to often he finds the answer. He seeks Megatron's position of supremacy over the Decepticons not because his ego demands it, but because his logic circuits dictate it. He feels Megatron's all consuming passion for conquest only hinders its achievement. With smug certainty Shockwave believes the reins of Decepticon power will inevitably be his-after all, he reasons, it's only logical."
+		},
+		{
+			"id": 58,
+			"toylineId": 3,
+			"name": "Sideswipe",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/sideswipe.jpg",
+			"description": "Although nearly as capable as his twin brother Sunstreaker in the combat arts, Sideswipe is far less cold blooded about it. He thoroughly relishes engaging an opponent in a fight to the finish, and will use any dirty underhanded tactic he can think of to come out on top. Back on his home world of Cybertron this conduct extended itself to the rest of his lifestyle: getting what he can out of life, enjoying it to the fullest, and cheating to get the rest. His exile to Earth hasn't changed his behavior, just his cause -now instead of doing everything for himself he does it for the sake of freedom for all. Personal safety takes a backseat to his reckless, but brave actions."
+		},
+		{
+			"id": 59,
+			"toylineId": 3,
+			"name": "Galvatron",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/galvatron.jpg",
+			"description": "Galvatron is the new name and identity for Megatron when his remains are metamorphosized by Unicron. Galvatron is Megatron to the ultimate degree, more evil, more powerful, and even  less subject to emotion or decency. Through the powers of Unicron, Galvatron's own powers are augmented continuously so that his strength becomes so vast that his arrogance and confidence are boundless. As long as Unicron exists, Galvatron is invincible, but Galvatron's conceit and greed for dominance are so great he even plots against Unicron and hopes to retain his new might without him."
+		},
+		{
+			"id": 60,
+			"toylineId": 3,
+			"name": "Hot Rod",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/hot-rod.jpg",
+			"description": "Hot Rod is the all-American boy Autobot. Not too sweet, not too sharp, not too snotty... not a goodie-goodie, but basically a typical adolescent who has dreams of doing great stuff and being as heroic and important as Optimus Prime and other famous and revered top Autobots. He tends to follow rules until they bug him and he sometime learns, to his regret, that disobeying wasn't exactly smart. And he often acts without thinking in an effort to do the right thing and this gets him and sometimes his friends in trouble. But he's not afraid when trouble does arrive and is a brave an honorable fighter and friend. He is especially close to Kup, the grizzled ole mentor of an Autobot, although he sometimes resents hearing hiw 'wise-ole' advise. He also likes Spike's son Daniel a lot. In a way, Hot Rod is big brother to Daniel -a role model and Hot Rod knows it and takes the responsibility seriously. In robot or automotive mode, Hot Rod is sometimes hot-headed, but always a well meaning, admirable 'lad' and popular with all who know him."
+		},
+		{
+			"id": 61,
+			"toylineId": 3,
+			"name": "Jazz",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/jazz.jpg",
+			"description": "Jazz would be cruising down Bourbon Street in New Orleans or be double parked outside a cellar club in Greenwich Village soaking up the local sounds if he weren't in the middle of a war. He's a confirmed Earthen culture junkie -he can talk fluently about ballet or break-dancing (although he prefers the latter) and he's always on the lookout for more stuff to turn on to. His knowledge of Earthen ways and his easy adaptability to Earthen environments make him the indispensable right-hand man of his commander, Optimus Prime.   He's often given the most dangerous assignments, and with characteristic coolness, usually pulls them off using something out of his seemingly bottomless bag of tricks. He'd rather dazzle you with style than accomplish a mission the easy way."
+		},
+		{
+			"id": 62,
+			"toylineId": 3,
+			"name": "Ironhide",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/ironhide.jpg",
+			"description": "'Go chew on a microchip,' is Ironhide's calling card. Never the sort who likes to be told what to do, he prefers action to words. He refers to what he considers excessive talking as 'leaking lubricant.'  He's the oldest Autobot, probably the toughest, most battle tested and certainly the orneriest. Due to his defensive capabilities, he is usually in charge of safekeeping anything or anyone of importance, and sort of acts as Commander Optimus Prime's personal bodyguard. His gruff exterior hides his kind inner soul; his concern for the protection of life, whether mechanical or biochemical, extends to the lowliest gasketoid or smallest sparrow."
+		},
+		{
+			"id": 63,
+			"toylineId": 3,
+			"name": "Cyclonus",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/cyclonus.jpg",
+			"description": "Cyclonus is a huge and emotionless air-warrior reprogrammed and rebuilt from parts of dead Decepticons by Unicron. Like Galvatron, he derives vast resources of power and energy through Unicron and so can draw on strength in direct proportion to its need -always being able to become stronger than his opponents because of his access to the infinite reservoir of power that Unicron wields. A dedicated destructor, Cyclonus transforms into a multi-engine jet fighter, augmented by an incendiary bomb attack. Upon his creation he had little personality and no interests other than conquests for the sake of Unicron. However, he is also similiar to Galvatron in that everything changed for him after the events of TF movie. Cyclonus personality began to shine through becoming the Decepticon's second in command. Cyclonus became a Decepticon of compassion and honor, reveling in opportunities to combat 'worthy foes.'  While dedicated to the Decepticon cause he must spend much of his time as the liason between Galvatron and the Decepticon ranks; a task he does not enjoy but does for the sake of the Decepticon empire he hopes to restore."
+		},
+		{
+			"id": 64,
+			"toylineId": 3,
+			"name": "Cliffjumper",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/cliffjumper.jpg",
+			"description": " 'Let me at 'em' is Cliffjumper's usual response when the Autobots embark on a mission .  His eagerness and daring have no equal among the Autobots. Optimus Prime knows this gung-ho trait is an expression of Cliffjumper's burning desire for vengeance on the Decepticons. Although he takes his work very seriously, Cliffjumper is full of good natured bravado while he's doing it. He doesn't actively dislike Earth, but he considers  its rough, uneven terrain a hindrance to his effectiveness, and too often is carelessly destructive. Often he is on the receiving end of a lecture from Optimus on caution and the protection of Earthen property."
+		},
+		{
+			"id": 65,
+			"toylineId": 3,
+			"name": "Bonecrusher",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/bonecrusher.jpg",
+			"description": "A rubble-strewn wasteland is Bonecrusher's idea of a beautiful landscape. Rare is the edifice that he feels is better off left standing. For him demolition is not merely a job- it is a performance. He loves to show off for his comrades. And Megatron realizes that the fear and terror sowed by this Constructicon's wild ways are bonus by-products that can only help theDecepticon conquest of Earth's resources. Bonecrusher's attitude about the worldaround him can best be summed up by his personal credo: 'Everything is dust- or it will be when I get through with it!'"
+		},
+		{
+			"id": 66,
+			"toylineId": 3,
+			"name": "Thundercracker",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/thundercracker.jpg",
+			"description": "Soaring swiftly through the clouds, Thundercracker gazes with scorn on the creatures below.  He is utterly contemptuous of anything that cannot lift itself off the ground and claim the sky. Occasionally, he expresses that contempt by diving and striking,   leaving flame and destruction as he again speeds upward. Yet he is not totally convinced of the cause that he serves. Only the words of his Decepticon companions about the rightness of their cause, the destiny of conquest that is their birth right, convince him to go on. He is persuaded because he wants to be persuaded. Without  a sense of purpose, Thundercracker would find his life unbearable."
+		},
+		{
+			"id": 67,
+			"toylineId": 3,
+			"name": "Wheeljack",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/wheeljack.jpg",
+			"description": "'That guy can build a neutron bomb out of a wristwatch and a rusty can,' says Blue Streak, and that's not far from the truth. As well as the Ark fashioned the Autobots, Wheeljack is always coming up with ways to improve them, particularly their weaponry.  His knack for creating wild new gadgets has earned him a 'mad scientist' reputation and their deadly effectiveness has earned him the respect of friends and enemies alike. He is also the Autobot most adept at driving while in his automobile mode and has pulled off tricks that Hollywood stunt drivers haven't  even dreamed of yet. He fully enjoys showing off when the opportunity presents itself."
+		},
+		{
+			"id": 68,
+			"toylineId": 3,
+			"name": "Prowl",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/prowl.jpg",
+			"description": "He is quiet, competent, and loyal, but perhaps his most valuable trait is his almost endless patience. Once Prowl is assigned a task, he will keep at it until it is accomplished. He works with proven facts, not imagination or guesses. If he has any doubts, he will radio Optimus Prime his commander, before proceeding. He hates doubts in any form and he strives to make everything he encounters reasonable and logical. He believes it only when he can explain it. On a personal level he is friendly, but not too sociable. He's a listener, not a talker, unless someone says something unreasonable. Then he will demand an explanation."
+		},
+		{
+			"id": 69,
+			"toylineId": 3,
+			"name": "Shrapnel",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/shrapnel.jpg",
+			"description": "The crackling sound of fused body parts short-circuiting is a sure sign of Shrapnel's work… and is music to his audio modules. In fact, whether he's scrambling microchips or shattering an armored torso, it is the noise of war, the scream of his victim that Shrapnel considers the true rewards of his work. He relishes these sounds much the same way an actor relishes applause. And he's not shy about showing his own evil glee-the piercing battle cry of this loathsome Insecticon can be heard up to 8 miles away."
+		},
+		{
+			"id": 70,
+			"toylineId": 3,
+			"name": "Bombshell",
+			"isHero": false,
+			"image": "assets/images/characters/transformers/bombshell.jpg",
+			"description": "Whether it refers to a robot's or a human's, Bombshell's credo carries the same awful meaning –once he sinks his stinger into someone's head, it's unlikely that that someone will ever think for himself again. His ability to turn foes into helpless accomplices makes this Insecticon one of the Decepticon Leader Megatron's favorites. And bombshell's interest I his victim doesn't end with mere control of his mind: Given his cruel sense of humor, Bombshell finds nothing more entertaining than to have his unwilling followers perform embarrassing and debasing acts, an amusement he eagerly shares with his evil comrades."
+		},
+		{
+			"id": 71,
+			"toylineId": 3,
+			"name": "Swoop",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/swoop.jpg",
+			"description": "Making a spectacular decent from the sky, Swoop watches with unhidden glee as his enemies scatter in terror before his looming presence. And that's just the way he likes it because he knows fear is a more effective weapon than any equipment he carries. Fear is also his greatest friend. His ability to cause it in others is the sole comfort he derives from what's generally considered the most horrifying form of the Dinobots. Even his comrades shy away form him. And that's is Swoop's tragedy. Four million years ago, when the Ark adapted his Autobot body to resemble that of a pterodactyl's, he gladly accepted the disguise as his contribution to the Autobot cause. Little did he know back then that the good natured, kind mechanoid that he was-and still is-would be disguised as well."
+		},
+		{
+			"id": 72,
+			"toylineId": 3,
+			"name": "Snarl",
+			"isHero": true,
+			"image": "assets/images/characters/transformers/snarl.jpg",
+			"description": " An Autobot of few words and fewer opinions, Snarl grudgingly follows the orders of Dinobot leader Grimlock and leaves the thinking to others. He's generally unhappy and a loner and his uncommunicative nature only adds to his feelings of isolation. Only the thrill of battle can elevate his spirits. In fact, few of his comrades experience the joyous heights that Snarl attains while locked in mortal combat. But for him war is an all too brief respite from the twin devils that haunt his miserable existence: the ungainly dinosaur form the Ark has bestowed upon him and the knowledge he may never see his beloved Cybertron again."
+		},
+		{
+			"id": 73,
+			"toylineId": 4,
+			"name": "Thunderhawk",
+			"isHero": true,
+			"image": "assets/images/characters/mask/thunderhawk.jpg",
+			"description": "Chevrolet Camaro / Fighter Jet"
+		},
+		{
+			"id": 74,
+			"toylineId": 4,
+			"name": "Rhino",
+			"isHero": true,
+			"image": "assets/images/characters/mask/rhino.jpg",
+			"description": "Tractor Rig / Mobile Defense Unit"
+		},
+		{
+			"id": 75,
+			"toylineId": 4,
+			"name": "Switchblade",
+			"isHero": false,
+			"image": "assets/images/characters/mask/switchblade.jpg",
+			"description": "Helicopter / Airplane"
+		},
+		{
+			"id": 76,
+			"toylineId": 4,
+			"name": "Piranha",
+			"isHero": false,
+			"image": "assets/images/characters/mask/piranha.jpg",
+			"description": "Motorcycle / Sidecar"
+		},
+		{
+			"id": 77,
+			"toylineId": 4,
+			"name": "Jackhammer",
+			"isHero": false,
+			"image": "assets/images/characters/mask/jackhammer.jpg",
+			"description": "Ford Bronco 4x4 / Assault Vehicle"
+		},
+		{
+			"id": 78,
+			"toylineId": 4,
+			"name": "Condor",
+			"isHero": true,
+			"image": "assets/images/characters/mask/condor.jpg",
+			"description": "Motorcycle / Helicopter"
+		},
+	    {
+			"id": 79,
+			"toylineId": 4,
+			"name": "Firecracker",
+			"isHero": true,
+			"image": "assets/images/characters/mask/firecracker.jpg",
+			"description": "Pickup Truck / Recon Truck"
+		},
+		{
+			"id": 80,
+			"toylineId": 4,
+			"name": "Gator",
+			"isHero": true,
+			"image": "assets/images/characters/mask/gator.jpg",
+			"description": "Jeep 4x4 / Hydroplane"
+		},
+		{
+			"id": 81,
+			"toylineId": 4,
+			"name": "T-Bob",
+			"isHero": true,
+			"image": "assets/images/characters/mask/t-bob.jpg",
+			"description": "Scooter / Robot"
+		},
+		{
+			"id": 82,
+			"toylineId": 4,
+			"name": "Boulder Hill",
+			"isHero": true,
+			"image": "assets/images/characters/mask/boulder-hill.jpg",
+			"description": "Service Station / Bunker"
+			
+		},
+		{
+			"id": 83,
+			"toylineId": 4,
+			"name": "Firefly",
+			"isHero": true,
+			"image": "assets/images/characters/mask/firefly.jpg",
+			"description": "Dune Buggy / Rocket Glider"
+		},
+		{
+			"id": 84,
+			"toylineId": 4,
+			"name": "Hurricane",
+			"isHero": true,
+			"image": "assets/images/characters/mask/hurricane.jpg",
+			"description": "1957 Chevy / Field Command Post"
+		},
+		{
+			"id": 85,
+			"toylineId": 4,
+			"name": "Raven",
+			"isHero": true,
+			"image": "assets/images/characters/mask/raven.jpg",
+			"description": "Corvette C4 / Armed Seaplane"
+		},
+		{
+			"id": 86,
+			"toylineId": 4,
+			"name": "Slingshot",
+			"isHero": true,
+			"image": "assets/images/characters/mask/slingshot.jpg",
+			"description": "Recreational Vehicle / Surveillance Unit & Sonic Jet"
+		},
+		{
+			"id": 87,
+			"toylineId": 4,
+			"name": "Volcano",
+			"isHero": true,
+			"image": "assets/images/characters/mask/volcano.jpg",
+			"description": "All Terrain Van / High-rise Tracker"
+		},
+		{
+			"id": 88,
+			"toylineId": 4,
+			"name": "Outlaw",
+			"isHero": false,
+			"image": "assets/images/characters/mask/outlaw.jpg",
+			"description": "Oil Tanker / Mobile Headquarters"
+		},
+		{
+			"id": 89,
+			"toylineId": 4,
+			"name": "Stinger",
+			"isHero": false,
+			"image": "assets/images/characters/mask/stinger.jpg",
+			"description": "Pontiac GTO / Armored Tank"
+		},
+		{
+			"id": 90,
+			"toylineId": 4,
+			"name": "Vampire",
+			"isHero": false,
+			"image": "assets/images/characters/mask/vampire.jpg",
+			"description": "Touring Cycle / Turbo Jet"
+		},
+		{
+			"id": 91,
+			"toylineId": 4,
+			"name": "Manta",
+			"isHero": false,
+			"image": "assets/images/characters/mask/manta.jpg",
+			"description": "Nissan 300zx / Assault Plane"
+		},
+		{
+			"id": 92,
+			"toylineId": 4,
+			"name": "Bulldog",
+			"isHero": true,
+			"image": "assets/images/characters/mask/bulldog.jpg",
+			"description": "Diesel Truck / Armored Half-track"
+		},
+		{
+			"id": 93,
+			"toylineId": 4,
+			"name": "Razorback",
+			"isHero": true,
+			"image": "assets/images/characters/mask/razorback.jpg",
+			"description": "Thunderbird Stock Car / Rescue Tank"
+		},
+		{
+			"id": 94,
+			"toylineId": 4,
+			"name": "Wildcat",
+			"isHero": true,
+			"image": "assets/images/characters/mask/wildcat.jpg",
+			"description": "Tow Truck / Vertical Fighting Machine"
+		},
+		{
+			"id": 95,
+			"toylineId": 4,
+			"name": "Igunau",
+			"isHero": false,
+			"image": "assets/images/characters/mask/iguana.jpg",
+			"description": "4-Wheel ATV / Mobile Shredder"
+		},
+		{
+			"id": 96,
+			"toylineId": 4,
+			"name": "Goliath",
+			"isHero": true,
+			"image": "assets/images/characters/mask/goliath.jpg",
+			"description": "Formula Race Car & Transport / Missile Launcher & Jet Fighter"
+		},
+		{
+			"id": 97,
+			"toylineId": 5,
+			"name": "Duke",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/duke.jpg",
+			"description": "When Duke is in command, he bellows his orders like that of a seasoned general. The troops follow him without question. He is capable of assessing situations and come up with quick solutions. Even high-ranking officers who know him well respect him and would even listen to his orders. And to think that he is only an enlisted man is to underestimate him. Duke graduated with top honors at Fort Benning's Airborne School. He joined US Special Forces and saw action in Southeast Asia. Some time later, he was transferred to the G.I. Joe Team. Duke turned down an officer's position in that he does not believe an officer's job is to let others take the risks and then take the blame in the event of a catastrophe."
+		},
+		{
+			"id": 98,
+			"toylineId": 5,
+			"name": "Baroness",
+			"isHero": false,
+			"image": "assets/images/characters/gi-joe/baroness.jpg",
+			"description": "The Baroness serves as the Cobra's intelligence officer and lieutenant to Cobra Commander. She is a dark, sensual femme fatale whose beauty is matched only by her ruthlessness. She is the child of a pair of wealthy European aristocrats who made sure their daughter got what she wanted. Somehow along the way as she grew up, she joined a group of student radicals then moving on to extremists and, finally, into the ranks of Cobra. Along with the Commander and Destro, she is part of the ruling Cobra Triumvirate. She is privy to the secrets of both men, especially Destro with whom she shows a special interest. Her loyalty is divided to both men and would not hesitate to play them against each other."
+		},
+		{
+			"id": 99,
+			"toylineId": 5,
+			"name": "Snake Eyes",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/snake-eyes.jpg",
+			"description": "One of the few mysterious and the more dangerous members of the G.I. Joe Team, Snake-Eyes served as a recon ranger in the jungles of Southeast Asia. All that can be said after that stint is he went on a long sabbatical, most believe it was in Japan. Some say he was training with the same ninja clan that begat Storm Shadow. We know his fighting skills have become more efficient and deadly. Rumors surfaced that when he was recruited into the Joe Team by Hawk, he was hunting rabbits at the time... with his bare hands."
+		},
+		{
+			"id": 100,
+			"name": "Cobra",
+			"isHero": false,
+			"image": "assets/images/characters/gi-joe/cobra.jpg",
+			"description": "Before Cobra started to have more specialized personnel, there were the Cobra Troopers. These men served as the basic infantrymen of Cobra. Each man swore absolute loyalty to Cobra Commander. While serving as the infantrymen of the organization, they are also cross-trained to be proficient in least two other support skills. The lot of what makes up the Trooper forces are mercenaries, criminals and people who are angry at the world who have taken up Cobra's offer of wealth and power."
+		},
+		{
+			"id": 101,
+			"toylineId": 5,
+			"name": "Cobra Commander",
+			"isHero": false,
+			"image": "assets/images/characters/gi-joe/cobra-commander.jpg",
+			"description": "Not much is known of the background of the man many call the Cobra Commander. What we can only tell is how he works and how he thinks. We know that he has deliberately started political and social conflict in a number of areas. He has amassed an army by recruiting displaced people, promising them money, power and a chance to get back at the world that hurt them. In return, he demands that they swear absolute loyalty to his cause. What is his cause? World domination. Cobra Commander does not delude himself by justifying his actions as matters of principles or glory. He knows he does it for control and power. He is ruthless, hatred-personified and totally obsessed. A meticulous person, he likes to personally oversee vital projects himself, even engaging in military combat himself on occasion."
+		},
+		{
+			"id": 102,
+			"toylineId": 5,
+			"name": "Destro",
+			"isHero": false,
+			"image": "assets/images/characters/gi-joe/destro.jpg",
+			"description": "Destro is one of the most cunning foes the Joe Team has ever faced. He is the power behind M.A.R.S. (Military Armament Research Syndicate), one of the largest manufacturer of state-of-the-art weapons. His business is fueled by inciting unstable countries to wage wars against each other and then getting them to purchase weapons from him. To him, war is simply man's expression of his most natural state. It is the perfect example of where the fittest survive and where many technological advances are made. His biggest client, thus far, is Cobra with whom he maintains an alliance of convenience. Despite being a manipulative person, Destro maintains a sense of honor and actually respects the Joe Team for their skills and expertise, if not their motivation. The silver mask Destro wears is his most distinctive feature. It is forged from Beryllium steel. For centuries, the Destro clan designed and sold weapons. In an incident dating back to the English Civil War, an ancestor of his was caught selling weapons to both sides. He was forced to wear a steel mask for his crimes (neither side were willing to execute him because they still wanted his weapons). Rather than taking it as a sign of shame, the Destro clan turned it into a symbol of pride. The patriarchs passed it down as tradition from father to son for over 20 generations."
+		},
+	    {
+			"id": 103,
+			"toylineId": 5,
+			"name": "Stalker",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/stalker.jpg",
+			"description": "You would never have thought but before Stalker joined the Army he was the leader of a large street gang in Detroit. Life in the gang tempered him into a ferocious fighter and a leader capable of controlling rambunctious men. Life in a gang disillusioned Stalker but the skills he learned, he brought with him in the Army and became one of the most trusted men tasked with leading squads in their missions. Stalker is a graduate from Monterey's Army Languages School, Fort Holabird's Intelligence School and Fort Bening's Ranger School. His fluency in a variety of languages (including French, Arabic and Swahili) means he is a hard man to fool."
+		},
+		{
+			"id": 104,
+			"toylineId": 5,
+			"name": "Quick Kick",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/quick-kick.jpg",
+			"description": "Quick Kick had his odds stacked against him. He found difficulty being accepted by either the Japanese or Korean community because of his mixed blood. He would have had a passion for basketball if only he wasn't being turned down for his height. However, there was one thing he found out he could be good at. With his can-do attitude, Quick Kick excelled in many martial arts forms. He has earned black belts in many of them that you will find it hard to track of which ones he has yet to fully master. He is a top contender in Tae Kwon Do, Go Ju Ryo, Southern Praying Mantis Kung-Fu, Tai-Chi Sword, Zen Sword and Wing-Chun fighting arts. There are few places where mastery of the martial arts is prized. Hollywood is one of them. With his resumé, Quick Kick easily found work as a stuntman. The US Army didn't fail to notice him. He was recruited on the spot. With his skills and that same can-do attitude that got him through life, it didn't take long to get him inducted into the Joe Team."
+		},
+		{
+			"id": 105,
+			"toylineId": 5,
+			"name": "Flint",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/flint.jpg",
+			"description": "Flint is a classic example of a great, respected field leader. He is capable of making thorough tactical plans and executing them to a perfect tee. A natural leader who inspires his men to victory and credited with the success of several rescue missions in hostile territories. He is trained in many military skills including airborne, HALO jumping, ranger, helicopter piloting and is a Special Forces man. With all those attributes, it would not have occurred to many that Flint was a Rhodes scholar and has a degree in English literature. The life of an academe held little meaning for him and promptly got bored. Joining the military was the adventure he was looking for. But all that literary pursuit didn't go to waste. The same tenacity and concentration he used to get through his scholarly struggles is what ultimately got him through his many trainings. He brings the same scholarly approach in laying out tactics and strategies."
+		},
+		{
+			"id": 106,
+			"toylineId": 5,
+			"name": "Sergeant Slaughter",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/sgt-slaughter.jpg",
+			"description": "When you think of tough, you think of Sgt. Slaughter. The man is muscle strong and extremely mean. In the ranks of the Joe Team, the Sarge has garnered many tales of exaggeration in his career to the point where he is credited with superhuman feats. His personal mission is to beat all trainees into examples of military perfection. While every Joe member can qualify for drill instructor, the Sarge fits the role to a tee. He can drill trainees into the ground for 72 hours before he breaks a sweat. He likes to march over their backs and spewing out verbal brutalities while they do finger push ups. If they can survive him, they're good enough for the Joe Team. Slaughter is also qualified to drive many of the Joes' ground vehicles. He treats them just as he would any new recruit, he often pushes them past their very limits of their performance and specification. As such, only few vehicles would earn his approval. Because, as he believes, no one is going to give you a break in the battlefield. They say, 'If it's not as tough as he is, he doesn't want it.'"
+		},
+		{
+			"id": 107,
+			"toylineId": 5,
+			"name": "Gung-Ho",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/gung-ho.jpg",
+			"description": "Gung-Ho is described as the most craziest and scariest jarhead to come out from Parris Island. His esprit-de-corps attitude is infectious especially when he gets out and fights Cobra forces head on, man-to-man. Born on the bayou, Gung-Ho was part of a large Cajun clan. He earned the reputation as a tough brawler and knife-fighter in New Orleans. He joined the Marines at age 18 and graduated top of class in Parris Island. A proud Marine through-and-through, he isn't shy about exhibiting that huge USMC tattoo on his chest."
+		},
+		{
+			"id": 108,
+			"toylineId": 5,
+			"name": "Storm Shadow",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/storm-shadow.jpg",
+			"description": "Storm Shadow is best known as the Cobra Commander's ninja bodyguard and assassin. He can trace his lineage through thirty generations of assassins. He is a classic character study in conflict. Storm Shadow's primary reason for joining the evil Cobra organization is borne not out of greed but a need for vengeance. The Commander has attained his loyalty on the promise of eventually revealing the identity of his uncle's killer. His swords brother, Snake Eyes finally convinced him to let go of revenge and even has joined the Joe Team, engaging in many missions and adventures. However, on a routine mission, he was captured by Cobra and brainwashed into their service once more. Now, Snake Eyes and Storm Shadow find themselves at odds once more."
+		},
+		{
+			"id": 109,
+			"toylineId": 5,
+			"name": "Laser Viper",
+			"isHero": false,
+			"image": "assets/images/characters/gi-joe/laser-viper.jpg",
+			"description": "Laser weapons are only effective at relatively short ranges because of the amount of energy lost through atmospheric dissipation. Therefore, a LASER-VIPER's primary function on the battlefield is 'target illumination' for H.E.A.T. VIPERS and AERO-VIPERS. The Laser-Viper places his beam on the target, then squeezes off a heat-seeking, anti-tank missile or guided bomb that 'rides' the beam to destroy the target. 'Don't underestimate the Laser-Vipers. You might get the impression that all they do is shine flashlights and spot targets, but that's not the case. These guys can sit well outside the range of your weapons and drop a world of hurt down on your head within seconds! If you're lucky enough to sneak in close to get a shot at them, you're also close enough for them to make it overly hot for you!'"
+		},
+		{
+			"id": 110,
+			"toylineId": 5,
+			"name": "Flash",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/flash.jpg",
+			"description": "If you were to talk to Flash, you could describe him as a scientist. He is very methodical in his work and wouldn't let failures get in his way of acquiring solutions. When he sets out to work, he often uses logic to come to a conclusion. He has an unshakable belief in the order of the universe and everyone and everything has a role. Flash specializes in many aspects of electronic technology and capable of field repair. He also has an impressive knowledge in computer technology, advanced circuitry, analog and digital electronics."
+		},
+		{
+			"id": 111,
+			"toylineId": 5,
+			"name": "Rock 'N Roll",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/rock-n-roll.jpg",
+			"description": "It has been said that the sound of machine gun fire is music to Rock 'n Roll's ears. Back when in his teenage years in Malibu, he was a surfer, pro weight lifter. He played bass guitar in a local rock band with a particular affinity for British heavy metal. Accustomed to loud, amplified noises, being the Joe Team's machine gunner was a natural for him. He graduated top of class in Advanced Infantry Training School. Rock 'n Roll is one of the easiest people to get along with. He brings a sense of camaraderie and genuinely cares for his teammates. While he can be a raging bull, he is definitely someone you want on your side."
+		},
+		{
+			"id": 112,
+			"toylineId": 5,
+			"name": "Scarlett",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/scarlett.jpg",
+			"description": "Scarlett is an extremely talented woman. She is already a gifted martial artist owing to growing up to a family of black belts. Her father and three brothers are all martial arts instructors. She got her black belt by age 15. She eventually joined the Army and entered into all sorts of training she could get into, finally excelling into intelligence work. She stands as the only member of the Joe Team who has duties that are kept confidential from the rest of the team. Despite all her deadly skills and serious work, she still manages to have a sense of humor."
+		},
+		{
+			"id": 113,
+			"toylineId": 5,
+			"name": "Short Fuze",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/short-fuze.jpg",
+			"description": "Short-Fuze comes from a military family. His father and grandfather both became career top sergeants. He followed in their footsteps and joined the Army. However, he does have a short temper and very sensitive on things said about him. This earned him the codename he sports now. The one thing that calms his temper is his love for abstract mathematics. He can mentally calculate artillery azimuths and plot trajectories. This amazing ability has helped the Joe Team win many battles."
+		},
+		{
+			"id": 114,
+			"toylineId": 5,
+			"name": "Doc",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/doc.jpg",
+			"description": "Doc is an avowed pacifist but never backed down from a challenge. When he heard about the G.I. Joe Team, he enlisted in the Army hoping to be on the team. He was told that the Army made no such deals. That didn't stop Doc. He went on with his training and did all he can to get on the Joe Team. It is his belief that the Joe Team is the country's best weapon against terror and that even they need a man who's willing to go into the field when the going gets rough and the chips are down and patch them back up. Doc is not just any medic. He actually got his degree from Harvard Medical School and completed his residency at John Hopkins. He also did all the training that would get him to any field as possible. To that end, he's airborne qualified, had mountaineering experience and desert training. There's no place he wouldn't go."
+		},
+		{
+			"id": 115,
+			"toylineId": 5,
+			"name": "Grand Slam",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/grand-slam.jpg",
+			"description": "Grand Slam has a life-long fascination with technology born out of his love for science fiction stories and comic books. He also has a passion for ancient artillery and one of his hobbies involved miniature recreations of catapults, trebuchets and cannons. It is also a hobby that got him in trouble on occasion with those less patient with his practical jokes, he hurled small stones and papers with these working miniatures. Nevertheless, he became an expert in calculating distance and trajectories, the necessary elements in artillery work. He studied electronics engineering before enlisting. One of his primary reasons for joining the military was that it was one organization that is always on the forefront of technology. While a science geek at heart, he is also very much a man of action as he has become an expert with operating the H.A.L. laser cannon and flying around with the J.U.M.P. jet pack."
+		},
+		{
+			"id": 116,
+			"toylineId": 5,
+			"name": "Roadblock",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/roadblock.jpg",
+			"description": "Within the heart of a man lies the desire to become a gourmet chef. You wouldn't know that by looking at Roadblock. With his size and brawn, he can carry a .50 Browning machine gun with accompanying 50 lbs. ammo and still endure the powerful recoils. That fact alone is enough to scare the enemy. In actuality, he's one of the most amiable members of the Joe Team and a great source of camarederie. Aside from his impressive strength, he could take your K-rations and whip up something more appetizing. Roadblock was setting to go to France's Escoffier School by working as a bouncer until a recruiter convinced him the Army can train him just as well. He was appalled by the menu and preparation techniques in the Army kitchen that he requested a transfer. And that is how Roadblock got into infantry."
+		},
+		{
+			"id": 117,
+			"toylineId": 5,
+			"name": "Zartan",
+			"isHero": false,
+			"image": "assets/images/characters/gi-joe/zartan.jpg",
+			"description": "One of the more eerie operatives in the employ of Cobra, Zartan unnerves both colleagues and opponents alike with his ability to alter his appearance and blend in with the environment. As a master of disguise, he has employed both practical and technological means of deceit, utilizing makeup and holographs. In addition to disguise, he is an expert in ventriloquism, a versatile linguist and escape artist. Zartan is a difficult man to capture and hold as he has shown to be proficient in several martial arts, some of which are believed to be derived from ninja. Cunning and intelligent, Zartan is the complete opposite of the band of biker miscreants he leads, the Dreadnoks who tend to rely on brute force."
+		},
+		{
+			"id": 118,
+			"toylineId": 5,
+			"name": "Airtight",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/airtight.jpg",
+			"description": "Airtight was one of a group of prospective Joes who were tested in the Nevada desert by Lady Jaye. During the course of the test his propensity for collecting scorpions was revealed. When the group came under attack from Cobra, using new mutant plant spores, Airtight's chemical knowledge proved essential, using battery acid to destroy the spores."
+		},
+		{
+			"id": 119,
+			"toylineId": 5,
+			"name": "Lady Jaye",
+			"isHero": true,
+			"image": "assets/images/characters/gi-joe/lady-jaye.jpg",
+			"description": "Lady Jaye is a gifted linguist as well as an accomplished actress and mime artist. She has participated in or led many undercover missions for the Joe Team. She is a believer in the saying that 'less is more.' That is why when she puts on a disguise, she eschews complicated makeup and rubber masks. Instead, she becomes the object of her disguise, right down to movement and mannerisms, even right down to the dialect and accent. It also helps that her genes help her pass for a number of European and Middle Eastern natives. Lady Jaye is educated in Bryn Mawr and Trinity College, Dublin. Aside from Airborne and Ranger training, she is skilled in cryptological linguistics, signals intelligence, and electronic interception analysis. She is just as equally adept at infantry field work and quite enjoys the grunt duty."
+		},
+		{
+			"id": 120,
+			"toylineId": 5,
+			"name": "Tele-Vipers",
+			"isHero": false,
+			"image": "assets/images/characters/gi-joe/tele-vipers.jpg",
+			"description": "Tele-Vipers get to have the latest technology in radio telecommunications. Apart from the standard modular radio pack, their gear includes a automatic frequency hopper, cryptography unit, and jamming/anti-jamming equipment. Their helmets come equipped with high-resolution earphones and they get to use dual microphones. That may all be impressive and all but do they get any respect? The helmet's visor is capable of giving LED readouts that's triggered by a computer pack installed onto their radio gear. That readout is visible to anyone he's infront of is a source of jokes for other Cobras."
+		},
+			{
+			"id": 121,
+			"toylineId": 6,
+			"name": "Leonardo",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/leonardo.jpg",
+			"description": "Hardworking, honorable, and respectful, Leonardo is the Turtles' fearless leader. Driven to be the perfect hero, Leo's inexperience and (often) rowdy brothers sometimes get in the way of his goal."
+		},
+		{
+			"id": 122,
+			"toylineId": 6,
+			"name": "Raphael",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/raphael.jpg",
+			"description": "Tough, quick to act, and hot-tempered, Raphael's a powder keg ready to explode on unsuspecting enemies! The biggest of his mutant brothers, Raph's attitude is \"why sneak around when you can bash some heads instead?\". Master of the three-pronged Sai, Raph is the perfect reflection of his weapon: sharp and to the point!"
+		},
+		{
+			"id": 123,
+			"toylineId": 6,
+			"name": "Donatello",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/donatello.jpg",
+			"description": "Donatello is the team inventor and weaponeer. He creates all their gadgets from the simplest bo-staff to their incredible vehicles. He's utterly brilliant, able to cobble together fantastic stuff from things he's literally scrounged from a trash heap. He's obsessively detail-oriented and often impatient that his brothers can't keep up with him intellectually. But Donnie also happens to be the most reclusive and socially awkward of the Turtles - especially when April is on her way!"
+		},
+		{
+			"id": 124,
+			"toylineId": 6,
+			"name": "Michelangelo",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/michelangelo.jpg",
+			"description": "Physically the smallest of the Turtles and the least mature. Mikey is easily distracted and enthusiastic about... well, pretty much everything. He's also extremely creative. He has a thousand ideas, and every now and then, one of them will be brilliant. This combination of creativity and lack of focus gives him a kind of \"flow\" that the other Turtles cannot match. He's a social mutant and more than the others, begs to be part of the real world."
+		},
+		{
+			"id": 125,
+			"toylineId": 6,
+			"name": "April O'Neil",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/april.jpg",
+			"description": "April is the Turtles human ally, and is a very good friend of the Turtles, acting as a big sister/motherly-figure to them."
+		},
+		{
+			"id": 126,
+			"toylineId": 6,
+			"name": "Shredder",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/shredder.jpg",
+			"description": "Shredder is a master of Ninjutsu who is an arch-enemy to Splinter and the turtles, the former 'adopted father' of Karai and the fearless leader of The Foot Clan."
+		},
+	    {
+			"id": 127,
+			"toylineId": 6,
+			"name": "Foot Soldier",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/foot-soldier.jpg",
+			"description": "Silent and lethal, the soldiers of the Foot Clan exists for one purpose only: to obediently serve their leader, the villainous Shredder! Armed with the best of stolen weapons and gear, these soldiers cause everyone - except the Turtles - to cower in fear at the sight of their bug-like eyes and red bandanas!"
+		},
+		{
+			"id": 128,
+			"toylineId": 6,
+			"name": "Bebop",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/bebop.jpg",
+			"description": "Master thief Anton Zeck is hired to break into Shredder's Lair and steal his legendary helmet. With his purple Mohawk, z-ray glasses, and the ability to become invisible, Anton's thieving opportunities appear endless. But Shredder catches Anton and sends him into a tub of mutagen Ooze with the DNA of a warthog. The thief transforms into Bebop, a half human, half warthog mutant!"
+		},
+		{
+			"id": 129,
+			"toylineId": 6,
+			"name": "Rocksteady",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/rocksteady.jpg",
+			"description": "A former Russian arms dealer, Steranko has ended his gun-dealing days and now collects rare weapons and armor. He hires Anton Zeck (Bebop) to steal Shredder's legendary helmet. But Shredder discovers that Steranko's the mastermind behind the theft and sends him flying into a mixture of mutagen Ooze and Rhino DNA! Steranko instantly mutates into the half human, half Rhino known as Rocksteady. "
+		},
+		{
+			"id": 130,
+			"toylineId": 6,
+			"name": "Splinter",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/splinter.jpg",
+			"description": "Master Splinter is the teacher and adoptive father of the Ninja Turtles. He has trained the Turtles in the art of Ninjitsu, but they are not ninja masters yet. Splinter is mature, serious, and protective. He fights with various ninja weapons and fights with many ninja skills. Any villain wishing to harm his sons will have to go through him first."
+		},
+		{
+			"id": 131,
+			"toylineId": 6,
+			"name": "Casey Jones",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/casey-jones.jpg",
+			"description": "Casey Jones is a vigilante who is a little nuts. He uses sports equipment to fight and often wears a hockey mask. Casey's a close human ally of the Turtles and is also a very good friend to them, and he also often acts as a big brother-figure to them."
+		},
+		{
+			"id": 132,
+			"toylineId": 6,
+			"name": "Krang",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/krang.jpg",
+			"description": "Krang is the disembodied brain of an evil alien warlord from Dimension X. He is determined to take over Earth and make it habitable for The Krangs."
+		},
+		{
+			"id": 133,
+			"toylineId": 6,
+			"name": "Baxter Stockman",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/baxter.jpg",
+			"description": "Baxter Stockman is a brilliant but mad scientist, allied with Shredder and/or Krang. He is the creator of the Mousers, and an enemy of the Turtles. He alternates in form (cyborg, fly mutant) which causes his sanity to erode even further."
+		},
+		{
+			"id": 134,
+			"toylineId": 6,
+			"name": "Metalhead",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/metalhead.jpg",
+			"description": "Built to last, built to blast, Metalhead is a \"mutant\" machine like no other. Created by Donatello from salvaged Kraang tech, Metalhead is one of the Turtles' most powerful weapons against evil. Almost indestructible, this \"Don droid\" is cloaked in impenetrable armor and bears a laser-lancing arm cannon. Metalhead's a force or be reckoned with, Turtle style!"
+		},
+		{
+			"id": 135,
+			"toylineId": 6,
+			"name": "Rat King",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/rat-king.jpg",
+			"description": "Rat King is an enigmatic character whose origins are unknown. His relationship with the Turtles is quite complicated; he is an enemy, anti-hero, and also an ally of the Turtles."
+		},
+		{
+			"id": 136,
+			"toylineId": 6,
+			"name": "Leatherhead",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/leatherhead.jpg",
+			"description": "Leatherhead is a Mutant alligator (or crocodile). He is most often an ally of the Turtles, but there are instances in which he is a villain."
+		},
+		{
+			"id": 137,
+			"toylineId": 6,
+			"name": "Genghis Frog",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/genghis-frog.jpg",
+			"description": "Genghis Frog, once a humble, naive tadpole, was accidentally mutated, then intentionally tricked by the evil Shredder to join his cohorts in horror. Once exposed to the sinister, wicked ways of Shredder, Genghis soon realized that the Turtles were his true friends. Now this radical amphibious leader of the frogs is showing everyone his true colors. He's a sewer-surfin' fool and courageous dude who doesn't mind ridin' the waves to splash the Foot. Undaunted by the fear of croaking, Genghis Frog arms himself with his Tongue Gun to lick the evil Shredder. Riding his Radical Razor-sharp Boogie Board, this frog's ready to cut the Foot Clan to rib-bits!" 
+		},
+		{
+			"id": 138,
+			"toylineId": 6,
+			"name": "Usagi Yojimbo",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/usagi-yojimbo.jpg",
+			"description": "Hundreds of years before sewers were even invented, Usagi Yojimbo (Rabbit Bodyguard), a skilled but masterless Samurai, wandered ancient legendary Japan. In a freakish burst of reception through Donatello's trans-dimensional portal, this medieval hare wound up thrashing his way through the Turtles' lair, kicking shell and more or less proving a few points with his Katana. Splinter recognized the ronin's skills at once as Usagi repeatedly put the Turtles on the cutting edge. Trapped in Turtle-time, Usagi Yojimbo quickly became a trusted and honorable ally in the ongoing pursuit of pizza and a Shredder-less world."
+		},
+		{
+			"id": 139,
+			"toylineId": 6,
+			"name": "General Traag",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/general-traag.jpg",
+			"description": "As unstoppable as a landslide, General Traag, leader of Krang's Rock Soldier armies in Dimension X, has one thing on his tiny mind — demolish Turtles. Summoned by Krang to exterminate the Turtles and prepare the way for an invasion from Dimension X, General Traag is grinding like a glacier over everything in his path. This stone-cold killer digs through solid rock with his Anti-Turtle Combat Knife looking for Turtles. In a battle of wits, he may be unarmed but beware of his Laser Blaster. You are in for a shock should you end up on the wrong end of this atom smasher. Traag's Stunlaser gun leaves his enemies dazed, dopey and defenseless — perfect for Turtle shish-kabobs or as victims for Krang's diabolical schemes."
+		},
+		{
+			"id": 140,
+			"toylineId": 6,
+			"name": "Ace Duck",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/ace-duck.jpg",
+			"description": "Hungry for duck brain, Krang ordered Shredder to beam an Earthbound duck to Dimension X (there's a shortage of ducks in Dimension X). While transmuting the duck, famous test pilot, Ace Conrad, accidentally flew into the energy beam. The emerging plane was suddenly piloted by Ace Duck, the aero-dynamic adventurer with a big bill. The plane plummeted into the inner city and slid nose-first into the sewer. Ace escaped without ruffling his feathers and found himself at the secret hideout of the Turtles. After realizing he wasn't just some quack off of the streets, the Turtles decided to hire Ace to pilot their Turtle Blimp. Always looking for a good adventure, Ace isn't afraid to scramble the Foot with his hard-boiled Egg Grenades... as long as he gets paid on time. Even though he's employed by the Turtles, Ace is still their fearless, flying friend."
+		},
+		{
+			"id": 141,
+			"toylineId": 6,
+			"name": "Turtle Blimp",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/turtle-blimp.jpg",
+			"description": "Now, with the incredibly wacky Turtle Blimp, you can help the Turtles patrol for the evil Shredder and his band of stinky cohorts, the Foot Clan! Yea, you control the action as the Turtles dive into battle from their zappin' zeppelin. That's right! You command the Blimp over the city skyscrapers and swoop in for sneak attacks with the Turtle Glider. No leaky batteries. no tangled strings or rusty springs, just you and good clean fun."
+		},
+		{
+			"id": 142,
+			"toylineId": 6,
+			"name": "Party Wagon",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/party-wagon.jpg",
+			"description": "The radical, super-cool, Super-Spoiler on top of the van triggers the Foot-pounding tenderizer, whacko bombs, and other party surprises! All this control is now in the palm of your Foot-bustin' hands! Turtle-plated flip top allows easy access for six action figures—more if you squish 'em!"
+		},
+		{
+			"id": 143,
+			"toylineId": 6,
+			"name": "Cheapskate",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/cheapskate.jpg",
+			"description": "The streets won't be safe with this radical street-legal skateboard. Be the envy of all your mutant friends! Let your Turtles skate through the sewers in style on this pizza-powered machine. But wait. There's more: comes with muck blower, kick-action Turtle Foot, sewer cover shield, stench-cutting sewer searchlight and National Turtle Quiz Jokebook. We'd give you the kitchen sink, but it won't fit in the box."
+		},
+		{
+			"id": 144,
+			"toylineId": 6,
+			"name": "Knucklehead",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/knucklehead.jpg",
+			"description": "Alright you Knuckleheads, listen up! You wanna put an end to those little green pests once and for all? Get 'em with the menacing, spring-loaded Foor Knucklehead! Gem 'em out of the sewer, off the streets, and into the soup bowl where they belong!"
+		}
+
+	]
+
+
+}

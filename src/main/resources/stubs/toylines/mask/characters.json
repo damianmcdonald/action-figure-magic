@@ -1,0 +1,190 @@
+{
+	"id": 4,
+	"toyline": "Kenners's M.A.S.K.",
+	"credits": "http://www.albertpenello.com/mask",
+	"factions": 
+	{ 
+		"heroes": 
+		{
+			"name": "M.A.S.K.", 
+			"image": "assets/images/characters/mask/factions/mask.png" 
+		},
+		"villains": 
+		{ 	
+			"name": "V.E.N.O.M.", 
+			"image": "assets/images/characters/mask/factions/venom.png" 
+		}
+	},
+	"description": "M.A.S.K. was a unique toyline pioneered by Kenner in 1985, capitalizing on the rising themes of action features and transformation in the action figure market. Running concurrent to a two-season cartoon by DIC, the series produced four waves of toys before foundering. M.A.S.K. toys centered around ordinary vehicles (scaled to two-inch action figures) which could transform to reveal hidden weaponry, armory, or even change into a different vehicle type. Despite not using die-cast metal, the toys were of a high quality, and detailed with stickers, tampographs, chrome, and rubber tires. Each vehicle included its pilot figure and a science-fiction which could give the figure pretend superpowers. The vehicles typically sported removable weapons, projectiles, and other accessories.",
+	"characters" : [
+		{
+			"id": 73,
+			"name": "Thunderhawk",
+			"isHero": true,
+			"image": "assets/images/characters/mask/thunderhawk.jpg",
+			"description": "Chevrolet Camaro / Fighter Jet"
+		},
+		{
+			"id": 74,
+			"name": "Rhino",
+			"isHero": true,
+			"image": "assets/images/characters/mask/rhino.jpg",
+			"description": "Tractor Rig / Mobile Defense Unit"
+		},
+		{
+			"id": 75,
+			"name": "Switchblade",
+			"isHero": false,
+			"image": "assets/images/characters/mask/switchblade.jpg",
+			"description": "Helicopter / Airplane"
+		},
+		{
+			"id": 76,
+			"name": "Piranha",
+			"isHero": false,
+			"image": "assets/images/characters/mask/piranha.jpg",
+			"description": "Motorcycle / Sidecar"
+		},
+		{
+			"id": 77,
+			"name": "Jackhammer",
+			"isHero": false,
+			"image": "assets/images/characters/mask/jackhammer.jpg",
+			"description": "Ford Bronco 4x4 / Assault Vehicle"
+		},
+		{
+			"id": 78,
+			"name": "Condor",
+			"isHero": true,
+			"image": "assets/images/characters/mask/condor.jpg",
+			"description": "Motorcycle / Helicopter"
+		},
+	    {
+			"id": 79,
+			"name": "Firecracker",
+			"isHero": true,
+			"image": "assets/images/characters/mask/firecracker.jpg",
+			"description": "Pickup Truck / Recon Truck"
+		},
+		{
+			"id": 80,
+			"name": "Gator",
+			"isHero": true,
+			"image": "assets/images/characters/mask/gator.jpg",
+			"description": "Jeep 4x4 / Hydroplane"
+		},
+		{
+			"id": 81,
+			"name": "T-Bob",
+			"isHero": true,
+			"image": "assets/images/characters/mask/t-bob.jpg",
+			"description": "Scooter / Robot"
+		},
+		{
+			"id": 82,
+			"name": "Boulder Hill",
+			"isHero": true,
+			"image": "assets/images/characters/mask/boulder-hill.jpg",
+			"description": "Service Station / Bunker"
+			
+		},
+		{
+			"id": 83,
+			"name": "Firefly",
+			"isHero": true,
+			"image": "assets/images/characters/mask/firefly.jpg",
+			"description": "Dune Buggy / Rocket Glider"
+		},
+		{
+			"id": 84,
+			"name": "Hurricane",
+			"isHero": true,
+			"image": "assets/images/characters/mask/hurricane.jpg",
+			"description": "1957 Chevy / Field Command Post"
+		},
+		{
+			"id": 85,
+			"name": "Raven",
+			"isHero": true,
+			"image": "assets/images/characters/mask/raven.jpg",
+			"description": "Corvette C4 / Armed Seaplane"
+		},
+		{
+			"id": 86,
+			"name": "Slingshot",
+			"isHero": true,
+			"image": "assets/images/characters/mask/slingshot.jpg",
+			"description": "Recreational Vehicle / Surveillance Unit & Sonic Jet"
+		},
+		{
+			"id": 87,
+			"name": "Volcano",
+			"isHero": true,
+			"image": "assets/images/characters/mask/volcano.jpg",
+			"description": "All Terrain Van / High-rise Tracker"
+		},
+		{
+			"id": 88,
+			"name": "Outlaw",
+			"isHero": false,
+			"image": "assets/images/characters/mask/outlaw.jpg",
+			"description": "Oil Tanker / Mobile Headquarters"
+		},
+		{
+			"id": 89,
+			"name": "Stinger",
+			"isHero": false,
+			"image": "assets/images/characters/mask/stinger.jpg",
+			"description": "Pontiac GTO / Armored Tank"
+		},
+		{
+			"id": 90,
+			"name": "Vampire",
+			"isHero": false,
+			"image": "assets/images/characters/mask/vampire.jpg",
+			"description": "Touring Cycle / Turbo Jet"
+		},
+		{
+			"id": 91,
+			"name": "Manta",
+			"isHero": false,
+			"image": "assets/images/characters/mask/manta.jpg",
+			"description": "Nissan 300zx / Assault Plane"
+		},
+		{
+			"id": 92,
+			"name": "Bulldog",
+			"isHero": true,
+			"image": "assets/images/characters/mask/bulldog.jpg",
+			"description": "Diesel Truck / Armored Half-track"
+		},
+		{
+			"id": 93,
+			"name": "Razorback",
+			"isHero": true,
+			"image": "assets/images/characters/mask/razorback.jpg",
+			"description": "Thunderbird Stock Car / Rescue Tank"
+		},
+		{
+			"id": 94,
+			"name": "Wildcat",
+			"isHero": true,
+			"image": "assets/images/characters/mask/wildcat.jpg",
+			"description": "Tow Truck / Vertical Fighting Machine"
+		},
+		{
+			"id": 95,
+			"name": "Igunau",
+			"isHero": false,
+			"image": "assets/images/characters/mask/iguana.jpg",
+			"description": "4-Wheel ATV / Mobile Shredder"
+		},
+		{
+			"id": 96,
+			"name": "Goliath",
+			"isHero": true,
+			"image": "assets/images/characters/mask/goliath.jpg",
+			"description": "Formula Race Car & Transport / Missile Launcher & Jet Fighter"
+		}
+	]
+}

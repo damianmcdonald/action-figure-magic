@@ -1,0 +1,189 @@
+{	
+	"id": 6,
+	"toyline": "Playmate's Teenage Mutant Ninja Turtles",
+	"credits": "http://www.tmnttoys.com",
+	"factions": 
+	{ 
+		"heroes": 
+		{
+			"name": "Turtles", 
+			"image": "assets/images/characters/tmnt/factions/turtles.jpg"
+		},
+		"villains": 
+		{ 	
+			"name": "Foot Clan", 
+			"image": "assets/images/characters/tmnt/factions/foot-clan.png"
+		}
+	},
+	"description": "During the run of the 1987 TV series, Playmates Toys produced hundreds of TMNT action figures, along with vehicles, playsets, and accessories, becoming one of the top collectibles for children. Never before in toy history did an action figure line have such an impact for over two decades, generating billions of dollars in licensing revenue.",
+	"characters" : [
+		{
+			"id": 121,
+			"name": "Leonardo",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/leonardo.jpg",
+			"description": "Hardworking, honorable, and respectful, Leonardo is the Turtles' fearless leader. Driven to be the perfect hero, Leo's inexperience and (often) rowdy brothers sometimes get in the way of his goal."
+		},
+		{
+			"id": 122,
+			"name": "Raphael",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/raphael.jpg",
+			"description": "Tough, quick to act, and hot-tempered, Raphael's a powder keg ready to explode on unsuspecting enemies! The biggest of his mutant brothers, Raph's attitude is \"why sneak around when you can bash some heads instead?\". Master of the three-pronged Sai, Raph is the perfect reflection of his weapon: sharp and to the point!"
+		},
+		{
+			"id": 123,
+			"name": "Donatello",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/donatello.jpg",
+			"description": "Donatello is the team inventor and weaponeer. He creates all their gadgets from the simplest bo-staff to their incredible vehicles. He's utterly brilliant, able to cobble together fantastic stuff from things he's literally scrounged from a trash heap. He's obsessively detail-oriented and often impatient that his brothers can't keep up with him intellectually. But Donnie also happens to be the most reclusive and socially awkward of the Turtles - especially when April is on her way!"
+		},
+		{
+			"id": 124,
+			"name": "Michelangelo",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/michelangelo.jpg",
+			"description": "Physically the smallest of the Turtles and the least mature. Mikey is easily distracted and enthusiastic about... well, pretty much everything. He's also extremely creative. He has a thousand ideas, and every now and then, one of them will be brilliant. This combination of creativity and lack of focus gives him a kind of \"flow\" that the other Turtles cannot match. He's a social mutant and more than the others, begs to be part of the real world."
+		},
+		{
+			"id": 125,
+			"name": "April O'Neil",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/april.jpg",
+			"description": "April is the Turtles human ally, and is a very good friend of the Turtles, acting as a big sister/motherly-figure to them."
+		},
+		{
+			"id": 126,
+			"name": "Shredder",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/shredder.jpg",
+			"description": "Shredder is a master of Ninjutsu who is an arch-enemy to Splinter and the turtles, the former 'adopted father' of Karai and the fearless leader of The Foot Clan."
+		},
+	    {
+			"id": 127,
+			"name": "Foot Soldier",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/foot-soldier.jpg",
+			"description": "Silent and lethal, the soldiers of the Foot Clan exists for one purpose only: to obediently serve their leader, the villainous Shredder! Armed with the best of stolen weapons and gear, these soldiers cause everyone - except the Turtles - to cower in fear at the sight of their bug-like eyes and red bandanas!"
+		},
+		{
+			"id": 128,
+			"name": "Bebop",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/bebop.jpg",
+			"description": "Master thief Anton Zeck is hired to break into Shredder's Lair and steal his legendary helmet. With his purple Mohawk, z-ray glasses, and the ability to become invisible, Anton's thieving opportunities appear endless. But Shredder catches Anton and sends him into a tub of mutagen Ooze with the DNA of a warthog. The thief transforms into Bebop, a half human, half warthog mutant!"
+		},
+		{
+			"id": 129,
+			"name": "Rocksteady",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/rocksteady.jpg",
+			"description": "A former Russian arms dealer, Steranko has ended his gun-dealing days and now collects rare weapons and armor. He hires Anton Zeck (Bebop) to steal Shredder's legendary helmet. But Shredder discovers that Steranko's the mastermind behind the theft and sends him flying into a mixture of mutagen Ooze and Rhino DNA! Steranko instantly mutates into the half human, half Rhino known as Rocksteady. "
+		},
+		{
+			"id": 130,
+			"name": "Splinter",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/splinter.jpg",
+			"description": "Master Splinter is the teacher and adoptive father of the Ninja Turtles. He has trained the Turtles in the art of Ninjitsu, but they are not ninja masters yet. Splinter is mature, serious, and protective. He fights with various ninja weapons and fights with many ninja skills. Any villain wishing to harm his sons will have to go through him first."
+		},
+		{
+			"id": 131,
+			"name": "Casey Jones",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/casey-jones.jpg",
+			"description": "Casey Jones is a vigilante who is a little nuts. He uses sports equipment to fight and often wears a hockey mask. Casey's a close human ally of the Turtles and is also a very good friend to them, and he also often acts as a big brother-figure to them."
+		},
+		{
+			"id": 132,
+			"name": "Krang",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/krang.jpg",
+			"description": "Krang is the disembodied brain of an evil alien warlord from Dimension X. He is determined to take over Earth and make it habitable for The Krangs."
+		},
+		{
+			"id": 133,
+			"name": "Baxter Stockman",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/baxter.jpg",
+			"description": "Baxter Stockman is a brilliant but mad scientist, allied with Shredder and/or Krang. He is the creator of the Mousers, and an enemy of the Turtles. He alternates in form (cyborg, fly mutant) which causes his sanity to erode even further."
+		},
+		{
+			"id": 134,
+			"name": "Metalhead",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/metalhead.jpg",
+			"description": "Built to last, built to blast, Metalhead is a \"mutant\" machine like no other. Created by Donatello from salvaged Kraang tech, Metalhead is one of the Turtles' most powerful weapons against evil. Almost indestructible, this \"Don droid\" is cloaked in impenetrable armor and bears a laser-lancing arm cannon. Metalhead's a force or be reckoned with, Turtle style!"
+		},
+		{
+			"id": 135,
+			"name": "Rat King",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/rat-king.jpg",
+			"description": "Rat King is an enigmatic character whose origins are unknown. His relationship with the Turtles is quite complicated; he is an enemy, anti-hero, and also an ally of the Turtles."
+		},
+		{
+			"id": 136,
+			"name": "Leatherhead",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/leatherhead.jpg",
+			"description": "Leatherhead is a Mutant alligator (or crocodile). He is most often an ally of the Turtles, but there are instances in which he is a villain."
+		},
+		{
+			"id": 137,
+			"name": "Genghis Frog",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/genghis-frog.jpg",
+			"description": "Genghis Frog, once a humble, naive tadpole, was accidentally mutated, then intentionally tricked by the evil Shredder to join his cohorts in horror. Once exposed to the sinister, wicked ways of Shredder, Genghis soon realized that the Turtles were his true friends. Now this radical amphibious leader of the frogs is showing everyone his true colors. He's a sewer-surfin' fool and courageous dude who doesn't mind ridin' the waves to splash the Foot. Undaunted by the fear of croaking, Genghis Frog arms himself with his Tongue Gun to lick the evil Shredder. Riding his Radical Razor-sharp Boogie Board, this frog's ready to cut the Foot Clan to rib-bits!" 
+		},
+		{
+			"id": 138,
+			"name": "Usagi Yojimbo",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/usagi-yojimbo.jpg",
+			"description": "Hundreds of years before sewers were even invented, Usagi Yojimbo (Rabbit Bodyguard), a skilled but masterless Samurai, wandered ancient legendary Japan. In a freakish burst of reception through Donatello's trans-dimensional portal, this medieval hare wound up thrashing his way through the Turtles' lair, kicking shell and more or less proving a few points with his Katana. Splinter recognized the ronin's skills at once as Usagi repeatedly put the Turtles on the cutting edge. Trapped in Turtle-time, Usagi Yojimbo quickly became a trusted and honorable ally in the ongoing pursuit of pizza and a Shredder-less world."
+		},
+		{
+			"id": 139,
+			"name": "General Traag",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/general-traag.jpg",
+			"description": "As unstoppable as a landslide, General Traag, leader of Krang's Rock Soldier armies in Dimension X, has one thing on his tiny mind — demolish Turtles. Summoned by Krang to exterminate the Turtles and prepare the way for an invasion from Dimension X, General Traag is grinding like a glacier over everything in his path. This stone-cold killer digs through solid rock with his Anti-Turtle Combat Knife looking for Turtles. In a battle of wits, he may be unarmed but beware of his Laser Blaster. You are in for a shock should you end up on the wrong end of this atom smasher. Traag's Stunlaser gun leaves his enemies dazed, dopey and defenseless — perfect for Turtle shish-kabobs or as victims for Krang's diabolical schemes."
+		},
+		{
+			"id": 140,
+			"name": "Ace Duck",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/ace-duck.jpg",
+			"description": "Hungry for duck brain, Krang ordered Shredder to beam an Earthbound duck to Dimension X (there's a shortage of ducks in Dimension X). While transmuting the duck, famous test pilot, Ace Conrad, accidentally flew into the energy beam. The emerging plane was suddenly piloted by Ace Duck, the aero-dynamic adventurer with a big bill. The plane plummeted into the inner city and slid nose-first into the sewer. Ace escaped without ruffling his feathers and found himself at the secret hideout of the Turtles. After realizing he wasn't just some quack off of the streets, the Turtles decided to hire Ace to pilot their Turtle Blimp. Always looking for a good adventure, Ace isn't afraid to scramble the Foot with his hard-boiled Egg Grenades... as long as he gets paid on time. Even though he's employed by the Turtles, Ace is still their fearless, flying friend."
+		},
+		{
+			"id": 141,
+			"name": "Turtle Blimp",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/turtle-blimp.jpg",
+			"description": "Now, with the incredibly wacky Turtle Blimp, you can help the Turtles patrol for the evil Shredder and his band of stinky cohorts, the Foot Clan! Yea, you control the action as the Turtles dive into battle from their zappin' zeppelin. That's right! You command the Blimp over the city skyscrapers and swoop in for sneak attacks with the Turtle Glider. No leaky batteries. no tangled strings or rusty springs, just you and good clean fun."
+		},
+		{
+			"id": 142,
+			"name": "Party Wagon",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/party-wagon.jpg",
+			"description": "The radical, super-cool, Super-Spoiler on top of the van triggers the Foot-pounding tenderizer, whacko bombs, and other party surprises! All this control is now in the palm of your Foot-bustin' hands! Turtle-plated flip top allows easy access for six action figures—more if you squish 'em!"
+		},
+		{
+			"id": 143,
+			"name": "Cheapskate",
+			"isHero": true,
+			"image": "assets/images/characters/tmnt/cheapskate.jpg",
+			"description": "The streets won't be safe with this radical street-legal skateboard. Be the envy of all your mutant friends! Let your Turtles skate through the sewers in style on this pizza-powered machine. But wait. There's more: comes with muck blower, kick-action Turtle Foot, sewer cover shield, stench-cutting sewer searchlight and National Turtle Quiz Jokebook. We'd give you the kitchen sink, but it won't fit in the box."
+		},
+		{
+			"id": 144,
+			"name": "Knucklehead",
+			"isHero": false,
+			"image": "assets/images/characters/tmnt/knucklehead.jpg",
+			"description": "Alright you Knuckleheads, listen up! You wanna put an end to those little green pests once and for all? Get 'em with the menacing, spring-loaded Foor Knucklehead! Gem 'em out of the sewer, off the streets, and into the soup bowl where they belong!"
+		}
+	]
+}

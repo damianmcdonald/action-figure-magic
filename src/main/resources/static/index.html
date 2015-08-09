@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>ActionFigure RestMagic</title>
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/default.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+      <style>
+      /* Added as recommended by the Bootstrappers to pad out the navbar */
+      body { padding-top: 70px; }
+      </style>
+
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-sanitize.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+      <script type="text/javascript" src="assets/js/lib/ui-bootstrap-tpls-0.13.2.min.js"></script>
+      <script type="text/javascript" src="assets/js/app.js"></script>
+      <script type="text/javascript" src="assets/js/services/validationService.js"></script>
+      <script type="text/javascript" src="assets/js/controllers/toylinesController.js"></script>
+      <script type="text/javascript" src="assets/js/controllers/charactersController.js"></script>
+      <script type="text/javascript" src="assets/js/controllers/figureController.js"></script>
+      <script type="text/javascript" src="assets/js/controllers/logonController.js"></script>
+      <script type="text/javascript" src="assets/js/controllers/autoCompleteController.js"></script>
+      <script type="text/javascript" src="assets/js/controllers/easterEggsController.js"></script>
+      <script type="text/javascript" src="assets/js/utils/functions.js"></script>
+
+    </head>
+    <body ng-app="actionFigureApp">
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/toylines">ActionFigureMagic</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <div ng-controller="AutoCompleteController">
+                  <script type="text/ng-template" id="autoCompleteTemplate.html">
+                  <a>
+                  <img ng-src="{{match.model.image}}" width="16">
+                  <span ng-bind-html="match.model.name | typeaheadHighlight:query"></span>
+                  </a>
+                  </script>
+                  <input style="width:250px;" type="text" ng-model="selected" typeahead="figure as figure.name for figure in figures | filter:{name:$viewValue} | limitTo:8" typeahead-template-url="autoCompleteTemplate.html" typeahead-editable="false" typeahead-on-select='onSelect($item, $model, $label)' class="form-control" placeholder="Enter action figure name">
+                </div><!-- / ng-controller -->
+              </div>
+            </form>
+            <ul class="nav navbar-nav">
+              <li><a href="/restmagic/registry/registry.html">API Registry</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+              <a href="#/logon" class="btn btn-primary navbar-btn" role="button">Easter Eggs</a>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+
+      <div ng-view></div>
+
+    </div>
+
+  </body>
+
+  </html>

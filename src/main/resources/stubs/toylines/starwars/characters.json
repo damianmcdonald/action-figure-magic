@@ -1,0 +1,189 @@
+{	
+	"id": 1,
+	"toyline": "Kenner's Star Wars",
+	"credits": "http://www.rebelscum.com",
+	"factions": 
+	{ 
+		"heroes": 
+		{
+			"name": "Rebels", 
+			"image": "assets/images/characters/starwars/factions/rebels.png" 
+		},
+		"villains": 
+		{ 	
+			"name": "Empire", 
+			"image": "assets/images/characters/starwars/factions/empire.png"
+		}
+	},
+	"description": "Every saga has a beginning, and for Star Wars action figure collectors it was the fourth quarter of 1977, when a small toy company from Cincinnati, Ohio sold us the promise of toys. When all was said and done Kenner released 115 figures, excluding production variations, but they did much more than sell the Star Wars Generation toys, they shaped our childhoods, and allowed us to live in a galaxy far, far away.",
+	"characters" : [
+		{
+			"id": 1,
+			"name": "Luke Skywalker",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/luke-skywalker.jpg",
+			"description": "Luke Skywalker was a Tatooine farmboy who rose from humble beginnings to become one of the greatest Jedi the galaxy has ever known. Along with his friends Princess Leia and Han Solo, Luke battled the evil Empire, discovered the truth of his parentage, and ended the tyranny of the Sith."
+		},
+		{
+			"id": 2,
+			"name": "Han Solo",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/han-solo.jpg",
+			"description": "Smuggler. Scoundrel. Hero. Han Solo, captain of the Millennium Falcon, was one of the great leaders of the Rebel Alliance. He and his co-pilot Chewbacca came to believe in the cause of galactic freedom, joining Luke Skywalker and Princess Leia Organa in the fight against the Empire."
+		},
+		{
+			"id": 3,
+			"name": "Darth Vader",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/darth-vader.jpg",
+			"description": "Once a heroic Jedi Knight, Darth Vader was seduced by the dark side of the Force, became a Sith Lord, and led the Empire's eradication of the Jedi Order. He remained in service of the Emperor -- the evil Darth Sidious -- for decades, enforcing his Master's will and seeking to crush the fledgling Rebel Alliance. But there was still good in him…"
+		},
+		{
+			"id": 4,
+			"name": "Chewbacca",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/chewbacca.jpg",
+			"description": "A legendary Wookiee warrior and Han Solo's co-pilot aboard the Millennium Falcon, Chewbacca was part of a core group of Rebels who restored freedom to the galaxy. Known for his short temper and accuracy with a bowcaster, Chewie also has a big heart -- and is unwavering in his loyalty to his friends."
+		},
+		{
+			"id": 5,
+			"name": "Imperial Stormtrooper",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/stormtrooper.jpg",
+			"description": "Stormtroopers are elite shock troops fanatically loyal to the Empire and impossible to sway from the Imperial cause. They wear imposing white armor, which offers a wide range of survival equipment and temperature controls to allow the soldiers to survive in almost any environment. Stormtroopers wield blaster rifles and pistols with great skill, and attack in hordes to overwhelm their enemies. Along with standard Stormtroopers, the Empire has organized several specialized units, including snowtroopers and scout troopers."
+		},
+		{
+			"id": 6,
+			"name": "Artoo-Detoo (R2-D2)",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/r2d2.jpg",
+			"description": "A resourceful astromech droid, R2-D2 served Padmé Amidala, Anakin Skywalker and Luke Skywalker in turn, showing great bravery in rescuing his masters and their friends from many perils. A skilled starship mechanic and fighter pilot's assistant, he formed an unlikely but enduring friendship with the fussy protocol droid C-3PO."
+		},
+	    {
+			"id": 7,
+			"name": "Emperor Palpatine",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/emperor.jpg",
+			"description": "Scheming, powerful, and evil to the core, Darth Sidious restored the Sith and destroyed the Jedi Order. Living a double life, Sidious was in fact Palpatine, a Naboo Senator and phantom menace. He slowly manipulated the political system of the Galactic Republic until he was named Supreme Chancellor -- and eventually Emperor -- ruling the galaxy through fear and tyranny."
+		},
+		{
+			"id": 8,
+			"name": "Princess Leia Organa",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/leia.jpg",
+			"description": "Princess Leia Organa was one of the Rebel Alliance's greatest leaders, fearless on the battlefield and dedicated to ending the tyranny of the Empire. Daughter of Padmé Amidala and Anakin Skywalker, sister of Luke Skywalker, and with a soft spot for scoundrels, Leia ranks among the galaxy's great heroes."
+		},
+		{
+			"id": 9,
+			"name": "See-Threepio (C-3PO)",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/c3p0.jpg",
+			"description": "C-3PO is a droid programmed for etiquette and protocol, built by the heroic Jedi Anakin Skywalker, and a constant companion to astromech R2-D2. Over the years, he was involved in some of the galaxy's most defining moments and thrilling battles -- and is fluent in over six million forms of communication."
+		},
+		{
+			"id": 10,
+			"name": "Imperial TIE Fighter Pilot",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/tie-pilot.jpg",
+			"description": "Imperial pilots relied on lightning-quick reflexes and fearlessness to survive tours of duty against the Empire's enemies, as TIE fighters were lightly armored and lacked shields. Only the very best pilots earned their wings as fighter aces."
+		},
+		{
+			"id": 11,
+			"name": "Yoda",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/yoda.jpg",
+			"description": "Yoda was a legendary Jedi Master and stronger than most in his connection with the Force. Small in size but wise and powerful, he trained Jedi for over 800 years, playing integral roles in the Clone Wars, the instruction of Luke Skywalker, and unlocking the path to immortality."
+		},
+		{
+			"id": 12,
+			"name": "Ben (Obi-Wan) Kenobi",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/obi-wan.jpg",
+			"description": "A legendary Jedi Master, Obi-Wan Kenobi was a noble man and gifted in the ways of the Force. He trained Anakin Skywalker, served as a general in the Republic Army during the Clone Wars, and guided Luke Skywalker as a mentor."
+		},
+		{
+			"id": 13,
+			"name": "Boba Fett",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/boba-fett.jpg",
+			"description": "With his customized Mandalorian armor, deadly weaponry, and silent demeanor, Boba Fett was one of the most feared bounty hunters in the galaxy. A genetic clone of his father, bounty hunter Jango Fett, Boba learned combat and martial skills from a young age. Over the course of his career, which included contracts for the Empire and the criminal underworld, he became a legend."
+		},
+		{
+			"id": 14,
+			"name": "AT-AT Driver",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/at-at-driver.jpg",
+			"description": "The Empire's combat drivers are trained to handle everything in the Imperial ground arsenal, but AT-AT pilots see themselves as elite, controlling their massive four-footed assault vehicles in combat against rebel targets. AT-AT pilots obeyed General Veers's orders during the Empire's advance on Hoth's Echo Base, destroying numerous snowspeeders and blasting apart the rebels' ground defenses."
+		},
+		{
+			"id": 15,
+			"name": "Bossk (Bounty Hunter)",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/bossk.jpg",
+			"description": "One of the most feared bounty hunters of the galaxy, Bossk used his natural Trandoshan hunting instincts to capture his prey. During the Clone Wars, the red-eyed reptilian partnered with Aurra Sing, Castas and young Boba Fett. Bossk didn't care much for vendettas or politics. He was in it to get paid. After a brief stint in a Republic prison, Bossk continued his partnership with Fett, becoming a bodyguard to the teen bounty hunter. Decades later, Bossk answered Darth Vader's call to capture the Millennium Falcon after the Battle of Hoth, an assignment that put him in direct competition with Boba."
+		},
+		{
+			"id": 16,
+			"name": "IG-88 (Bounty Hunter)",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/ig88.jpg",
+			"description": "Many people in the galaxy fear droids, what with the memories of the Clone Wars still fresh in their minds. Far more terrifying than battle droids were assassin droids, independently programmed mechanical killers that had no masters. IG-88 is a battered chrome war droid who has become a bounty hunter, and answered Darth Vader's call to capture the Millennium Falcon during the events surrounding the Battle of Hoth."
+		},
+		{
+			"id": 17,
+			"name": "Lando Calrissian",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/lando.jpg",
+			"description": "Once a smooth-talking smuggler, Lando Calrissian changed from a get-rich-quick schemer to a selfless leader in the fight against the Empire. From adventures with the Ghost crew of rebels to the attack on Death Star II, his quick wit and daring proved to be invaluable."
+		},
+		{
+			"id": 18,
+			"name": "Imperial Stormtrooper (Hoth Battle Gear)",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/snowtrooper.jpg",
+			"description": "Snowtroopers are stormtroopers trained for operations in arctic conditions and equipped with specialized gear to protect them against cold. When deployed, snowtroopers wear breath heaters and protective hoods, insulated suits and belt capes, rugged boots, heating units and survival backpacks. During the Battle of Hoth, snowtroopers under General Veers' command were deployed from AT-AT Walkers and quickly and ruthlessly took control of Echo Base."
+		},
+		{
+			"id": 19,
+			"name": "Admiral Ackbar",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/ackbar.jpg",
+			"description": "A veteran commander, Ackbar led the defense of his oceanic home world, Mon Cala, during the Clone Wars, and the Rebel cruiser assault of the Battle of Endor during the war against the Empire. A Mon Calamari, Ackbar and his people manned the distinctive warships supplied to the Rebellion by that aquatic culture. Beyond the qualifications of his great skills and sterling character, Ackbar was a symbol to the rest of the galaxy that the Alliance is fighting for everyone, no matter what their background or origin. The Empire, in contrast, routinely subjugated non-humans."
+		},
+		{
+			"id": 20,
+			"name": "Biker Scout",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/biker-scout.jpg",
+			"description": "Scout troopers were lightly armored compared with other stormtroopers, which allowed them to move more quickly and easily in a range of environments. They were also trained for more independence and adaptability than most Imperial troops. The Empire used scout troopers for a range of missions, including reconnaissance and infiltration. On Endor, scout troopers riding speeder bikes patrolled the forests, guarding against threats to the shield generator protecting the second Death Star during its construction in orbit above the moon."
+		},
+		{
+			"id": 21,
+			"name": "Emperor's Royal Guard",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/royal-guard.jpg",
+			"description": "Resplendent in crimson robes and armor, the Imperial Royal Guard protected the Emperor. Secrecy shrouded the Guard, with rumors abounding about the sentinels' backgrounds and combat capabilities."
+		},
+		{
+			"id": 22,
+			"name": "Gamorrean Guard",
+			"isHero": false,
+			"image": "assets/images/characters/starwars/gamorrean-guard.jpg",
+			"description": "Burly, pig-like brutes who favored axes and other primitive weapons, Gamorreans were often used as muscle by Hutts and other underworld kingpins. Jabba the Hutt employed a gang of intimidating Gamorreans to guard his palace on Tatooine."
+		},
+		{
+			"id": 23,
+			"name": "Nien Nunb",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/nien-numb.jpg",
+			"description": "Nien Nunb is a small, jowled, mouse-eyed native of Sullust, the world that served as the staging area for the Alliance Fleet prior to the Battle of Endor. Nunb was co-pilot to Lando Calrissian aboard the Millennium Falcon during that historic event. Many of his fellow Sullustans also served as Alliance starfighter pilots in the battle. Nunb spoke the liquid, chattering tongue of the Sullustans, a language Lando understood."
+		},
+		{
+			"id": 24,
+			"name": "Wicket W. Warrick",
+			"isHero": true,
+			"image": "assets/images/characters/starwars/wicket.jpg",
+			"description": "Wicket W. Warrick was the brave young Ewok who willingly joined the Rebellion and aided in the battle against the Empire on the forest moon of Endor. Even before he encountered the Rebels, Wicket had devised methods for defeating the Imperial machines, plans which were implemented after the Ewok befriended Princess Leia and recruited his tribe to the Alliance's cause. During the Battle of Endor, Wicket fought valiantly alongside his new allies."
+		}
+	]
+}

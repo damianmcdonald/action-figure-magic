@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>RestMagic Registered API's</title>
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <style>
+    .container-fluid { margin: 10px;  }
+    .get { background-color: #dff0d8; border: 5px solid #5cb85c; }
+    .post { background-color: #d9edf7; border: 5px solid #5bc0de; }
+    .put { background-color: #fcf8e3; border: 5px solid #f0ad4e; }
+    .delete { background-color: #f2dede; border: 5px solid #d9534f; }
+  </style>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+      <script type="text/javascript" src="js/controllers.js"></script>
+
+    </head>
+    <body ng-app="restMagicApp">
+
+      <div class="jumbotron">
+        <div class="container">
+          <h1><img src="img/magic_96.png"/> RestMagic <small>API Registry</small></h1>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+
+        <!-- Start of API Entries -->
+        <div ng-controller="RegisteredApiCtrl">
+
+          <!-- Start iterate API Entries by Spray Http directive-->
+          <div ng-repeat="apis in directory.apis">
+            <div class="row">
+              <div>
+                <p><button type="button" class="btn" ng-class="{'btn-success': apis.directive == 'Get', 'btn-danger': apis.directive == 'Delete', 'btn-info': apis.directive == 'Post', 'btn-warning': apis.directive == 'Put'}">{{apis.directive}}</button></p>
+              </div>
+            </div>
+
+            <!-- Start iterate API Entries by individual API per directive-->
+            <div ng-repeat="api in apis.registeredApis" ng-switch on="$index % 3">
+             <div class="row">
+
+               <div class="col-md-4" ng-switch-when="0">
+                <h4>{{apis.registeredApis[$index].displayName}}</h4>
+                <table class="table" ng-class="{'get': apis.directive == 'Get', 'delete': apis.directive == 'Delete', 'post': apis.directive == 'Post', 'put': apis.directive == 'Put'}">
+                  <thead>
+                    <tr>
+                      <th class="col-md-2">Attribute</th>
+                      <th class="col-md-7">Value</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Http Method
+                      </td>
+                      <td>
+                        {{apis.registeredApis[$index].httpMethod}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Name
+                      </td>
+                      <td>
+                        {{apis.registeredApis[$index].displayName}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Path
+                      </td>
+                      <td>
+                        <a ng-href="{{serverPrefix}}{{apis.registeredApis[$index].displayUrl}}" />{{apis.registeredApis[$index].displayUrl}}</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Produces
+                      </td>
+                      <td>
+                        {{apis.registeredApis[$index].produces}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Data Mode
+                      </td>
+                      <td>
+                        {{apis.registeredApis[$index].dataMode}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        ServeMode
+                      </td>
+                      <td>
+                        {{apis.registeredApis[$index].serverMode}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        API Type
+                      </td>
+                      <td>
+                        {{apis.registeredApis[$index].apiType}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Param Name
+                      </td>
+                      <td>
+                        {{apis.registeredApis[$index].paramName}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Response Data
+                      </td>
+                      <td>
+                        <a ng-href="/restmagic/api/registry/responsedata/{{apis.registeredApis[$index].id}}">View Data</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <span ng-show="apis.registeredApis[$index+1]">
+               <div class="col-md-4" ng-switch-when="0">
+                 <h4>{{apis.registeredApis[$index+1].displayName}}</h4>
+                 <table class="table" ng-class="{'get': apis.directive == 'Get', 'delete': apis.directive == 'Delete', 'post': apis.directive == 'Post', 'put': apis.directive == 'Put'}">
+                   <thead>
+                     <tr>
+                       <th class="col-md-2">Attribute</th>
+                       <th class="col-md-7">Value</th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                     <tr>
+                       <td>
+                         Http Method
+                       </td>
+                       <td>
+                         {{apis.registeredApis[$index+1].httpMethod}}
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         Name
+                       </td>
+                       <td>
+                         {{apis.registeredApis[$index+1].displayName}}
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         Path
+                       </td>
+                       <td>
+                         <a ng-href="{{serverPrefix}}{{apis.registeredApis[$index+1].displayUrl}}" />{{apis.registeredApis[$index+1].displayUrl}}</a>
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         Produces
+                       </td>
+                       <td>
+                         {{apis.registeredApis[$index+1].produces}}
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         Data Mode
+                       </td>
+                       <td>
+                         {{apis.registeredApis[$index+1].dataMode}}
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         ServeMode
+                       </td>
+                       <td>
+                         {{apis.registeredApis[$index+1].serverMode}}
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         API Type
+                       </td>
+                       <td>
+                         {{apis.registeredApis[$index+1].apiType}}
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         Param Name
+                       </td>
+                       <td>
+                         {{apis.registeredApis[$index+1].paramName}}
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         Response Data
+                       </td>
+                       <td>
+                         <a ng-href="/restmagic/api/registry/responsedata/{{apis.registeredApis[$index+1].id}}">View Data</a>
+                       </td>
+                     </tr>
+                   </tbody>
+                 </table>
+               </div>
+             </span>
+
+
+
+
+             <span ng-show="apis.registeredApis[$index+2]">
+               <div class="col-md-4" ng-switch-when="0">
+                 <h4>{{apis.registeredApis[$index+2].displayName}}</h4>
+                 <table class="table" ng-class="{'get': apis.directive == 'Get', 'delete': apis.directive == 'Delete', 'post': apis.directive == 'Post', 'put': apis.directive == 'Put'}">
+                   <thead>
+                     <tr>
+                       <th class="col-md-2">Attribute</th>
+                       <th class="col-md-7">Value</th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                     <tr>
+                       <td>
+                         Http Method
+                       </td>
+                       <td>
+                         {{apis.registeredApis[$index+2].httpMethod}}
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         Name
+                       </td>
+                       <td>
+                         {{apis.registeredApis[$index+2].displayName}}
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         Path
+                       </td>
+                       <td>
+                         <a ng-href="{{serverPrefix}}{{apis.registeredApis[$index+2].displayUrl}}" />{{apis.registeredApis[$index+2].displayUrl}}</a>
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         Produces
+                       </td>
+                       <td>
+                         {{apis.registeredApis[$index+2].produces}}
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         Data Mode
+                       </td>
+                       <td>
+                         {{apis.registeredApis[$index+2].dataMode}}
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         ServeMode
+                       </td>
+                       <td>
+                         {{apis.registeredApis[$index+2].serverMode}}
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         API Type
+                       </td>
+                       <td>
+                         {{apis.registeredApis[$index+2].apiType}}
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         Param Name
+                       </td>
+                       <td>
+                         {{apis.registeredApis[$index+2].paramName}}
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         Response Data
+                       </td>
+                       <td>
+                         <a ng-href="/restmagic/api/registry/responsedata/{{apis.registeredApis[$index+2].id}}">View Data</a>
+                       </td>
+                     </tr>
+                   </tbody>
+                 </table>
+               </div>
+             </span>
+
+
+           </div><!-- /row -->
+         </div><!-- /ng-repeat -->
+
+         <hr>
+
+       </div><!-- /ng-repeat -->
+
+     </div><!-- /ng-controller -->
+
+   </div><!--/container-fluid -->
+
+ </body>
+
+ </html>

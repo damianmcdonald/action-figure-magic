@@ -1,0 +1,189 @@
+{
+	"id": 2,
+	"toyline": "Mattel's He-Man and the Masters of the Universe",
+	"credits": "http://www.he-man.org",
+	"factions": 
+	{ 
+		"heroes": 
+		{
+			"name": "Heroic Warriors", 
+			"image": "assets/images/characters/motu/factions/heroic-warriors.png" 
+		},
+		"villains": 
+		{ 	
+			"name": "Evil Warriors", 
+			"image": "assets/images/characters/motu/factions/evil-warriors.png" 
+		}
+	},
+	"description": "Most powerful series in the universe! Discover some characters from the revolutionary range of Mattel toys that dominated and changed the Action Figure market in the 80s, capturing the public and becoming a popular icon worldwide.",
+	"characters" : [
+		{
+			"id": 25,
+			"name": "He-Man",
+			"isHero": true,
+			"image": "assets/images/characters/motu/he-man.jpg",
+			"description": "A direct descendent of the legendary King Grayskull, Prince Adam of Eternia was chosen to protect his ancestors Power Sword from evil. At first he used a techno vest with a built-in force field to fight evil, but Adam has since learned to combine both halves of the Power Sword, using it to channel the energy of the Elders and become He-Man, the most powerful man in the universe! He guards the safety of all Eternia along side the heroic Masters of the Universe."
+		},
+		{
+			"id": 26,
+			"name": "Skeletor",
+			"isHero": false,
+			"image": "assets/images/characters/motu/skeletor.png",
+			"description": "Mortally wounded in battle with his half-brother Captain Randor, Keldor turned to his dark-arts master Hordak to save his life. Hordak merged Keldor with an extra-dimensional being Demo-Man from Despondos, Keldor was forever changed into Skeletor, Overlord of Evil! He gathered together many of Eternias greatest outcasts and evil warriors in his quest to gain entry into Castle Grayskull and obtain what he believes is the universes ultimate power source."
+		},
+		{
+			"id": 27,
+			"name": "Battle Cat",
+			"isHero": true,
+			"image": "assets/images/characters/motu/battle-cat.jpg",
+			"description": "A member of the Green Tiger Tribe, Cringer was saved from a Parek-Narr attack by a young Prince Adam and afterwards became his devoted companion for life. He assisted Adam during his quest to unite both halves of the Power Sword of He and afterwards was enhanced by it's power to become Battle Cat the fighting tiger of He-Man. Cringer is one of only a handful of allies who knows Adam's secret and fights alongside the other Masters of the Universe, carrying He-Man into battle against the forces of evil."
+		},
+		{
+			"id": 28,
+			"name": "Beast Man",
+			"isHero": false,
+			"image": "assets/images/characters/motu/beast-man.jpg",
+			"description": "After being banished from his home in the Vine Jungle, the Beast Man named Raqquill Rqazz joined up with a young alchemist named Keldor during a skirmish in the Berserker Islands. Like others of his race, Rqazz has the ability to control beasts and monsters. He currently uses this particular talent as chief henchmen to Skeletor, the Overlord of Evil."
+		},
+		{
+			"id": 29,
+			"name": "Hordak",
+			"isHero": false,
+			"image": "assets/images/characters/motu/hordak.jpg",
+			"description": "Second born heir to the Horde Empire, Hec-Tor Kur arrived on the planet Eternia while battling the cosmic warrior He-Ro. Taking the name Hordak, he raised an army and challenged the Snake Men for rule over the planet. And although he defeated King Hssss, Grayskull, leader of the free people of Eternia succeeded in banishing him to the dimension of Despondos. It was there that centuries later Hordak contacted a young alchemist named Keldor and began teaching him the ways of the dark arts in exchange for freedom from his extra-dimensional prison."
+		},
+		{
+			"id": 30,
+			"name": "Man-AT-Arms",
+			"isHero": true,
+			"image": "assets/images/characters/motu/man-at-arms.jpg",
+			"description": "For two centuries, the Eternian weapons master and combat instructor to the royal family has been called the Man-At-Arms. Trained by the renowned tactician Dekker and a veteran of the Great Unrest, Duncan was asked by King Randor to step into this position and fortify his guard with an elite strike force, which he named The Masters of the Universe. In addition to his skills in combat, Duncan is also a great inventor and helped construct an electronic version of the Power Sword for Adam to use until he could unite both halves of the sword of King Grayskull. Man-At-Arms and his adopted daughter Teela often scout the borders of Eternia for signs of lurking evil."
+		},
+	    {
+			"id": 31,
+			"name": "Man-E-Faces",
+			"isHero": true,
+			"image": "assets/images/characters/motu/man-e-faces.png",
+			"description": "Perhaps the greatest actor on Eternia, Perkaedo, the Master of Disguise, performed before King Randor and Queen Marlena at Prince Adam's 18th birthday celebration. It was here that he drank a magic potion, created by Skeletor, that transformed him into a terrible monster with great strength loyal only to evil. With the help of He-Man and the Sorceress, Perkaedo was cured from this transformation, but the process left him forever split between not just two, but three personalities. He now uses his powers to protect justice in his greatest role, as Man-E-Faces, the man who is three warriors in one--fighting as a human, robot, or monster."
+		},
+		{
+			"id": 32,
+			"name": "Leech",
+			"isHero": false,
+			"image": "assets/images/characters/motu/leech.jpg",
+			"description": "A Slebetor Slug-man from deep in the Lake of Gnarl, Leech was called from the depths by a magic spell of Hordak to bolster his forces against King Grayskull and the Snake Men during the Great Wars. Mindwiped by Hordak's lead witch, Leech became a loyal member of his Horde Army, using his magically enhanced energy-draining powers to suck enemies of their strength. He later played a key role in the Horde's fight against the Great Rebellion after Hordak claimed Etheria as a new homeworld during their banishment in Despondos. When called upon in battle, Leech sucks the power from his enemies!"
+		},
+		{
+			"id": 33,
+			"name": "Mer-Man",
+			"isHero": false,
+			"image": "assets/images/characters/motu/mer-man.jpg",
+			"description": "Ruler of the undersea realms of Eternia, Mer-Man was forced to serve in the armies of Skeletor after his kingdom was destroyed in a battle with rival ocean clans. His allegiance with Skeletor brings him to the surface world more often then he would like. Lurking deep beneath the sea of Rakash, Mer-Man awaits the evil call to arms of Skeletor!"
+		},
+		{
+			"id": 34,
+			"name": "Modulok",
+			"isHero": false,
+			"image": "assets/images/characters/motu/modulok.jpg",
+			"description": "An evil scientist from the Tri-Solar system, Galen Nycroff was incarcerated in Prison Starr for scientific crimes against the galaxy. While awaiting execution, he constructed a device which allowed him to divide his body into pieces, with each part endowed with his own evil consciousness. Slipping out of prison in a series of crates, he was delivered to Horde World where he reassembled himself finding he could now mix and match his parts in a thousand different ways. His skills were observed by Horde leaders and Nycroff became chief technician for Commander Kur, traveling with him to Eternia on their quest to vanquish He-Ro. Nycroff was banished along with the rest of the in invading Horde army to Despondos, serving his leader with his evil inventions."
+		},
+		{
+			"id": 35,
+			"name": "Orko",
+			"isHero": true,
+			"image": "assets/images/characters/motu/orko.jpg",
+			"description": "After the rise of the Horde Empire, evil again outweighed the forces of good in the five dimensions. So in every generation a Cosmic Warrior was recruited by the Overlords of Trolla to fight against evil. Each was given the Sword of He, a weapon infused with the Power of the Universe. They were also assigned a Trollan guide to watch over and advise them in their quests. On the planet of Eternia, after five centuries of being split in two, the Trollan Power Sword was at long last joined and bequeathed to an heir worthy of it's power - Prince Adam of the royal household. Orko, a member of the Trollan magical elite, was assigned to watch over Adam. Although he was a powerful Mage on Trolla, the hidden mystic properties of Eternia turned his magic into little more than entertaining tricks, which he uses to entertain his friends and remain undercover."
+		},
+		{
+			"id": 36,
+			"name": "Ram-Man",
+			"isHero": true,
+			"image": "assets/images/characters/motu/ram-man.png",
+			"description": "Growing up just outside the Vine Jungle, Krass' village was always under threat from the savage Beastmen. During a particularly brutal attack, he donned his family's ancient mystical armor that magically absorbs raw force. Using it to ram into his enemies and drive their attack earned Krass the nickname 'Ram Man'. These actions were quickly detected by Skeletor who recruited him in a scheme to ram through the Jaw Bridge of Castle Grayskull. Realizing the error of his ways after seeing Skeletor attack He-Man, Ram Man switched sides, helping to defeat the Evil Lord of Destruction and save the Castle. He soon became a core member of the Masters of the Universe, using his iron-like body as a battering ram against evil!"
+		},
+		{
+			"id": 37,
+			"name": "Panthor",
+			"isHero": false,
+			"image": "assets/images/characters/motu/panthor.jpg",
+			"description": "During his exile from Eternos Palace Keldor saved a young dylinx cub from a hunter's pit in the Corridors of Lithos. The cub remained fiercely loyal to Keldor, who named him Panthor after a tribal story his Gar mother told him as a child. The purple skinned feline stayed with Keldor even after he was transformed into the Lord of Destruction by Hordak's magic. Finding a new home in Snake Mountain, Panthor is forever at his master's side, carrying him into battle or curled up at the feet of Skeletor's throne, loyally growling at any who disagree with the Overlord of Evil."
+		},
+		{
+			"id": 38,
+			"name": "Snake Mountain",
+			"isHero": false,
+			"image": "assets/images/characters/motu/snake-mountain.png",
+			"description": "Snake Mountain is a location in the He-Man series, located on the planet of Eternia. It is located on the Dark Hemisphere of Eternia and is home to the villainous, skull-faced Skeletor. It is later revealed to have once been home to the Snake Men. Its defining feature is its snake-like shape, hence the name."
+		},
+		{
+			"id": 39,
+			"name": "Teela",
+			"isHero": true,
+			"image": "assets/images/characters/motu/teela.jpg",
+			"description": "The adoptive daughter of Duncan, the current Man-At-Arms, Teela grew upon the palace of King Randor. Trained from an early age in the ways of battle, at 18 she became Captain of the Guard, leading Randors troops and acting as a defector member of the Masters of the Universe. She has yet to become aware of her true heritage as the magically cloned daughter, and heir to, the Sorceress of Castle Grayskull. She carries the staff of Ka which was once used by the Snake Men in their epic battles against the Horde and King Grayskull during the Great Wars. Teela uses her magical staff to track her foes every move."
+		},
+		{
+			"id": 40,
+			"name": "Castle Grayskull",
+			"isHero": false,
+			"image": "assets/images/characters/motu/castle-grayskull.jpg",
+			"description": "Long Ago, in ages past at the end of the Great Wars the Cosmic Warrior He-Ro joined forces with King Grayskull. Their combined might became a beacon of hope, bringing together the greatest warriors from across Preternia. Together, this band of warriors became the first Masters of the Universe, fighting against the Horde and Snake Men invaders. Heroically sacrificing himself to save King Grayskull's life, He-Ro passed his magical sword to the King, ensuring only those with great strength, courage, wisdom, and compassion would wield the sword of He. To safeguard the sword's power source and protect the Kingdom, King Grayskull ordered a great fortress erected. With the help of the giants, this mighty fortress was constructed first from a single enchanted stone, which was sculpted into a giant Power Skull. Later, towers and walls were erected around the Skull Stone and the fortress was protected by the magic of the Elders. After the King's death, his fortress would remain, fading from memory into legend, but always protecting the hidden power of the Universe and the secrets of Eternia from evil."
+		},
+		{
+			"id": 41,
+			"name": "Evil-Lyn",
+			"isHero": false,
+			"image": "assets/images/characters/motu/evil-lyn.jpg",
+			"description": "Raised alone by her father in the ruins of Zalesia, Evelyn left her home in a fit of teenage rebellion. Taking the name Evil-Lyn, she travelled Eternia learning from many of its great masters the ways of magic and the dark arts. While searching for new ways to increase her power, she met and fell in love with an ambitious alchemist named Keldor, and agreed to join his cause. After Keldor was transformed into Skeletor, he lost all emotional attachments to Evil-Lyn, and she began to scheme against him. In a series of miscalculations, she helped release both King Hssss and Hordak from their inter-dimensional prisons. Evil-Lyn uses her crystal ball to foresee the evil future!"
+		},
+		{
+			"id": 42,
+			"name": "Faker",
+			"isHero": false,
+			"image": "assets/images/characters/motu/faker.png",
+			"description": "Originally built by Man-At-Arms to cover for He-Man when Prince Adam is needed, Faker was abandoned in the royal junkyard after his first mission and salvaged by the evil warrior Tri-Klops. At the request of Skeletor, Faker was reprogrammed to replace He-Man and convince the people of Eternia that He-Man had betrayed King Randor and turned to evil."
+		},
+		{
+			"id": 43,
+			"name": "King Randor",
+			"isHero": true,
+			"image": "assets/images/characters/motu/king-randor.png",
+			"description": "King Miros second born son, Randor came of age during the Great Unrest, a time when conflict returned to Eternia following the Count Marzo Uprisings and the subsequent betrayal by his half brother Keldor. After the disappearance of his father, Randor was appointed captain of the guard and lead Miros troops in battle against Keldors growing rebellion. Randor eventually ended the battles by fatally wounding Keldor and locking his evil warriors behind the mystic wall. For this act he was appointed King by the Council of Elders. King Randor raises his staff exulting his rule over Eternia!"
+		},
+		{
+			"id": 44,
+			"name": "Mekaneck",
+			"isHero": true,
+			"image": "assets/images/characters/motu/mekaneck.jpg",
+			"description": "Injured in the Battle of Avion during the Great Unrest, Orius was brought by Duncan to Castle Grayskull where he was healed by the Sorceress. The magic spell replaced his neck with an ever-expanding mechanical construction made of microscopic nanites. By increasing or decreasing the number of nanites in his body, Orius gained the ability to grow his neck to almost unlimited length. Taking the code name Mekaneck, he served the royal household as a loyal member of the Masters of the Universe, using his amazing periscope neck to spy on the evil enemy."
+		},
+		{
+			"id": 45,
+			"name": "Mantenna",
+			"isHero": false,
+			"image": "assets/images/characters/motu/mantenna.jpg",
+			"description": "A Rebrunk Nurus from Phelibio IX, Mantenna has the frightening ability to see and hear over great distances with his highly sensitive ears and periscope screeners. He can do more than just see with those wide eyes, he can fire a variety of horrible beams from them as well including paralysis beams, stun beams and laser waves. Mantenna is also an agile scout and often goes out well ahead of his Horde companions to make sure their way is clear for meandering, pillaging and the like. Since he is no slouch in the combat area either Mantenna rarely needs assistance on his scouting missions. He uses his antenna eyes to spy on the enemy!"
+		},
+		{
+			"id": 46,
+			"name": "Moss Man",
+			"isHero": true,
+			"image": "assets/images/characters/motu/moss-man.jpg",
+			"description": "Thought of for many centuries to be an urban legend, the creature called moss Man was in fact an ancient Eternian nature god and ally to King Grayskull. During the rise of Skeletor and the subsequent battles with the Snake Men and Horde invaders, Moss Man often joined forces with the Masters of the Universe helping to protect freedom for all forms of life. He was instrumental in helping them win the Second Ultimate Battleground using his powers over plant life and his fur of forest green to fool and frustrate his wicked foes!"
+		},
+		{
+			"id": 47,
+			"name": "Prince Adam",
+			"isHero": true,
+			"image": "assets/images/characters/motu/prince-adam.jpg",
+			"description": "Thought of for many centuries to be an urban legend, the creature called moss Man was in fact an ancient Eternian nature god and ally to King Grayskull. During the rise of Skeletor and the subsequent battles with the Snake Men and Horde invaders, Moss Man often joined forces with the Masters of the Universe helping to protect freedom for all forms of life. He was instrumental in helping them win the Second Ultimate Battleground using his powers over plant life and his fur of forest green to fool and frustrate his wicked foes!"
+		},
+		{
+			"id": 48,
+			"name": "Snout Spout",
+			"isHero": true,
+			"image": "assets/images/characters/motu/snout-spout.jpg",
+			"description": "A peasant from Etheria, Jaxton was one of three athletes abducted by Hordak and cast into his experimentation matrix. There, like the others, Jaxton was grafted with cybernetic parts giving him both amazing powers and a bizarre form. After crossing through a Laser gate to Eternia with the Evil Horde, Snout Spout escaped and joined with the renegade Masters of the Universe. Self-conscious about his appearance, and called 'Snout Spout' for his abilities to blast water from his cybernetic trunk, Jaxton often feels that everyone is always laughing at him. But when the Snake Men slither out and enemies attack, Snout Spout blasts them back with a super jet spray!"
+		}
+	]
+}
