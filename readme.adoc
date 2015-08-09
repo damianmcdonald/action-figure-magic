@@ -1,6 +1,6 @@
 = action-figure-magic
 
-image:https://travis-ci.org/damianmcdonald/rest-magic.svg?branch=master["Build Status", link="https://travis-ci.org/damianmcdonald/rest-magic"] image:https://go-shields.herokuapp.com/license-apache2-blue.png["License Apache2", link="http://www.apache.org/licenses/LICENSE-2.0"]
+image:https://travis-ci.org/damianmcdonald/action-figure-magic.svg?branch=master["Build Status", link="https://travis-ci.org/damianmcdonald/action-figure-magic"] image:https://go-shields.herokuapp.com/license-apache2-blue.png["License Apache2", link="http://www.apache.org/licenses/LICENSE-2.0"]
 
 Under construction
  
