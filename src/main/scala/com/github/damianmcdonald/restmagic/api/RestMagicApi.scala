@@ -44,7 +44,8 @@ trait RestMagicApi extends RouteConcatenation with StaticRoute with AbstractSyst
     }
 
     val packagesToScan = {
-      if (!Configuration.mockApiPackage.equals("com.github.damianmcdonald.restmagic")) {
+      if (!Configuration.mockApiPackage.isEmpty() &&
+        !Configuration.mockApiPackage.equals("com.github.damianmcdonald.restmagic")) {
         List("com.github.damianmcdonald.restmagic", Configuration.mockApiPackage)
       } else {
         List("com.github.damianmcdonald.restmagic")

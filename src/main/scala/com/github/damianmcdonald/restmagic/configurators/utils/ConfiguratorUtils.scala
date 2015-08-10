@@ -43,7 +43,8 @@ trait ConfiguratorUtils extends SLF4JLogging {
   }
   val ERROR_EMPTY_FILE_PARAM_NAME = {
     "The fileParamName can not be empty. " +
-      "This value is used identify the file part of a multi part form submission. You must provide a fileParamName"
+      "This value is used identify the file part of a multi part form submission. " +
+      "You must provide a fileParamName"
   }
   val ERROR_FILE_DOWNLOAD_NOT_EXISTS = "The provided filePath can not be resolved to a valid file."
   val ERROR_EMPTY_CREDENTIALS = "The credentials map can not be empty. You must provide at least one user -> password entry"
@@ -65,9 +66,28 @@ trait ConfiguratorUtils extends SLF4JLogging {
   val MATCH_PARAM = """\w+""".r
   val MATCH_ANY: PathMatcher1[String] = Rest
 
-  def getEmptyFieldMessage(field: String): String = { s"$field can not be empty. You must provide a $field entry" }
+  private def fileToString(fileName: String): String = {
+    if (Configuration.stubsDir.isEmpty) {
+      val is = this.getClass().getResourceAsStream("/stubs" + fileName)
+      try {
+        scala.io.Source.fromInputStream(is, "UTF-8").mkString
+      } catch {
+        case e: Exception => {
+          e.printStackTrace()
+          log.error("A problem has occured attempting to read file: " + fileName)
+          e.getMessage
+        }
+      }
+    } else {
+      scala.io.Source.fromFile(Configuration.stubsDir + fileName).mkString
+    }
+  }
 
-  def httpMethodToDirective(httpMethod: HttpMethod): Directive0 = {
+  protected def getEmptyFieldMessage(field: String): String = {
+    s"$field can not be empty. You must provide a $field entry"
+  }
+
+  protected def httpMethodToDirective(httpMethod: HttpMethod): Directive0 = {
     httpMethod match {
       case GET => get
       case POST => post
@@ -76,14 +96,14 @@ trait ConfiguratorUtils extends SLF4JLogging {
     }
   }
 
-  def dataModeTypeToString(dataMode: DataModeType): String = {
+  protected def dataModeTypeToString(dataMode: DataModeType): String = {
     dataMode match {
       case FileStub() => "File stub"
       case Inline() => "Inline"
     }
   }
 
-  def serveModeTypeToString(serveMode: ServeModeType): String = {
+  protected def serveModeTypeToString(serveMode: ServeModeType): String = {
     serveMode match {
       case Singular() => "Singular"
       case Random() => "Random"
@@ -113,23 +133,6 @@ trait ConfiguratorUtils extends SLF4JLogging {
     }
   }
 
-  private def fileToString(fileName: String): String = {
-    if (Configuration.stubsDir.isEmpty) {
-      val is = this.getClass().getResourceAsStream("/stubs" + fileName)
-      try {
-        scala.io.Source.fromInputStream(is, "UTF-8").mkString
-      } catch {
-        case e: Exception => {
-          e.printStackTrace()
-          log.error("A problem has occured attempting to read file: " + fileName)
-          e.getMessage
-        }
-      }
-    } else {
-      scala.io.Source.fromFile(Configuration.stubsDir + fileName).mkString
-    }
-  }
-
   protected def validateAndLoadResponses(dataMode: DataModeType, produces: MediaType, s: String): String = {
     val data = dataMode match {
       case FileStub() => fileToString(s)
@@ -141,13 +144,13 @@ trait ConfiguratorUtils extends SLF4JLogging {
       case `application/json` => {
         import net.liftweb.json._
         implicit val formats = net.liftweb.json.DefaultFormats
-        parse(data) // if the json is not valid we will get an exception here!
+        parse(data) // if the json is not valid we will get a net.liftweb.json.JsonParser.ParseException
       }
       case `text/xml` => {
-        scala.xml.XML.loadString(data) // if the xml is not valid we will get an exception here!
+        scala.xml.XML.loadString(data) // if the xml is not valid we will get an org.xml.sax.SAXParseException
       }
       case `text/html` => {
-        scala.xml.XML.loadString(data) // if the html is not valid we will get an exception here!
+        scala.xml.XML.loadString(data) // if the html is not valid we will get an org.xml.sax.SAXParseException
       }
       case _ => log.debug("No validator available for MediaType: " + produces)
     }
@@ -175,13 +178,13 @@ trait ConfiguratorUtils extends SLF4JLogging {
           case `application/json` => {
             import net.liftweb.json._
             implicit val formats = net.liftweb.json.DefaultFormats
-            parse(data) // if the json is not valid we will get an exception here!
+            parse(data) // if the json is not valid we will get a net.liftweb.json.JsonParser.ParseException
           }
           case `text/xml` => {
-            scala.xml.XML.loadString(data) // if the xml is not valid we will get an exception here!
+            scala.xml.XML.loadString(data) // if the xml is not valid we will get an org.xml.sax.SAXParseException
           }
           case `text/html` => {
-            scala.xml.XML.loadString(data) // if the html is not valid we will get an exception here!
+            scala.xml.XML.loadString(data) // if the html is not valid we will get an org.xml.sax.SAXParseException
           }
           case _ => log.debug("No validator available for MediaType: " + produces)
         }

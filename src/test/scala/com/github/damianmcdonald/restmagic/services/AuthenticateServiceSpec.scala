@@ -52,7 +52,7 @@ class AuthenticateServiceSpec extends Specification with Specs2RouteTest with Re
         status mustEqual StatusCodes.Forbidden
         val response = responseAs[String]
         response must not be empty
-        response === "Authorization failure!"
+        response === "Authorization failure"
       }
     }
   }
@@ -78,7 +78,7 @@ class AuthenticateServiceSpec extends Specification with Specs2RouteTest with Re
         status mustEqual StatusCodes.Unauthorized
         val response = responseAs[String]
         response must not be empty
-        response === "Authentication failure!"
+        response === "Authentication failure"
       }
     }
   }

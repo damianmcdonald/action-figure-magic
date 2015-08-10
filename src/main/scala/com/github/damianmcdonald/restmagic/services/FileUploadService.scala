@@ -28,7 +28,19 @@ import spray.routing._
 
 import scala.util.Random
 
-class FileUploadService(cfg: FileUploadConfig)(implicit system: ActorSystem) extends Directives with RootMockService with SLF4JLogging {
+class FileUploadService(cfg: FileUploadConfig)(implicit system: ActorSystem)
+    extends Directives with RootMockService with SLF4JLogging {
+
+  def getFileName(): String = {
+    val name = "rest-magic-file-upload"
+    if (Configuration.uploadsDir.isEmpty) {
+      val resourceUrl = this.getClass().getResource("/uploads")
+      val resourcePath: Path = Paths.get(resourceUrl.toURI())
+      resourcePath.toFile.getAbsolutePath + File.separator + name
+    } else {
+      new File(Configuration.uploadsDir + File.separator + name).getAbsolutePath
+    }
+  }
 
   lazy val route =
     path(cfg.apiPath) {
@@ -36,16 +48,7 @@ class FileUploadService(cfg: FileUploadConfig)(implicit system: ActorSystem) ext
         formFields(cfg.fileParamName.as[Array[Byte]]) { (file) =>
           detach() {
             complete {
-              val fileName = {
-                val name = "rest-magic-file-upload"
-                if (Configuration.uploadsDir.isEmpty) {
-                  val resourceUrl = this.getClass().getResource("/uploads")
-                  val resourcePath: Path = Paths.get(resourceUrl.toURI())
-                  resourcePath.toFile.getAbsolutePath + File.separator + name
-                } else {
-                  new File(Configuration.uploadsDir + File.separator + name).getAbsolutePath
-                }
-              }
+              val fileName = getFileName
               val result = saveFile(fileName, file)
               log.debug("File Upload >>> Upload successful. File has been uploaded to " + fileName)
               if (result) cfg.responseData else (StatusCodes.InternalServerError, "Upload failed!!")

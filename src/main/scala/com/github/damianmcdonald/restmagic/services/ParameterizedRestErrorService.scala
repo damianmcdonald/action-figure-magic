@@ -26,7 +26,8 @@ import com.github.damianmcdonald.restmagic.configurators.ParameterizedRestErrorC
 import com.github.damianmcdonald.restmagic.configurators.ErrorCode
 import spray.http.StatusCodes._
 
-class ParameterizedRestErrorService(cfg: ParameterizedRestErrorConfig)(implicit system: ActorSystem) extends Directives with RootMockService with SLF4JLogging {
+class ParameterizedRestErrorService(cfg: ParameterizedRestErrorConfig)(implicit system: ActorSystem)
+    extends Directives with RootMockService with SLF4JLogging {
 
   lazy val route =
     path(cfg.apiPath) { param =>

@@ -29,6 +29,7 @@ import spray.routing.{ Directive0, PathMatcher0 }
 import spray.http.HttpMethod
 
 object FileUploadConfig extends ConfiguratorUtils {
+
   def apply(
     httpMethod: HttpMethod,
     apiPath: PathMatcher0,
@@ -93,6 +94,11 @@ object FileUploadConfig extends ConfiguratorUtils {
   }
 }
 
+/**
+ * A FileUploadConfig that can be converted to a File Upload Web Service
+ *
+ * This class should be created via it's companion object.
+ */
 case class FileUploadConfig(
   httpMethod: Directive0,
   apiPath: PathMatcher0,

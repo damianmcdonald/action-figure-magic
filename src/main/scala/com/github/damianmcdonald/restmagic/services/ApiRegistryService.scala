@@ -23,7 +23,8 @@ import spray.http.MediaType
 import spray.http.MediaTypes._
 import spray.routing.Directives
 
-class ApiRegistryService(apis: Map[String, List[RegisteredApi]])(implicit system: ActorSystem) extends Directives with RootMockService with SLF4JLogging {
+class ApiRegistryService(apis: Map[String, List[RegisteredApi]])(implicit system: ActorSystem)
+    extends Directives with RootMockService with SLF4JLogging {
 
   def getResponseDataTemplate(displayName: String, responseData: Map[String, String], produces: String): String = {
 
@@ -99,8 +100,14 @@ class ApiRegistryService(apis: Map[String, List[RegisteredApi]])(implicit system
           complete {
             val apiContent = apis.map({
               case (k, v) =>
-                """{ "directive":"""" + k.toString + """",""" +
-                  """"registeredApis": [ """ + v.map(api => api.toJson).mkString(",") + """] }"""
+                val directive = k.toString
+                val registeredApis = v.map(api => api.toJson).mkString(",")
+                s"""{
+                	|"directive":"$directive",
+                	|"registeredApis": [
+                	|$registeredApis
+                	|]
+                	|}""".stripMargin
             }).mkString(",")
 
             if (apis.isEmpty) {

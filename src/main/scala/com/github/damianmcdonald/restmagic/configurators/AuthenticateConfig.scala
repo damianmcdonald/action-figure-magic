@@ -24,6 +24,7 @@ import spray.http.{ MediaTypes, HttpMethod, MediaType }
 import spray.routing.{ Directive0, PathMatcher0 }
 
 object AuthenticateConfig extends ConfiguratorUtils {
+
   def apply(
     httpMethod: HttpMethod,
     securePathPrefix: PathMatcher0,
@@ -90,6 +91,11 @@ object AuthenticateConfig extends ConfiguratorUtils {
   }
 }
 
+/**
+ * A AuthenticateConfig that can be converted to an Authenticate Web Service
+ *
+ * This class should be created via it's companion object.
+ */
 case class AuthenticateConfig(
   httpMethod: Directive0,
   securePathPrefix: PathMatcher0,

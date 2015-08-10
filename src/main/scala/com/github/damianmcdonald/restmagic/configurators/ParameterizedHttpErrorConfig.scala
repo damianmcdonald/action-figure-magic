@@ -72,6 +72,11 @@ object ParameterizedHttpErrorConfig extends ConfiguratorUtils {
   }
 }
 
+/**
+ * A ParameterizedHttpErrorConfig that can be converted to a Parameterized Http Error Web Service
+ *
+ * This class should be created via it's companion object.
+ */
 case class ParameterizedHttpErrorConfig(
   httpMethod: Directive0,
   apiPath: PathMatcher0,

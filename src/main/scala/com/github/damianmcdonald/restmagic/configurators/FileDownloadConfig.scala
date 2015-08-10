@@ -24,6 +24,7 @@ import spray.http.{ HttpMethod, MediaType }
 import spray.routing.{ Directive0, PathMatcher0 }
 
 object FileDownloadConfig extends ConfiguratorUtils {
+
   def apply(
     httpMethod: HttpMethod,
     apiPath: PathMatcher0,
@@ -66,6 +67,11 @@ object FileDownloadConfig extends ConfiguratorUtils {
   }
 }
 
+/**
+ * A FileDownloadConfig that can be converted to a File Download Web Service
+ *
+ * This class should be created via it's companion object.
+ */
 case class FileDownloadConfig(
   httpMethod: Directive0,
   apiPath: PathMatcher0,

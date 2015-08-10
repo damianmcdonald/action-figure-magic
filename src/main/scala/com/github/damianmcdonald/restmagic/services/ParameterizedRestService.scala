@@ -23,7 +23,8 @@ import com.github.damianmcdonald.restmagic.configurators.ParameterizedRestConfig
 import spray.routing.Directives
 import shapeless.HList
 
-class ParameterizedRestService(cfg: ParameterizedRestConfig)(implicit system: ActorSystem) extends Directives with RootMockService with SLF4JLogging {
+class ParameterizedRestService(cfg: ParameterizedRestConfig)(implicit system: ActorSystem)
+    extends Directives with RootMockService with SLF4JLogging {
 
   lazy val route =
     path(cfg.apiPath) { param =>

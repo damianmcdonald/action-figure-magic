@@ -61,6 +61,11 @@ object SimpleRestErrorConfig extends ConfiguratorUtils {
 
 }
 
+/**
+ * A SimpleRestErrorConfig that can be converted to a Simple Rest Error Web Service
+ *
+ * This class should be created via it's companion object.
+ */
 case class SimpleRestErrorConfig(
   httpMethod: Directive0,
   apiPath: PathMatcher0,

@@ -22,6 +22,7 @@ import spray.http.{ HttpMethod, MediaType }
 import spray.routing.{ Directive0, PathMatcher0 }
 
 object SimpleRestConfig extends ConfiguratorUtils {
+
   def apply(
     httpMethod: HttpMethod,
     apiPath: PathMatcher0,
@@ -80,6 +81,11 @@ object SimpleRestConfig extends ConfiguratorUtils {
   }
 }
 
+/**
+ * A SimpleRestConfig that can be converted to a Simple Rest Web Service
+ *
+ * This class should be created via it's companion object.
+ */
 case class SimpleRestConfig(
   httpMethod: Directive0,
   apiPath: PathMatcher0,

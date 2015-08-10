@@ -28,13 +28,13 @@ import scala.concurrent.{ ExecutionContext, Future }
 
 class UserDetails(val userName: String, val password: String, val isAuthenticated: Boolean)
 
-class AuthenticateService(cfg: AuthenticateConfig)(implicit system: ActorSystem) extends Directives with RootMockService with SLF4JLogging {
+class AuthenticateService(cfg: AuthenticateConfig)(implicit system: ActorSystem)
+    extends Directives with RootMockService with SLF4JLogging {
 
   implicit val ec: ExecutionContext = system.dispatcher
 
   def isCredentialValid(userPass: Option[UserPass]): Boolean = {
     val credentials: Map[String, String] = cfg.credentials
-
     userPass match {
       case Some(UserPass(user, pass)) => {
         credentials.get(user) match {
@@ -70,7 +70,7 @@ class AuthenticateService(cfg: AuthenticateConfig)(implicit system: ActorSystem)
     BasicAuth(authenticator _, realm = "RestMagic Secure API")
   }
 
-  def myUserPassAuthenticator(userPass: Option[UserPass]): Future[Option[UserDetails]] =
+  def restMagicUserPassAuthenticator(userPass: Option[UserPass]): Future[Option[UserDetails]] =
     Future {
       if (isCredentialValid(userPass)) {
         userPass match {
@@ -88,12 +88,11 @@ class AuthenticateService(cfg: AuthenticateConfig)(implicit system: ActorSystem)
         cfg.httpMethod {
           authenticate(basicUserAuthenticator) { userDetails: UserDetails =>
             path(cfg.authorizePath) {
-              // authorize(isAuthorizedForSecuredPage(userDetails.userName)) {
               complete {
                 if (isAuthorizedForSecuredPage(userDetails.userName)) {
                   cfg.authorizeResponseData
                 } else {
-                  (StatusCodes.Forbidden, "Authorization failure!")
+                  (StatusCodes.Forbidden, "Authorization failure")
                 }
               }
             } ~
@@ -102,7 +101,7 @@ class AuthenticateService(cfg: AuthenticateConfig)(implicit system: ActorSystem)
                   if (userDetails.isAuthenticated) {
                     cfg.authenticateResponseData
                   } else {
-                    (StatusCodes.Unauthorized, "Authentication failure!")
+                    (StatusCodes.Unauthorized, "Authentication failure")
                   }
                 }
               }

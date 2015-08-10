@@ -35,7 +35,6 @@ object Configuration extends Directives {
   import org.apache.commons.lang3.SystemUtils
 
   // load configuration settings from application.conf
-  // in the default location
   private val config = ConfigFactory.load
   config.checkValid(ConfigFactory.defaultReference)
 

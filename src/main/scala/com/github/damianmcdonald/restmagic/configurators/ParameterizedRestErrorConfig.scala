@@ -75,6 +75,11 @@ object ParameterizedRestErrorConfig extends ConfiguratorUtils {
 
 }
 
+/**
+ * A ParameterizedRestErrorConfig that can be converted to a Parameterized Rest Error Web Service
+ *
+ * This class should be created via it's companion object.
+ */
 case class ParameterizedRestErrorConfig(
   httpMethod: Directive0,
   apiPath: PathMatcher1[String],

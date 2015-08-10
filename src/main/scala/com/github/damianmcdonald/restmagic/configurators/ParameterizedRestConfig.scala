@@ -25,6 +25,7 @@ import shapeless.HList
 import spray.http.HttpMethod
 
 object ParameterizedRestConfig extends ConfiguratorUtils {
+
   def apply(
     httpMethod: HttpMethod,
     apiPath: PathMatcher1[String],
@@ -92,6 +93,11 @@ object ParameterizedRestConfig extends ConfiguratorUtils {
   }
 }
 
+/**
+ * A ParameterizedRestConfig that can be converted to a Parameterized Rest Web Service
+ *
+ * This class should be created via it's companion object.
+ */
 case class ParameterizedRestConfig(
   httpMethod: Directive0,
   apiPath: PathMatcher1[String],

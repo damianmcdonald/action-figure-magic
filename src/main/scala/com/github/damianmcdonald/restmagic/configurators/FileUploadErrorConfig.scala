@@ -63,9 +63,13 @@ object FileUploadErrorConfig extends ConfiguratorUtils {
     }
     new FileUploadErrorConfig(directive, apiPath, errorCode, errorMessage, fileParamName, registeredApi)
   }
-
 }
 
+/**
+ * A FileUploadErrorConfig that can be converted to a File Upload Error Web Service
+ *
+ * This class should be created via it's companion object.
+ */
 case class FileUploadErrorConfig(
   httpMethod: Directive0,
   apiPath: PathMatcher0,

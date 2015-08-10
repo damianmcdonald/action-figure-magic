@@ -27,8 +27,6 @@ import com.github.damianmcdonald.restmagic.exceptions.HttpParameterMissingExcept
 
 trait RootMockService {
 
-  def route: Route
-
   private def getRandomInt(x: Int, y: Int) = {
     Random.nextInt((y - x) + 1) + x
   }
@@ -75,4 +73,5 @@ trait RootMockService {
     xs.getOrElse(index, headVal)
   }
 
+  def route: Route
 }

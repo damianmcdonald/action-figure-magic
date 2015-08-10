@@ -23,7 +23,8 @@ import com.github.damianmcdonald.restmagic.configurators.SimpleRestConfig
 import spray.routing.Directives
 import spray.http.Uri
 
-class SimpleRestService(cfg: SimpleRestConfig)(implicit system: ActorSystem) extends Directives with RootMockService with SLF4JLogging {
+class SimpleRestService(cfg: SimpleRestConfig)(implicit system: ActorSystem)
+    extends Directives with RootMockService with SLF4JLogging {
 
   lazy val route =
     path(cfg.apiPath) {

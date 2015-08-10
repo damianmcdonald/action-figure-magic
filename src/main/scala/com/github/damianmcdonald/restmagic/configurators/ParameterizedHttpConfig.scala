@@ -101,6 +101,11 @@ object ParameterizedHttpConfig extends ConfiguratorUtils {
   }
 }
 
+/**
+ * A ParameterizedHttpConfig that can be converted to a Parameterized Http Web Service
+ *
+ * This class should be created via it's companion object.
+ */
 case class ParameterizedHttpConfig(
   httpMethod: Directive0,
   apiPath: PathMatcher0,

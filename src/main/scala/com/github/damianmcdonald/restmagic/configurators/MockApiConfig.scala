@@ -62,18 +62,18 @@ class RegisteredApi(
 
   def toJson: String = {
     s"""
-        |  {
-        |    "displayName": "$displayName",
-        |    "displayUrl": "$displayUrl",
-        |    "httpMethod": "$httpMethod",
-        |    "produces": "$produces",
-        |    "dataMode": "$dataMode",
-        |    "serverMode": "$serveMode",
-        |    "responseData": "$jsonResponseData",
-        |    "apiType": "$apiType",
-        |    "paramName": "$paramName",
-        |    "id": "$id"
-        |  }
+    |  {
+    |    "displayName": "$displayName",
+    |    "displayUrl": "$displayUrl",
+    |    "httpMethod": "$httpMethod",
+    |    "produces": "$produces",
+    |    "dataMode": "$dataMode",
+    |    "serverMode": "$serveMode",
+    |    "responseData": "$jsonResponseData",
+    |    "apiType": "$apiType",
+    |    "paramName": "$paramName",
+    |    "id": "$id"
+    |  }
     """.stripMargin
   }
 

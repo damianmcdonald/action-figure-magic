@@ -2,10 +2,70 @@
 
 image:https://travis-ci.org/damianmcdonald/action-figure-magic.svg?branch=master["Build Status", link="https://travis-ci.org/damianmcdonald/action-figure-magic"] image:https://go-shields.herokuapp.com/license-apache2-blue.png["License Apache2", link="http://www.apache.org/licenses/LICENSE-2.0"]
 
-Under construction
- 
+`action-figure-magic` is an _eat your own dog food_ application that utilizes https://github.com/damianmcdonald/rest-magic[rest-magic] to create a fictious web site that uses awesome 80's action figures as the domain.
 
+`action-figure-magic` is implemented with an AngularJS front-end which communicates with mocked web services provided by `rest-magic`.
 
+The application is dynamic and functional. Real calls to external services are made and real server side responses are returned.
 
+You can view the applicaton in action over at //TODO: INSERT_HEROKU_LINK_HERE.
 
+To learn more about `rest-magic`, take a look at the //TODO: INSERT_DOCUMENTATION_LINK page.
 
+== Getting started
+
+`action-figure-magic` is a Scala application built using http://www.scala-sbt.org/[sbt].
+
+The application was built using the following toolchain:
+
+* http://www.oracle.com/technetwork/java/javase/downloads/index.html[Java Oracle JDK 1.8]
+* http://www.scala-lang.org/download/all.html[Scala 2.11.6]
+* http://www.scala-sbt.org/download.html[SBT 0.13.8]
+
+The application has also been built against the `OpenJDK 1.8` but is less thoroughly tested so in general your mileage may vary if you attempt to use the application with versions different than the ones specified above.
+
+1) Git-clone this repository.
+
+----
+$ git clone git://github.com/damianmcdonald/action-figure-magic.git my-project
+----
+
+2) Change directory into your clone:
+
+----
+$ cd my-project
+----
+    
+3) Launch SBT:
+
+----
+$ sbt
+----
+
+4) Compile and test everything:
+
+----
+> test
+----
+
+5) Start the application:
+
+----
+> re-start
+----
+
+6) Browse to http://localhost:8085
+
+7) Bask in the awesomeness of 1980's toys!
+
+8) Stop the application:
+
+----
+> re-stop
+----
+
+== Credits
+
+`action-figure-magic` has been created for educational purposes.
+
+The application uses images of action figures and toy lines. Credits for the sources of these images are provided within the application including links to the relevant source web sites.

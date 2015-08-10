@@ -27,7 +27,8 @@ import spray.routing._
 
 import scala.util.Random
 
-class FileUploadErrorService(cfg: FileUploadErrorConfig)(implicit system: ActorSystem) extends Directives with RootMockService with SLF4JLogging {
+class FileUploadErrorService(cfg: FileUploadErrorConfig)(implicit system: ActorSystem)
+    extends Directives with RootMockService with SLF4JLogging {
 
   lazy val route =
     path(cfg.apiPath) {
