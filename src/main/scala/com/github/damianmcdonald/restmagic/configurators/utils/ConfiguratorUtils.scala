@@ -16,18 +16,18 @@
 
 package com.github.damianmcdonald.restmagic.configurators.utils
 
-import java.io.{ File, FileNotFoundException }
-import java.nio.file.{ Path, Paths }
+import java.io.{File, FileNotFoundException}
+import java.nio.file.{Path, Paths}
 
 import akka.event.slf4j.SLF4JLogging
-import com.github.damianmcdonald.restmagic.configurators.DataMode.{ DataModeType, FileStub, Inline }
+import com.github.damianmcdonald.restmagic.configurators.DataMode.{DataModeType, FileStub, Inline}
 import com.github.damianmcdonald.restmagic.configurators.ServeMode._
 import com.github.damianmcdonald.restmagic.system.Configuration
 import spray.http.HttpMethods._
-import spray.http.{ HttpMethod, MediaType }
 import spray.http.MediaTypes._
+import spray.http.{HttpMethod, MediaType}
 import spray.routing.Directives._
-import spray.routing.{ Directive0, PathMatcher1 }
+import spray.routing.{Directive0, PathMatcher1}
 
 trait ConfiguratorUtils extends SLF4JLogging {
 
