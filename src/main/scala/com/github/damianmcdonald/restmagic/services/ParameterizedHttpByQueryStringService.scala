@@ -16,20 +16,15 @@
 
 package com.github.damianmcdonald.restmagic.services
 
-import com.github.damianmcdonald.restmagic.configurators.ParameterizedHttpConfig
-import com.github.damianmcdonald.restmagic.configurators.ServeMode.ByParam
-import com.github.damianmcdonald.restmagic.configurators.ServeMode.Random
-import com.github.damianmcdonald.restmagic.configurators.ServeMode.Singular
-import com.github.damianmcdonald.restmagic.exceptions._
 import akka.actor.ActorSystem
 import akka.event.slf4j.SLF4JLogging
+import com.github.damianmcdonald.restmagic.configurators.ParameterizedHttpConfig
+import com.github.damianmcdonald.restmagic.configurators.ServeMode._
+import spray.http.StatusCodes._
 import spray.httpx.marshalling.ToResponseMarshallable.isMarshallable
 import spray.routing.Directive.pimpApply
 import spray.routing.Directives
 import spray.routing.directives.ParamDefMagnet.apply
-import spray.http.StatusCodes._
-import spray.util.LoggingContext
-import spray.routing.ExceptionHandler
 
 class ParameterizedHttpByQueryStringService(cfg: ParameterizedHttpConfig)(implicit system: ActorSystem)
     extends Directives with RootMockService with SLF4JLogging {
@@ -43,12 +38,16 @@ class ParameterizedHttpByQueryStringService(cfg: ParameterizedHttpConfig)(implic
               cfg.serveMode match {
                 case Singular() => serveSingular(cfg.responseData)
                 case Random() => serveRandom(cfg.responseData)
-                case ByParam() => {
+                case ByParam() =>
                   query match {
                     case Some(s) => serveByParam(s, cfg.responseData)
                     case None => (BadRequest, "Parameter: " + cfg.paramName + " is missing!")
                   }
-                }
+                case CustomStrategy(strategy) =>
+                  query match {
+                    case Some(s) => serveByCustomStrategy(s, cfg.responseData, strategy)
+                    case None => (BadRequest, "Parameter: " + cfg.paramName + " is missing!")
+                  }
               }
             }
           }

@@ -17,16 +17,9 @@
 package com.github.damianmcdonald.restmagic.configurators
 
 import com.github.damianmcdonald.restmagic.configurators.DataMode.DataModeType
-import com.github.damianmcdonald.restmagic.configurators.ServeMode.ByParam
-import com.github.damianmcdonald.restmagic.configurators.SimpleRestConfig._
 import com.github.damianmcdonald.restmagic.configurators.utils.ConfiguratorUtils
-import com.github.damianmcdonald.restmagic.exceptions.MethodNotSupportedException
-import spray.http.MediaType
-import spray.http.Uri.Path
-import spray.routing.Directives
-import spray.http.HttpMethods
+import spray.http.{ HttpMethod, MediaType }
 import spray.routing.{ Directive0, PathMatcher0 }
-import spray.http.HttpMethod
 
 object FileUploadConfig extends ConfiguratorUtils {
 

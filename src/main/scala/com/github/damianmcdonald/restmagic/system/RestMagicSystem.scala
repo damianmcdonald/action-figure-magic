@@ -17,6 +17,7 @@
 package com.github.damianmcdonald.restmagic.system
 
 import java.io.File
+import scala.util.Properties
 
 import akka.actor.ActorSystem
 import akka.io.IO
@@ -32,7 +33,6 @@ object RestMagicSystem extends App with RestMagicApi {
 
 object Configuration extends Directives {
   import com.typesafe.config.ConfigFactory
-  import org.apache.commons.lang3.SystemUtils
 
   // load configuration settings from application.conf
   private val config = ConfigFactory.load
@@ -40,7 +40,13 @@ object Configuration extends Directives {
 
   lazy val host = config.getString("restmagic.host")
 
-  lazy val port = config.getString("restmagic.port").toInt
+  /**
+   * The port number that http requests will be served on.
+   * As this app is intended to be deployed to Heroku, we first try to
+   * use the PORT variable defined in Heroku. If that variable is not available
+   * then the port number is obtained using the restmagic.port from application.conf.
+   */
+  lazy val port = Properties.envOrElse("PORT", config.getString("restmagic.port")).toInt
 
   lazy val staticPathName = config.getString("restmagic.static.path.name")
 

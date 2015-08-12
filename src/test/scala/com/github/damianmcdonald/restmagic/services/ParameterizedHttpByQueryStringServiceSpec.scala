@@ -31,14 +31,27 @@ class ParameterizedHttpByQueryStringServiceSpec extends Specification with Specs
   implicit val formats = net.liftweb.json.DefaultFormats
 
   "The ParameterizedHttpService created via ParameterizedHtpByQueryStringTestApi" should {
-    "return a json object for a GET request to path /" + rootApiPath + "/examples/parameterizedhttp/helloworld/json?lang=turkish" in {
-      Get("/" + rootApiPath + "/examples/parameterizedhttp/helloworld/json?lang=turkish") ~> routes ~> check {
+    "return a json object for a GET request to path /" + rootApiPath + "/examples/parameterizedhttp/querystring?lang=turkish" in {
+      Get("/" + rootApiPath + "/examples/parameterizedhttp/querystring?lang=turkish") ~> routes ~> check {
         status mustEqual StatusCodes.OK
         val response = responseAs[String]
         response must not be empty
         val json = parse(response)
         val value = (json \ "response").extract[String]
         value mustEqual "Merhaba Dunya"
+      }
+    }
+  }
+
+  "The ParameterizedRestService created via ParameterizedRestTestApi" should {
+    "return a json object for a GET request to path /" + rootApiPath + "/examples/parameterizedhttp/querystring/customstrategy?id=1309" in {
+      Get("/" + rootApiPath + "/examples/parameterizedhttp/querystring/customstrategy?id=1309") ~> routes ~> check {
+        status mustEqual StatusCodes.OK
+        val response = responseAs[String]
+        response must not be empty
+        val json = parse(response)
+        val value = (json \ "response").extract[String]
+        value mustEqual "Salve Mondo"
       }
     }
   }

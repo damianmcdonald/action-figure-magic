@@ -16,13 +16,11 @@
 
 package com.github.damianmcdonald.restmagic.services
 
-import org.specs2.mutable.Specification
 import com.github.damianmcdonald.restmagic.api.RestMagicApi
 import net.liftweb.json._
+import org.specs2.mutable.Specification
+import spray.http.{ HttpEntity, MediaTypes, StatusCodes }
 import spray.testkit.Specs2RouteTest
-import spray.http.StatusCodes
-import spray.http.HttpEntity
-import spray.http.MediaTypes
 
 class ParameterizedRestServiceSpec extends Specification with Specs2RouteTest with RestMagicApi {
 
@@ -56,6 +54,19 @@ class ParameterizedRestServiceSpec extends Specification with Specs2RouteTest wi
         val json = parse(response)
         val value = (json \ "name").extract[String]
         value mustEqual "Skeletor"
+      }
+    }
+  }
+
+  "The ParameterizedRestService created via ParameterizedRestTestApi" should {
+    "return a json object for a GET request to path /" + rootApiPath + "/examples/parameterizedrest/customstrategy/1236" in {
+      Get("/" + rootApiPath + "/examples/parameterizedrest/customstrategy/1236") ~> routes ~> check {
+        status mustEqual StatusCodes.OK
+        val response = responseAs[String]
+        response must not be empty
+        val json = parse(response)
+        val value = (json \ "response").extract[String]
+        value mustEqual "Salve Mondo"
       }
     }
   }

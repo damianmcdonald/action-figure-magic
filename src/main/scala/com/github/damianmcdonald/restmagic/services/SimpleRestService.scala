@@ -18,10 +18,8 @@ package com.github.damianmcdonald.restmagic.services
 
 import akka.actor.ActorSystem
 import akka.event.slf4j.SLF4JLogging
-import com.github.damianmcdonald.restmagic.configurators.ServeMode._
 import com.github.damianmcdonald.restmagic.configurators.SimpleRestConfig
 import spray.routing.Directives
-import spray.http.Uri
 
 class SimpleRestService(cfg: SimpleRestConfig)(implicit system: ActorSystem)
     extends Directives with RootMockService with SLF4JLogging {

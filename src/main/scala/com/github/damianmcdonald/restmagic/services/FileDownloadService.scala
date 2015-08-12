@@ -16,19 +16,14 @@
 
 package com.github.damianmcdonald.restmagic.services
 
-import java.io._
-
 import akka.actor.ActorSystem
 import akka.event.slf4j.SLF4JLogging
-import com.github.damianmcdonald.restmagic.configurators.BinaryMode.{ Inline, Attachment, BinaryModeType }
-import com.github.damianmcdonald.restmagic.configurators.{ FileDownloadConfig, FileUploadConfig }
-import com.github.damianmcdonald.restmagic.system.Configuration
+import com.github.damianmcdonald.restmagic.configurators.BinaryMode.{ Attachment, BinaryModeType, Inline }
+import com.github.damianmcdonald.restmagic.configurators.FileDownloadConfig
+import org.apache.commons.io.FileUtils
 import spray.http.HttpHeaders.{ `Content-Disposition`, `Content-Type` }
 import spray.http._
 import spray.routing._
-import org.apache.commons.io.FileUtils
-
-import scala.util.Random
 
 class FileDownloadService(cfg: FileDownloadConfig)(implicit system: ActorSystem)
     extends Directives with RootMockService with SLF4JLogging {

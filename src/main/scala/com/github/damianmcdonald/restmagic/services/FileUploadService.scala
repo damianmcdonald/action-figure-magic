@@ -17,7 +17,7 @@
 package com.github.damianmcdonald.restmagic.services
 
 import java.io._
-import java.nio.file.{ Paths, Path }
+import java.nio.file.{ Path, Paths }
 
 import akka.actor.ActorSystem
 import akka.event.slf4j.SLF4JLogging
@@ -25,8 +25,6 @@ import com.github.damianmcdonald.restmagic.configurators.FileUploadConfig
 import com.github.damianmcdonald.restmagic.system.Configuration
 import spray.http.StatusCodes
 import spray.routing._
-
-import scala.util.Random
 
 class FileUploadService(cfg: FileUploadConfig)(implicit system: ActorSystem)
     extends Directives with RootMockService with SLF4JLogging {

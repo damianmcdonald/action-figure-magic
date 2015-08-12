@@ -19,10 +19,8 @@ package com.github.damianmcdonald.restmagic.configurators
 import com.github.damianmcdonald.restmagic.configurators.DataMode.DataModeType
 import com.github.damianmcdonald.restmagic.configurators.ServeMode.ServeModeType
 import com.github.damianmcdonald.restmagic.configurators.utils.ConfiguratorUtils
+import spray.http.{ HttpMethod, MediaType }
 import spray.routing.{ Directive0, PathMatcher1 }
-import spray.http.MediaType
-import shapeless.HList
-import spray.http.HttpMethod
 
 object ParameterizedRestConfig extends ConfiguratorUtils {
 

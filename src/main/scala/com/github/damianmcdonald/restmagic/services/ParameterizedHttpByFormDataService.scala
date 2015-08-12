@@ -19,12 +19,11 @@ package com.github.damianmcdonald.restmagic.services
 import akka.actor.ActorSystem
 import akka.event.slf4j.SLF4JLogging
 import com.github.damianmcdonald.restmagic.configurators.ParameterizedHttpConfig
-import com.github.damianmcdonald.restmagic.configurators.ServeMode.{ ByParam, Random, Singular }
+import com.github.damianmcdonald.restmagic.configurators.ServeMode._
 import spray.http.StatusCodes._
 import spray.httpx.marshalling.ToResponseMarshallable.isMarshallable
 import spray.routing.Directive.pimpApply
 import spray.routing.Directives
-import spray.routing.directives.ParamDefMagnet.apply
 
 class ParameterizedHttpByFormDataService(cfg: ParameterizedHttpConfig)(implicit system: ActorSystem)
     extends Directives with RootMockService with SLF4JLogging {
@@ -41,6 +40,11 @@ class ParameterizedHttpByFormDataService(cfg: ParameterizedHttpConfig)(implicit 
                 case ByParam() =>
                   query match {
                     case Some(s) => serveByParam(s, cfg.responseData)
+                    case None => (BadRequest, "Parameter: " + cfg.paramName + " is missing!")
+                  }
+                case CustomStrategy(strategy) =>
+                  query match {
+                    case Some(s) => serveByCustomStrategy(s, cfg.responseData, strategy)
                     case None => (BadRequest, "Parameter: " + cfg.paramName + " is missing!")
                   }
               }

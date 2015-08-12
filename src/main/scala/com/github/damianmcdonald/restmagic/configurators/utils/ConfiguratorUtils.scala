@@ -16,22 +16,18 @@
 
 package com.github.damianmcdonald.restmagic.configurators.utils
 
-import java.io.{ FileNotFoundException, File }
-import java.nio.charset.StandardCharsets
-import java.nio.file.{ Paths, Path }
+import java.io.{ File, FileNotFoundException }
+import java.nio.file.{ Path, Paths }
 
-import com.github.damianmcdonald.restmagic.configurators.DataMode.DataModeType
-import com.github.damianmcdonald.restmagic.configurators.DataMode.FileStub
-import com.github.damianmcdonald.restmagic.configurators.DataMode.Inline
+import akka.event.slf4j.SLF4JLogging
+import com.github.damianmcdonald.restmagic.configurators.DataMode.{ DataModeType, FileStub, Inline }
 import com.github.damianmcdonald.restmagic.configurators.ServeMode._
 import com.github.damianmcdonald.restmagic.system.Configuration
-import spray.http.HttpMethod
 import spray.http.HttpMethods._
-import spray.http.MediaType
+import spray.http.{ HttpMethod, MediaType }
 import spray.http.MediaTypes._
 import spray.routing.Directives._
 import spray.routing.{ Directive0, PathMatcher1 }
-import akka.event.slf4j.SLF4JLogging
 
 trait ConfiguratorUtils extends SLF4JLogging {
 
@@ -41,6 +37,7 @@ trait ConfiguratorUtils extends SLF4JLogging {
     "The selected serve mode can only be used when the responseData Map contains more than one entry." +
       "Please add additional responses to the Map or use Singular serve mode"
   }
+  val ERROR_CUSTOM_STRATEGY_MODE = "CustomStrategy serve mode is not available for use with this config type. Please use Singular, Random or ByParam serve modes"
   val ERROR_EMPTY_FILE_PARAM_NAME = {
     "The fileParamName can not be empty. " +
       "This value is used identify the file part of a multi part form submission. " +
@@ -108,6 +105,7 @@ trait ConfiguratorUtils extends SLF4JLogging {
       case Singular() => "Singular"
       case Random() => "Random"
       case ByParam() => "By Parameter"
+      case CustomStrategy(_) => "With Custom Strategy"
     }
   }
 

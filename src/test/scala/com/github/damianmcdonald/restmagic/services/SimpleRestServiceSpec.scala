@@ -16,12 +16,11 @@
 
 package com.github.damianmcdonald.restmagic.services
 
-import org.specs2.mutable.Specification
 import com.github.damianmcdonald.restmagic.api.RestMagicApi
 import net.liftweb.json._
-import spray.testkit.Specs2RouteTest
+import org.specs2.mutable.Specification
 import spray.http._
-import java.io.File
+import spray.testkit.Specs2RouteTest
 
 class SimpleRestServiceSpec extends Specification with Specs2RouteTest with RestMagicApi {
 

@@ -16,16 +16,13 @@
 
 package com.github.damianmcdonald.restmagic.testapi
 
-import com.github.damianmcdonald.restmagic.configurators._
-import com.github.damianmcdonald.restmagic.configurators.DataMode._
 import com.github.damianmcdonald.restmagic.configurators.ServeMode._
+import com.github.damianmcdonald.restmagic.configurators._
+import com.github.damianmcdonald.restmagic.configurators.utils.ConfiguratorUtils
 import com.github.damianmcdonald.restmagic.system.RegistrableMock
-import spray.http.MediaTypes._
+import spray.http.HttpMethods._
 import spray.http.StatusCodes._
 import spray.routing.Directives._
-import com.github.damianmcdonald.restmagic.configurators.utils.ConfiguratorUtils
-import shapeless.HList
-import spray.http.HttpMethods._
 
 class ParameterizedRestErrorTestApi extends RegistrableMock with ConfiguratorUtils {
 

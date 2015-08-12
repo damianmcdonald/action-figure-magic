@@ -1,10 +1,9 @@
 package com.github.damianmcdonald.actionfiguremagic
 
-import com.github.damianmcdonald.restmagic.configurators.BinaryMode.Attachment
-import com.github.damianmcdonald.restmagic.configurators.DataMode.{ Inline, FileStub }
-import com.github.damianmcdonald.restmagic.configurators.ServeMode.{ Random, Singular, ByParam }
-import com.github.damianmcdonald.restmagic.configurators.utils.ConfiguratorUtils
+import com.github.damianmcdonald.restmagic.configurators.DataMode.{ FileStub, Inline }
+import com.github.damianmcdonald.restmagic.configurators.ServeMode.{ ByParam, Random, Singular }
 import com.github.damianmcdonald.restmagic.configurators._
+import com.github.damianmcdonald.restmagic.configurators.utils.ConfiguratorUtils
 import com.github.damianmcdonald.restmagic.system.RegistrableMock
 import spray.http.HttpMethods._
 import spray.http.MediaTypes._

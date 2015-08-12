@@ -16,13 +16,10 @@
 
 package com.github.damianmcdonald.restmagic.services
 
-import org.specs2.mutable.Specification
 import com.github.damianmcdonald.restmagic.api.RestMagicApi
-import net.liftweb.json._
-import spray.testkit.Specs2RouteTest
+import org.specs2.mutable.Specification
 import spray.http.StatusCodes
-import spray.http.HttpEntity
-import spray.http.MediaTypes
+import spray.testkit.Specs2RouteTest
 
 class ParameterizedRestErrorServiceSpec extends Specification with Specs2RouteTest with RestMagicApi {
 

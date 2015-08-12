@@ -18,12 +18,10 @@ package com.github.damianmcdonald.restmagic.configurators
 
 import com.github.damianmcdonald.restmagic.configurators.DataMode.DataModeType
 import com.github.damianmcdonald.restmagic.configurators.FormMode.{ ByQueryString, FormModeType }
-import com.github.damianmcdonald.restmagic.configurators.ParameterizedRestConfig._
 import com.github.damianmcdonald.restmagic.configurators.ServeMode.ServeModeType
 import com.github.damianmcdonald.restmagic.configurators.utils.ConfiguratorUtils
-import spray.routing._
 import spray.http.{ HttpMethod, MediaType }
-import shapeless.HList
+import spray.routing._
 
 object ParameterizedHttpConfig extends ConfiguratorUtils {
 

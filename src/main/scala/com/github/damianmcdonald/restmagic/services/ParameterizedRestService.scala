@@ -18,10 +18,9 @@ package com.github.damianmcdonald.restmagic.services
 
 import akka.actor.ActorSystem
 import akka.event.slf4j.SLF4JLogging
-import com.github.damianmcdonald.restmagic.configurators.ServeMode._
 import com.github.damianmcdonald.restmagic.configurators.ParameterizedRestConfig
+import com.github.damianmcdonald.restmagic.configurators.ServeMode._
 import spray.routing.Directives
-import shapeless.HList
 
 class ParameterizedRestService(cfg: ParameterizedRestConfig)(implicit system: ActorSystem)
     extends Directives with RootMockService with SLF4JLogging {
@@ -35,6 +34,7 @@ class ParameterizedRestService(cfg: ParameterizedRestConfig)(implicit system: Ac
               case Singular() => serveSingular(cfg.responseData)
               case Random() => serveRandom(cfg.responseData)
               case ByParam() => serveByParam(param.toString, cfg.responseData)
+              case CustomStrategy(strategy) => serveByCustomStrategy(param.toString, cfg.responseData, strategy)
             }
           }
         }

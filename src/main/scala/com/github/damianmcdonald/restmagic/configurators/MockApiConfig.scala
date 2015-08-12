@@ -16,14 +16,9 @@
 
 package com.github.damianmcdonald.restmagic.configurators
 
-import scala.annotation.tailrec
-import scala.util.Random
-import scala.util.matching.Regex
-
-import shapeless.HList
-import shapeless.HNil
 import spray.http.StatusCode
-import spray.routing.Directives._
+
+import scala.util.Random
 
 trait RootApiConfig
 
@@ -52,7 +47,7 @@ class RegisteredApi(
     |httpMethod: $httpMethod
     |produces: $produces
     |dataMode: $dataMode
-    |serverMode: $serveMode
+    |serveMode: $serveMode
     |responseData: $responseData
     |apiType: $apiType
     |paramName: $paramName
@@ -68,7 +63,7 @@ class RegisteredApi(
     |    "httpMethod": "$httpMethod",
     |    "produces": "$produces",
     |    "dataMode": "$dataMode",
-    |    "serverMode": "$serveMode",
+    |    "serveMode": "$serveMode",
     |    "responseData": "$jsonResponseData",
     |    "apiType": "$apiType",
     |    "paramName": "$paramName",
@@ -86,6 +81,7 @@ object ServeMode {
   case class Singular() extends ServeModeType
   case class Random() extends ServeModeType
   case class ByParam() extends ServeModeType
+  case class CustomStrategy(strategy: (String, Map[String, String]) => String) extends ServeModeType
 }
 
 object DataMode {

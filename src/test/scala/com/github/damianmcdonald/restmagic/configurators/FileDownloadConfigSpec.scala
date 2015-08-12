@@ -22,7 +22,6 @@ import com.github.damianmcdonald.restmagic.configurators.BinaryMode.Attachment
 import org.specs2.mutable.Specification
 import spray.http.HttpMethods._
 import spray.http.MediaTypes._
-import spray.routing.PathMatcher0
 
 class FileDownloadConfigSpec extends Specification {
 

@@ -18,8 +18,7 @@ package com.github.damianmcdonald.restmagic.services
 
 import akka.actor.ActorSystem
 import akka.event.slf4j.SLF4JLogging
-import com.github.damianmcdonald.restmagic.configurators.{ RegisteredApi, SimpleRestConfig }
-import spray.http.MediaType
+import com.github.damianmcdonald.restmagic.configurators.RegisteredApi
 import spray.http.MediaTypes._
 import spray.routing.Directives
 

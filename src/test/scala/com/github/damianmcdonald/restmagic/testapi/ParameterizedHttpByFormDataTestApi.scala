@@ -16,43 +16,36 @@
 
 package com.github.damianmcdonald.restmagic.testapi
 
-import com.github.damianmcdonald.restmagic.configurators.FormMode.{ ByFormData, ByQueryString }
-import com.github.damianmcdonald.restmagic.configurators._
 import com.github.damianmcdonald.restmagic.configurators.DataMode._
+import com.github.damianmcdonald.restmagic.configurators.FormMode.ByFormData
 import com.github.damianmcdonald.restmagic.configurators.ServeMode._
+import com.github.damianmcdonald.restmagic.configurators._
 import com.github.damianmcdonald.restmagic.system.RegistrableMock
 import spray.http.HttpMethods._
 import spray.http.MediaTypes._
 import spray.routing.Directives._
-import spray.http.StatusCodes._
 
 class ParameterizedHttpByFormDataTestApi extends RegistrableMock {
 
   private val rootApiPath = "restmagic"
 
-  private val helloWorldJsonByParamApi = ParameterizedHttpConfig(
-    httpMethod = GET,
-    apiPath = rootApiPath / "examples" / "parameterizedhttp" / "helloworld" / "json",
-    produces = `application/json`,
-    dataMode = Inline(),
-    responseData = Map(
-      "english" -> """{ "response": "Hello World" }""",
-      "turkish" -> """{ "response": "Merhaba Dunya" }""",
-      "italian" -> """{ "response": "Salve Mondo" }""",
-      "spanish" -> """{ "response": "Hola Mundo" }""",
-      "german" -> """{ "response": "Halo Welt" }"""
-    ),
-    paramName = "lang",
-    serveMode = ByParam(),
-    formMode = ByQueryString(),
-    validate = true,
-    displayName = "Parameterized Http Hello World Json",
-    displayUrl = "/" + rootApiPath + "/examples/parameterizedhttp/helloworld/json?lang={{langId}}"
-  )
+  private val strategy = (param: String, data: Map[String, String]) => {
+    if (param.toInt > 0 && param.toInt < 500) {
+      data.getOrElse("1", throw new RuntimeException("Unable to find map entry for key 1"))
+    } else if (param.toInt > 501 && param.toInt < 1000) {
+      data.getOrElse("2", throw new RuntimeException("Unable to find map entry for key 2"))
+    } else if (param.toInt > 1001 && param.toInt < 1500) {
+      data.getOrElse("3", throw new RuntimeException("Unable to find map entry for key 3"))
+    } else if (param.toInt > 1501 && param.toInt < 2000) {
+      data.getOrElse("4", throw new RuntimeException("Unable to find map entry for key 4"))
+    } else {
+      data.getOrElse("5", throw new RuntimeException("Unable to find map entry for key 5"))
+    }
+  }
 
-  private val postByParamApi = ParameterizedHttpConfig(
+  private val postFormDataApi = ParameterizedHttpConfig(
     httpMethod = POST,
-    apiPath = rootApiPath / "examples" / "parameterizedhttp" / "post",
+    apiPath = rootApiPath / "examples" / "parameterizedhttp" / "formdata",
     produces = `application/json`,
     dataMode = Inline(),
     responseData = Map(
@@ -67,12 +60,32 @@ class ParameterizedHttpByFormDataTestApi extends RegistrableMock {
     formMode = ByFormData(),
     validate = true,
     displayName = "Parameterized Http Post",
-    displayUrl = "/" + rootApiPath + "/examples/parameterizedhttp/post"
+    displayUrl = "/" + rootApiPath + "/examples/parameterizedhttp/formdata"
   )
 
-  private val putByParamApi = ParameterizedHttpConfig(
+  private val postFormDataWithCustomStrategyApi = ParameterizedHttpConfig(
+    httpMethod = POST,
+    apiPath = rootApiPath / "examples" / "parameterizedhttp" / "formdata" / "customstrategy",
+    produces = `application/json`,
+    dataMode = Inline(),
+    responseData = Map(
+      "1" -> """{ "response": "Hello World" }""",
+      "2" -> """{ "response": "Merhaba Dunya" }""",
+      "3" -> """{ "response": "Salve Mondo" }""",
+      "4" -> """{ "response": "Hola Mundo" }""",
+      "5" -> """{ "response": "Halo Welt" }"""
+    ),
+    paramName = "id",
+    serveMode = CustomStrategy(strategy),
+    formMode = ByFormData(),
+    validate = true,
+    displayName = "Parameterized Http Post Form Data With Custom Strategy",
+    displayUrl = "/" + rootApiPath + "/examples/parameterizedhttp/formdata/customstrategy"
+  )
+
+  private val putFormDataApi = ParameterizedHttpConfig(
     httpMethod = PUT,
-    apiPath = rootApiPath / "examples" / "parameterizedhttp" / "put",
+    apiPath = rootApiPath / "examples" / "parameterizedhttp" / "formdata",
     produces = `application/json`,
     dataMode = Inline(),
     responseData = Map(
@@ -87,12 +100,12 @@ class ParameterizedHttpByFormDataTestApi extends RegistrableMock {
     formMode = ByFormData(),
     validate = true,
     displayName = "Parameterized Http Put",
-    displayUrl = "/" + rootApiPath + "/examples/parameterizedhttp/put"
+    displayUrl = "/" + rootApiPath + "/examples/parameterizedhttp/formdata"
   )
 
-  private val deleteByParamApi = ParameterizedHttpConfig(
+  private val deleteFormDataApi = ParameterizedHttpConfig(
     httpMethod = DELETE,
-    apiPath = rootApiPath / "examples" / "parameterizedhttp" / "delete",
+    apiPath = rootApiPath / "examples" / "parameterizedhttp" / "formdata",
     produces = `application/json`,
     dataMode = Inline(),
     responseData = Map(
@@ -107,15 +120,15 @@ class ParameterizedHttpByFormDataTestApi extends RegistrableMock {
     formMode = ByFormData(),
     validate = true,
     displayName = "Parameterized Http Delete",
-    displayUrl = "/" + rootApiPath + "/examples/parameterizedhttp/delete"
+    displayUrl = "/" + rootApiPath + "/examples/parameterizedhttp/formdata"
   )
 
   def getApiConfig: List[RootApiConfig] = {
     List(
-      helloWorldJsonByParamApi,
-      postByParamApi,
-      putByParamApi,
-      deleteByParamApi
+      postFormDataApi,
+      postFormDataWithCustomStrategyApi,
+      putFormDataApi,
+      deleteFormDataApi
     )
   }
 

@@ -16,10 +16,9 @@
 
 package com.github.damianmcdonald.restmagic.configurators
 
-import spray.routing.{ Directive0, PathMatcher0 }
-import spray.http.StatusCode
 import com.github.damianmcdonald.restmagic.configurators.utils.ConfiguratorUtils
-import spray.http.HttpMethod
+import spray.http.{ HttpMethod, StatusCode }
+import spray.routing.{ Directive0, PathMatcher0 }
 
 object SimpleRestErrorConfig extends ConfiguratorUtils {
 

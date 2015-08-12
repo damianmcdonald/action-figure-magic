@@ -17,8 +17,8 @@
 package com.github.damianmcdonald.restmagic.services
 
 import akka.actor.ActorSystem
-import com.github.damianmcdonald.restmagic.configurators.SimpleRestErrorConfig
 import akka.event.slf4j.SLF4JLogging
+import com.github.damianmcdonald.restmagic.configurators.SimpleRestErrorConfig
 import spray.routing.Directives
 
 class SimpleRestErrorService(cfg: SimpleRestErrorConfig)(implicit system: ActorSystem)

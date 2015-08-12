@@ -16,14 +16,12 @@
 
 package com.github.damianmcdonald.restmagic.services
 
-import scala.util.Random
-import spray.util.LoggingContext
-import spray.routing._
-import spray.http._
-import StatusCodes._
-import Directives._
 import com.github.damianmcdonald.restmagic.configurators.ErrorCode
-import com.github.damianmcdonald.restmagic.exceptions.HttpParameterMissingException
+import spray.http.StatusCodes._
+import spray.http._
+import spray.routing._
+
+import scala.util.Random
 
 trait RootMockService {
 
@@ -50,6 +48,10 @@ trait RootMockService {
   protected def serveByParam(index: String, xs: Map[String, String]): String = {
     val headVal = xs.values.headOption.getOrElse("No response data available in responseData Map").toString
     xs.getOrElse(index, headVal)
+  }
+
+  protected def serveByCustomStrategy(param: String, xs: Map[String, String], f: (String, Map[String, String]) => String): String = {
+    f(param, xs)
   }
 
   protected def serveRandomError(xs: Map[String, ErrorCode]): ErrorCode = {

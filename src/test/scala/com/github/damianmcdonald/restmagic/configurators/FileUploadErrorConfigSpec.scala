@@ -16,10 +16,8 @@
 
 package com.github.damianmcdonald.restmagic.configurators
 
-import com.github.damianmcdonald.restmagic.configurators.DataMode.Inline
 import org.specs2.mutable.Specification
 import spray.http.HttpMethods._
-import spray.http.MediaTypes._
 import spray.http.StatusCodes
 
 class FileUploadErrorConfigSpec extends Specification {

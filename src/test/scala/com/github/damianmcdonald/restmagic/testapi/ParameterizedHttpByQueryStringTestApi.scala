@@ -16,23 +16,36 @@
 
 package com.github.damianmcdonald.restmagic.testapi
 
-import com.github.damianmcdonald.restmagic.configurators.FormMode.{ ByFormData, ByQueryString }
-import com.github.damianmcdonald.restmagic.configurators._
 import com.github.damianmcdonald.restmagic.configurators.DataMode._
+import com.github.damianmcdonald.restmagic.configurators.FormMode.ByQueryString
 import com.github.damianmcdonald.restmagic.configurators.ServeMode._
+import com.github.damianmcdonald.restmagic.configurators._
 import com.github.damianmcdonald.restmagic.system.RegistrableMock
 import spray.http.HttpMethods._
 import spray.http.MediaTypes._
 import spray.routing.Directives._
-import spray.http.StatusCodes._
 
 class ParameterizedHttpByQueryStringTestApi extends RegistrableMock {
 
   private val rootApiPath = "restmagic"
 
+  private val strategy = (param: String, data: Map[String, String]) => {
+    if (param.toInt > 0 && param.toInt < 500) {
+      data.getOrElse("1", throw new RuntimeException("Unable to find map entry for key 1"))
+    } else if (param.toInt > 501 && param.toInt < 1000) {
+      data.getOrElse("2", throw new RuntimeException("Unable to find map entry for key 2"))
+    } else if (param.toInt > 1001 && param.toInt < 1500) {
+      data.getOrElse("3", throw new RuntimeException("Unable to find map entry for key 3"))
+    } else if (param.toInt > 1501 && param.toInt < 2000) {
+      data.getOrElse("4", throw new RuntimeException("Unable to find map entry for key 4"))
+    } else {
+      data.getOrElse("5", throw new RuntimeException("Unable to find map entry for key 5"))
+    }
+  }
+
   private val helloWorldJsonByParamApi = ParameterizedHttpConfig(
     httpMethod = GET,
-    apiPath = rootApiPath / "examples" / "parameterizedhttp" / "helloworld" / "json",
+    apiPath = rootApiPath / "examples" / "parameterizedhttp" / "querystring",
     produces = `application/json`,
     dataMode = Inline(),
     responseData = Map(
@@ -47,12 +60,12 @@ class ParameterizedHttpByQueryStringTestApi extends RegistrableMock {
     formMode = ByQueryString(),
     validate = true,
     displayName = "Parameterized Http Hello World Json",
-    displayUrl = "/" + rootApiPath + "/examples/parameterizedhttp/helloworld/json?lang={{langId}}"
+    displayUrl = "/" + rootApiPath + "/examples/parameterizedhttp/querystring?lang={{langId}}"
   )
 
-  private val postByParamApi = ParameterizedHttpConfig(
-    httpMethod = POST,
-    apiPath = rootApiPath / "examples" / "parameterizedhttp" / "post",
+  private val getWithCustomStrategyApi = ParameterizedHttpConfig(
+    httpMethod = GET,
+    apiPath = rootApiPath / "examples" / "parameterizedhttp" / "querystring" / "customstrategy",
     produces = `application/json`,
     dataMode = Inline(),
     responseData = Map(
@@ -62,60 +75,18 @@ class ParameterizedHttpByQueryStringTestApi extends RegistrableMock {
       "4" -> """{ "response": "Hola Mundo" }""",
       "5" -> """{ "response": "Halo Welt" }"""
     ),
-    paramName = "lang",
-    serveMode = ByParam(),
-    formMode = ByFormData(),
+    paramName = "id",
+    serveMode = CustomStrategy(strategy),
+    formMode = ByQueryString(),
     validate = true,
-    displayName = "Parameterized Http Post",
-    displayUrl = "/" + rootApiPath + "/examples/parameterizedhttp/post"
-  )
-
-  private val putByParamApi = ParameterizedHttpConfig(
-    httpMethod = PUT,
-    apiPath = rootApiPath / "examples" / "parameterizedhttp" / "put",
-    produces = `application/json`,
-    dataMode = Inline(),
-    responseData = Map(
-      "1" -> """{ "response": "Hello World" }""",
-      "2" -> """{ "response": "Merhaba Dunya" }""",
-      "3" -> """{ "response": "Salve Mondo" }""",
-      "4" -> """{ "response": "Hola Mundo" }""",
-      "5" -> """{ "response": "Halo Welt" }"""
-    ),
-    paramName = "lang",
-    serveMode = ByParam(),
-    formMode = ByFormData(),
-    validate = true,
-    displayName = "Parameterized Http Put",
-    displayUrl = "/" + rootApiPath + "/examples/parameterizedhttp/put"
-  )
-
-  private val deleteByParamApi = ParameterizedHttpConfig(
-    httpMethod = DELETE,
-    apiPath = rootApiPath / "examples" / "parameterizedhttp" / "delete",
-    produces = `application/json`,
-    dataMode = Inline(),
-    responseData = Map(
-      "1" -> """{ "response": "Hello World" }""",
-      "2" -> """{ "response": "Merhaba Dunya" }""",
-      "3" -> """{ "response": "Salve Mondo" }""",
-      "4" -> """{ "response": "Hola Mundo" }""",
-      "5" -> """{ "response": "Halo Welt" }"""
-    ),
-    paramName = "lang",
-    serveMode = ByParam(),
-    formMode = ByFormData(),
-    validate = true,
-    displayName = "Parameterized Http Delete",
-    displayUrl = "/" + rootApiPath + "/examples/parameterizedhttp/delete"
+    displayName = "Parameterized Http Custom Strategy",
+    displayUrl = "/" + rootApiPath + "/examples/parameterizedhttp/querystring/customstrategy?id={{id}}"
   )
 
   def getApiConfig: List[RootApiConfig] = {
     List(
       helloWorldJsonByParamApi,
-      postByParamApi,
-      putByParamApi,
-      deleteByParamApi
+      getWithCustomStrategyApi
     )
   }
 

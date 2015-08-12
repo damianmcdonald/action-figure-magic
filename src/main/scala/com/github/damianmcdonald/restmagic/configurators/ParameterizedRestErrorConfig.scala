@@ -16,13 +16,10 @@
 
 package com.github.damianmcdonald.restmagic.configurators
 
-import com.github.damianmcdonald.restmagic.configurators.DataMode.DataModeType
-import com.github.damianmcdonald.restmagic.configurators.ParameterizedHttpErrorConfig._
 import com.github.damianmcdonald.restmagic.configurators.ServeMode.ServeModeType
 import com.github.damianmcdonald.restmagic.configurators.utils.ConfiguratorUtils
+import spray.http.HttpMethod
 import spray.routing._
-import spray.http.{ HttpMethod, MediaType, StatusCode }
-import shapeless.HList
 
 object ParameterizedRestErrorConfig extends ConfiguratorUtils {
 
@@ -33,6 +30,7 @@ object ParameterizedRestErrorConfig extends ConfiguratorUtils {
     serveMode: ServeModeType
   ): ParameterizedRestErrorConfig = {
     assert(responseData.nonEmpty, ERROR_EMPTY_MAP)
+    assert(!serveMode.isInstanceOf[ServeMode.CustomStrategy], ERROR_CUSTOM_STRATEGY_MODE)
     assert(if (responseData.size == 1 && !serveMode.isInstanceOf[ServeMode.Singular]) false else true, ERROR_SINGULAR_MODE)
     assert(if (responseData.size > 1 && serveMode.isInstanceOf[ServeMode.Singular]) false else true, ERROR_MULTI_MODE)
     val directive = httpMethodToDirective(httpMethod)
@@ -48,6 +46,7 @@ object ParameterizedRestErrorConfig extends ConfiguratorUtils {
     displayUrl: String
   ): ParameterizedRestErrorConfig = {
     assert(responseData.nonEmpty, ERROR_EMPTY_MAP)
+    assert(!serveMode.isInstanceOf[ServeMode.CustomStrategy], ERROR_CUSTOM_STRATEGY_MODE)
     assert(if (responseData.size == 1 && !serveMode.isInstanceOf[ServeMode.Singular]) false else true, ERROR_SINGULAR_MODE)
     assert(if (responseData.size > 1 && serveMode.isInstanceOf[ServeMode.Singular]) false else true, ERROR_MULTI_MODE)
     val directive = httpMethodToDirective(httpMethod)

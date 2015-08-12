@@ -16,20 +16,32 @@
 
 package com.github.damianmcdonald.restmagic.testapi
 
-import com.github.damianmcdonald.restmagic.configurators._
 import com.github.damianmcdonald.restmagic.configurators.DataMode._
 import com.github.damianmcdonald.restmagic.configurators.ServeMode._
-import com.github.damianmcdonald.restmagic.system.RegistrableMock
-import spray.http.MediaTypes._
-import spray.http.StatusCodes._
-import spray.routing.Directives._
+import com.github.damianmcdonald.restmagic.configurators._
 import com.github.damianmcdonald.restmagic.configurators.utils.ConfiguratorUtils
-import shapeless.HList
+import com.github.damianmcdonald.restmagic.system.RegistrableMock
 import spray.http.HttpMethods._
+import spray.http.MediaTypes._
+import spray.routing.Directives._
 
 class ParameterizedRestTestApi extends RegistrableMock with ConfiguratorUtils {
 
   private val rootApiPath = "restmagic"
+
+  private val strategy = (param: String, data: Map[String, String]) => {
+    if (param.toInt > 0 && param.toInt < 500) {
+      data.getOrElse("1", throw new RuntimeException("Unable to find map entry for key 1"))
+    } else if (param.toInt > 501 && param.toInt < 1000) {
+      data.getOrElse("2", throw new RuntimeException("Unable to find map entry for key 2"))
+    } else if (param.toInt > 1001 && param.toInt < 1500) {
+      data.getOrElse("3", throw new RuntimeException("Unable to find map entry for key 3"))
+    } else if (param.toInt > 1501 && param.toInt < 2000) {
+      data.getOrElse("4", throw new RuntimeException("Unable to find map entry for key 4"))
+    } else {
+      data.getOrElse("5", throw new RuntimeException("Unable to find map entry for key 5"))
+    }
+  }
 
   private val helloWorldJsonByParamApi = ParameterizedRestConfig(
     httpMethod = GET,
@@ -77,6 +89,24 @@ class ParameterizedRestTestApi extends RegistrableMock with ConfiguratorUtils {
     validate = true,
     displayName = "Parameterized Rest He-Man",
     displayUrl = "/" + rootApiPath + "/examples/parameterizedrest/he-man/**"
+  )
+
+  private val getWithCustomStrategyApi = ParameterizedRestConfig(
+    httpMethod = GET,
+    apiPath = rootApiPath / "examples" / "parameterizedrest" / "customstrategy" / MATCH_PARAM,
+    produces = `application/json`,
+    dataMode = Inline(),
+    responseData = Map(
+      "1" -> """{ "response": "Hello World" }""",
+      "2" -> """{ "response": "Merhaba Dunya" }""",
+      "3" -> """{ "response": "Salve Mondo" }""",
+      "4" -> """{ "response": "Hola Mundo" }""",
+      "5" -> """{ "response": "Halo Welt" }"""
+    ),
+    serveMode = CustomStrategy(strategy),
+    validate = true,
+    displayName = "Parameterized Rest Custom Strategy",
+    displayUrl = "/" + rootApiPath + "/examples/parameterizedrest/customstrategy/{{parameter}}"
   )
 
   private val matchAnyPathApi = ParameterizedRestConfig(
@@ -174,6 +204,7 @@ class ParameterizedRestTestApi extends RegistrableMock with ConfiguratorUtils {
       helloWorldJsonByParamApi,
       mastersOfTheUniverseByParamApi,
       heManSingularApi,
+      getWithCustomStrategyApi,
       matchAnyPathApi,
       matchAnyPathByParamApi,
       postByParamApi,

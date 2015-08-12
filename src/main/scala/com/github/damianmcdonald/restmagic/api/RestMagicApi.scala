@@ -21,10 +21,9 @@ import akka.event.slf4j.SLF4JLogging
 import com.github.damianmcdonald.restmagic.configurators.FormMode.{ ByFormData, ByQueryString }
 import com.github.damianmcdonald.restmagic.configurators._
 import com.github.damianmcdonald.restmagic.services._
+import com.github.damianmcdonald.restmagic.system.{ Configuration, RegistrableMock }
 import spray.http.StatusCodes
 import spray.routing.{ Directives, _ }
-import java.lang.reflect.Method
-import com.github.damianmcdonald.restmagic.system.{ Configuration, RegistrableMock }
 
 trait AbstractSystem {
   implicit def system: ActorSystem
@@ -33,10 +32,10 @@ trait AbstractSystem {
 trait RestMagicApi extends RouteConcatenation with StaticRoute with AbstractSystem with SLF4JLogging {
 
   private def getRegistrableMocks: List[RootApiConfig] = {
-    import org.reflections.Reflections
-    import scala.collection.JavaConversions._
 
     def getMocks(packageName: String): List[RootApiConfig] = {
+      import org.reflections.Reflections
+      import scala.collection.JavaConversions._
       val reflections = new Reflections(packageName)
       val subclasses = reflections.getSubTypesOf(classOf[RegistrableMock])
       val registrables: List[RegistrableMock] = subclasses.toList.map { x => x.getDeclaredConstructors()(0).newInstance().asInstanceOf[RegistrableMock] }

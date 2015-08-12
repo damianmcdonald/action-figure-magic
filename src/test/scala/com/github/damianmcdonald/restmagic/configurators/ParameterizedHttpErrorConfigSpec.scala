@@ -17,7 +17,7 @@
 package com.github.damianmcdonald.restmagic.configurators
 
 import com.github.damianmcdonald.restmagic.configurators.FormMode.ByQueryString
-import com.github.damianmcdonald.restmagic.configurators.ServeMode.{ ByParam, Random, Singular }
+import com.github.damianmcdonald.restmagic.configurators.ServeMode._
 import org.specs2.mutable.Specification
 import spray.http.HttpMethods._
 import spray.http.StatusCodes._
@@ -26,6 +26,9 @@ class ParameterizedHttpErrorConfigSpec extends Specification {
 
   private val jsonAuthenticateResponse = """{ "status": "authenticated" }"""
   private val jsonAuthorizeResponse = """{ "status": "authorized" }"""
+  private val strategy = (param: String, data: Map[String, String]) => {
+    "dummy value"
+  }
 
   "A ParameterizedHttpErrorConfig" should {
     "return a valid ParameterizedHttpErrorConfig class instance using a minimal constructor" in {
@@ -87,6 +90,22 @@ class ParameterizedHttpErrorConfigSpec extends Specification {
 
   "A ParameterizedHttpErrorConfig" should {
     "throw an assertion error" in {
+      "when a ParameterizedHttpErrorConfig minimal constructor is CustomStrategy mode" in {
+        def parameterizedHttpConfig = ParameterizedHttpErrorConfig(
+          httpMethod = GET,
+          apiPath = "examples",
+          responseData = Map[String, ErrorCode](),
+          paramName = "errorId",
+          serveMode = CustomStrategy(strategy),
+          formMode = ByQueryString()
+        )
+        parameterizedHttpConfig must throwA[AssertionError]
+      }
+    }
+  }
+
+  "A ParameterizedHttpErrorConfig" should {
+    "throw an assertion error" in {
       "when a ParameterizedHttpErrorConfig minimal constructor is singular serve mode but responseData contains more than 1 item" in {
         def parameterizedHttpConfig = ParameterizedHttpErrorConfig(
           httpMethod = GET,
@@ -132,6 +151,24 @@ class ParameterizedHttpErrorConfigSpec extends Specification {
           responseData = Map[String, ErrorCode](),
           paramName = "errorId",
           serveMode = ByParam(),
+          formMode = ByQueryString(),
+          displayName = "Parameterized Http Error Get by query string",
+          displayUrl = "/examples/parameterizedhttp/error/querystring/get/{{errorId}}"
+        )
+        parameterizedHttpConfig must throwA[AssertionError]
+      }
+    }
+  }
+
+  "A ParameterizedHttpErrorConfig" should {
+    "throw an assertion error" in {
+      "when a ParameterizedHttpErrorConfig full constructor is CustomStrategy mode" in {
+        def parameterizedHttpConfig = ParameterizedHttpErrorConfig(
+          httpMethod = GET,
+          apiPath = "examples",
+          responseData = Map[String, ErrorCode](),
+          paramName = "errorId",
+          serveMode = CustomStrategy(strategy),
           formMode = ByQueryString(),
           displayName = "Parameterized Http Error Get by query string",
           displayUrl = "/examples/parameterizedhttp/error/querystring/get/{{errorId}}"

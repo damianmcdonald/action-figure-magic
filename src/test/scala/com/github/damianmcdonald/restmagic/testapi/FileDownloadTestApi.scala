@@ -19,7 +19,6 @@ package com.github.damianmcdonald.restmagic.testapi
 import com.github.damianmcdonald.restmagic.configurators.BinaryMode._
 import com.github.damianmcdonald.restmagic.configurators._
 import com.github.damianmcdonald.restmagic.system.RegistrableMock
-import com.sun.xml.internal.ws.api.message.AttachmentEx
 import spray.http.HttpMethods._
 import spray.http.MediaTypes._
 import spray.routing.Directives._

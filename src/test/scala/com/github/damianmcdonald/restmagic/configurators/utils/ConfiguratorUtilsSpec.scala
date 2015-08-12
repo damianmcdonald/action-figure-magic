@@ -16,13 +16,12 @@
 
 package com.github.damianmcdonald.restmagic.configurators.utils
 
-import com.github.damianmcdonald.restmagic.configurators.DataMode.{ Inline, FileStub }
+import com.github.damianmcdonald.restmagic.configurators.DataMode.{ FileStub, Inline }
 import net.liftweb.json.JsonParser.ParseException
 import net.liftweb.json._
 import org.specs2.mutable.Specification
 import org.xml.sax.SAXParseException
 import spray.http.MediaTypes._
-import net.liftweb.json._
 
 class ConfiguratorUtilsSpec extends Specification with ConfiguratorUtils {
 

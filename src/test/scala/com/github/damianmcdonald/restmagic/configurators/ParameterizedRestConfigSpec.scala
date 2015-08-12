@@ -17,14 +17,13 @@
 package com.github.damianmcdonald.restmagic.configurators
 
 import com.github.damianmcdonald.restmagic.configurators.DataMode.Inline
-import com.github.damianmcdonald.restmagic.configurators.ServeMode.{ Random, Singular, ByParam }
+import com.github.damianmcdonald.restmagic.configurators.ServeMode.{ ByParam, Random, Singular }
 import com.github.damianmcdonald.restmagic.configurators.utils.ConfiguratorUtils
 import org.specs2.mutable.Specification
 import spray.http.HttpMethods._
 import spray.http.MediaTypes._
-import spray.routing.PathMatcher1
-import spray.testkit.Specs2RouteTest
 import spray.routing.Directives._
+import spray.testkit.Specs2RouteTest
 
 class ParameterizedRestConfigSpec extends Specification with Specs2RouteTest with ConfiguratorUtils {
 

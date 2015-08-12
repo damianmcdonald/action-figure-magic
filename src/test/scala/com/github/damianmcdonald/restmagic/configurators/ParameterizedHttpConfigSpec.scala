@@ -18,7 +18,7 @@ package com.github.damianmcdonald.restmagic.configurators
 
 import com.github.damianmcdonald.restmagic.configurators.DataMode.Inline
 import com.github.damianmcdonald.restmagic.configurators.FormMode.ByQueryString
-import com.github.damianmcdonald.restmagic.configurators.ServeMode.{ Random, Singular, ByParam }
+import com.github.damianmcdonald.restmagic.configurators.ServeMode.{ ByParam, Random, Singular }
 import org.specs2.mutable.Specification
 import spray.http.HttpMethods._
 import spray.http.MediaTypes._

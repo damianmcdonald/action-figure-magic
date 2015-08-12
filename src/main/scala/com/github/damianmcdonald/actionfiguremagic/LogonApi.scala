@@ -1,7 +1,6 @@
 package com.github.damianmcdonald.actionfiguremagic
 
-import com.github.damianmcdonald.restmagic.configurators.DataMode.FileStub
-import com.github.damianmcdonald.restmagic.configurators.{ AuthenticateConfig, SimpleRestConfig }
+import com.github.damianmcdonald.restmagic.configurators.AuthenticateConfig
 import com.github.damianmcdonald.restmagic.system.RegistrableMock
 import spray.http.HttpMethods._
 import spray.http.MediaTypes._

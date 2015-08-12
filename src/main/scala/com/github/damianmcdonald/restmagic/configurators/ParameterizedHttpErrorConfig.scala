@@ -33,6 +33,7 @@ object ParameterizedHttpErrorConfig extends ConfiguratorUtils {
     formMode: FormModeType
   ): ParameterizedHttpErrorConfig = {
     assert(responseData.nonEmpty, ERROR_EMPTY_MAP)
+    assert(!serveMode.isInstanceOf[ServeMode.CustomStrategy], ERROR_CUSTOM_STRATEGY_MODE)
     assert(if (responseData.size == 1 && !serveMode.isInstanceOf[ServeMode.Singular]) false else true, ERROR_SINGULAR_MODE)
     assert(if (responseData.size > 1 && serveMode.isInstanceOf[ServeMode.Singular]) false else true, ERROR_MULTI_MODE)
     val directive = httpMethodToDirective(httpMethod)
@@ -50,6 +51,7 @@ object ParameterizedHttpErrorConfig extends ConfiguratorUtils {
     displayUrl: String
   ): ParameterizedHttpErrorConfig = {
     assert(responseData.nonEmpty, ERROR_EMPTY_MAP)
+    assert(!serveMode.isInstanceOf[ServeMode.CustomStrategy], ERROR_CUSTOM_STRATEGY_MODE)
     assert(if (responseData.size == 1 && !serveMode.isInstanceOf[ServeMode.Singular]) false else true, ERROR_SINGULAR_MODE)
     assert(if (responseData.size > 1 && serveMode.isInstanceOf[ServeMode.Singular]) false else true, ERROR_MULTI_MODE)
     val directive = httpMethodToDirective(httpMethod)

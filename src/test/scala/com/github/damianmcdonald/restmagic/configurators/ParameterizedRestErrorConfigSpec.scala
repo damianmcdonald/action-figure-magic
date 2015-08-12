@@ -16,7 +16,7 @@
 
 package com.github.damianmcdonald.restmagic.configurators
 
-import com.github.damianmcdonald.restmagic.configurators.ServeMode.{ ByParam, Random, Singular }
+import com.github.damianmcdonald.restmagic.configurators.ServeMode._
 import com.github.damianmcdonald.restmagic.configurators.utils.ConfiguratorUtils
 import org.specs2.mutable.Specification
 import spray.http.HttpMethods._
@@ -28,6 +28,9 @@ class ParameterizedRestErrorConfigSpec extends Specification with Specs2RouteTes
 
   private val jsonAuthenticateResponse = """{ "status": "authenticated" }"""
   private val jsonAuthorizeResponse = """{ "status": "authorized" }"""
+  private val strategy = (param: String, data: Map[String, String]) => {
+    "dummy value"
+  }
 
   "A ParameterizedRestErrorConfig" should {
     "return a valid ParameterizedRestErrorConfig class instance using a minimal constructor" in {
@@ -83,6 +86,20 @@ class ParameterizedRestErrorConfigSpec extends Specification with Specs2RouteTes
 
   "A ParameterizedRestErrorConfig" should {
     "throw an assertion error" in {
+      "when a ParameterizedRestErrorConfig minimal constructor is CustomStrategy mode" in {
+        def parameterizedRestErrorConfig = ParameterizedRestErrorConfig(
+          httpMethod = GET,
+          apiPath = "examples" / MATCH_PARAM,
+          responseData = Map[String, ErrorCode](),
+          serveMode = CustomStrategy(strategy)
+        )
+        parameterizedRestErrorConfig must throwA[AssertionError]
+      }
+    }
+  }
+
+  "A ParameterizedRestErrorConfig" should {
+    "throw an assertion error" in {
       "when a ParameterizedRestErrorConfig minimal constructor is singular serve mode but responseData contains more than 1 item" in {
         def parameterizedRestErrorConfig = ParameterizedRestErrorConfig(
           httpMethod = GET,
@@ -123,6 +140,22 @@ class ParameterizedRestErrorConfigSpec extends Specification with Specs2RouteTes
           apiPath = "examples" / MATCH_PARAM,
           responseData = Map[String, ErrorCode](),
           serveMode = ByParam(),
+          displayName = "Parameterized Rest Error by param",
+          displayUrl = "/examples/parameterizedrest/error/{{errorId}}"
+        )
+        parameterizedRestErrorConfig must throwA[AssertionError]
+      }
+    }
+  }
+
+  "A ParameterizedRestErrorConfig" should {
+    "throw an assertion error" in {
+      "when a ParameterizedRestErrorConfig full constructor is CustomStrategy mode" in {
+        def parameterizedRestErrorConfig = ParameterizedRestErrorConfig(
+          httpMethod = GET,
+          apiPath = "examples" / MATCH_PARAM,
+          responseData = Map[String, ErrorCode](),
+          serveMode = CustomStrategy(strategy),
           displayName = "Parameterized Rest Error by param",
           displayUrl = "/examples/parameterizedrest/error/{{errorId}}"
         )
