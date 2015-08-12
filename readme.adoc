@@ -10,7 +10,7 @@ The application is dynamic and functional. Real calls to external services are m
 
 You can view the applicaton in action over at //TODO: INSERT_HEROKU_LINK_HERE.
 
-To learn more about `rest-magic`, take a look at the //TODO: INSERT_DOCUMENTATION_LINK page.
+To learn more about `rest-magic`, take a look at the https://github.com/damianmcdonald/rest-magic/wiki[project documentation wiki].
 
 == Getting started
 
