@@ -18,9 +18,12 @@
 /*
 import de.heikoseeberger.sbtheader.HeaderPattern
 import de.heikoseeberger.sbtheader.license.Apache2_0
-*/
+
 
 lazy val actionfiguremagic = project.in(file(".")).enablePlugins(AutomateHeaderPlugin)
+*/
+
+enablePlugins(JavaAppPackaging)
 
 name := "action-figure-magic"
 
