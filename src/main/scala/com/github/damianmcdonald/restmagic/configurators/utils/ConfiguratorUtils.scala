@@ -16,17 +16,18 @@
 
 package com.github.damianmcdonald.restmagic.configurators.utils
 
-import java.io.{ File, FileNotFoundException }
+import java.io.{File, FileNotFoundException}
+import java.nio.file.{Files, Paths}
 
 import akka.event.slf4j.SLF4JLogging
-import com.github.damianmcdonald.restmagic.configurators.DataMode.{ DataModeType, FileStub, Inline }
+import com.github.damianmcdonald.restmagic.configurators.DataMode.{DataModeType, FileStub, Inline}
 import com.github.damianmcdonald.restmagic.configurators.ServeMode._
 import com.github.damianmcdonald.restmagic.system.Configuration
 import spray.http.HttpMethods._
-import spray.http.{ HttpMethod, MediaType }
 import spray.http.MediaTypes._
+import spray.http.{HttpMethod, MediaType}
 import spray.routing.Directives._
-import spray.routing.{ Directive0, PathMatcher1 }
+import spray.routing.{Directive0, PathMatcher1}
 
 trait ConfiguratorUtils extends SLF4JLogging {
 
@@ -109,8 +110,8 @@ trait ConfiguratorUtils extends SLF4JLogging {
 
   protected def fileExists(fileName: String): Boolean = {
     if (Configuration.downloadsDir.isEmpty) {
-      val resourceUrl = Option(this.getClass().getResource("/downloads" + fileName))
-      resourceUrl match {
+      val is = Option(this.getClass().getResourceAsStream("/downloads" + fileName))
+      is match {
         case Some(_) => true
         case None => false
       }
@@ -119,15 +120,15 @@ trait ConfiguratorUtils extends SLF4JLogging {
     }
   }
 
-  protected def fileNameToFile(fileName: String): File = {
+  protected def fileNameToBytes(fileName: String): Array[Byte] = {
     if (Configuration.downloadsDir.isEmpty) {
-      val resourceUrl = Option(this.getClass().getResource("/downloads" + fileName))
-      resourceUrl match {
-        case Some(res) => new File(res.toURI)
+      val is = Option(this.getClass().getResourceAsStream("/downloads" + fileName))
+      is match {
+        case Some(stream) => org.apache.commons.io.IOUtils.toByteArray(stream)
         case None => throw new FileNotFoundException("File: " + fileName + " not found")
       }
     } else {
-      new File(Configuration.downloadsDir + File.separator + fileName)
+      Files.readAllBytes(Paths.get(Configuration.downloadsDir + File.separator + fileName))
     }
   }
 
