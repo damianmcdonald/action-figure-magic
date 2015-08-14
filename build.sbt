@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+enablePlugins(JavaAppPackaging)
+
 name          := "action-figure-magic"
 
 version       := "1.0.0"
