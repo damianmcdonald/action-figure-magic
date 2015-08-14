@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-name := "action-figure-magic"
+name          := "action-figure-magic"
 
 version       := "1.0.0"
 
@@ -25,11 +25,11 @@ scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 resolvers ++= Seq(
   Resolver.url("ivy releases", url("http://repo.typesafe.com/typesafe/ivy-releases"))(Resolver.ivyStylePatterns),
   Resolver.url("scalasbt releases", url("http://scalasbt.artifactoryonline.com/scalasbt/repo"))(Resolver.ivyStylePatterns),
-  Resolver.url("maven releases", url("http://repo1.maven.org/maven2/"))(Resolver.mavenStylePatterns),
-  Resolver.url("scalaz releases", url("http://dl.bintray.com/scalaz/releases/"))(Resolver.mavenStylePatterns),
-  Resolver.url("sonatype releases", url("http://oss.sonatype.org/content/repositories/releases"))(Resolver.mavenStylePatterns),
-  Resolver.url("typesafe releases", url("http://dl.bintray.com/typesafe/maven-releases/"))(Resolver.mavenStylePatterns),
-  Resolver.url("sbt releases", url("http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases"))(Resolver.ivyStylePatterns)
+  "maven releases"        at  "http://repo1.maven.org/maven2/",
+  "scalaz releases"       at  "http://dl.bintray.com/scalaz/releases/",
+  "sonatype releases"     at  "http://oss.sonatype.org/content/repositories/releases",
+  "typesafe releases"     at  "http://dl.bintray.com/typesafe/maven-releases/",
+  "sbt releases"          at  "http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases"
 )
 
 libraryDependencies ++= {
@@ -57,7 +57,7 @@ libraryDependencies ++= {
     /* Testing */
     "com.typesafe.akka"           %%  "akka-testkit"            % akkaV    % "test"     withSources() withJavadoc,
     "io.spray"                    %%  "spray-testkit"           % sprayV   % "test"     withSources() withJavadoc,
-    "org.specs2"                  %%  "specs2"                  % "2.4.17" % "test"      // until spray-testkit gets compiled against specs 3.3
+    "org.specs2"                  %%  "specs2"                  % "2.4.17" % "test"     // until spray-testkit gets compiled against specs 3.3
   )
 }
 
