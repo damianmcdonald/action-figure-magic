@@ -10,9 +10,9 @@ image:https://travis-ci.org/damianmcdonald/action-figure-magic.svg?branch=master
 
 The application is dynamic and functional. Real calls to external services are made and real server side responses are returned.
 
-You can view the applicaton in action over at //TODO: INSERT_HEROKU_LINK_HERE.
+You can view the applicaton in action over at https://action-figure-magic.herokuapp.com[https://action-figure-magic.herokuapp.com].
 
-You can also take a look at the //TODO: INSERT_HEROKU_LINK_HERE[RestMagic registry], a listing of all the registered API's being provided by RestMagic. 
+You can also take a look at the https://action-figure-magic.herokuapp.com/restmagic/registry/registry.html[RestMagic registry], a listing of all the registered API's being provided by RestMagic.
 
 To learn more about RestMagic, take a look at the https://github.com/damianmcdonald/rest-magic/wiki[project documentation wiki].
 
