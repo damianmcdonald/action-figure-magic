@@ -41,7 +41,7 @@ class FileDownloadService(cfg: FileDownloadConfig)(implicit system: ActorSystem)
     }
 
   def getBinaryHeaders(binaryMode: BinaryModeType, produces: MediaType, filePath: String): List[HttpHeader] = {
-    val fileName = if (filePath.indexOf("/") > -1) filePath.substring(filePath.indexOf("/")+1, filePath.length)
+    val fileName = if (filePath.lastIndexOf("/") > -1) filePath.substring(filePath.lastIndexOf("/")+1, filePath.length)
                    else throw new RuntimeException(s"filePath: $filePath must contain a / char.")
     val contentType = `Content-Type`(cfg.produces)
     val contentDisposition = {
