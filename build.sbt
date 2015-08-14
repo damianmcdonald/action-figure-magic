@@ -24,12 +24,11 @@ scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
 resolvers ++= Seq(
   Resolver.url("ivy releases", url("http://repo.typesafe.com/typesafe/ivy-releases"))(Resolver.ivyStylePatterns),
-  Resolver.url("maven releases", url("http://repo1.maven.org/maven2")),
   Resolver.url("scalasbt releases", url("http://scalasbt.artifactoryonline.com/scalasbt/repo"))(Resolver.ivyStylePatterns),
-  Resolver.url("scalaz releases", url("http://dl.bintray.com/scalaz/releases")),
-  Resolver.url("sonatype releases", url("http://oss.sonatype.org/content/repositories/releases")),
-  Resolver.url("typesafe releases", url("http://dl.bintray.com/typesafe/maven-releases")),
-  Resolver.url("sbt releases", url("http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases"))
+  Resolver.url("scalaz releases", url("http://dl.bintray.com/scalaz/releases"))(Resolver.defaultPatterns),
+  Resolver.url("sonatype releases", url("http://oss.sonatype.org/content/repositories/releases"))(Resolver.defaultPatterns),
+  Resolver.url("typesafe releases", url("http://dl.bintray.com/typesafe/maven-releases"))(Resolver.defaultPatterns),
+  Resolver.url("sbt releases", url("http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases"))(Resolver.defaultPatterns)
 )
 
 libraryDependencies ++= {
