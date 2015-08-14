@@ -41,15 +41,17 @@ class FileUploadService(cfg: FileUploadConfig)(implicit system: ActorSystem)
   }
 
   lazy val route =
-    path(cfg.apiPath) {
-      cfg.httpMethod {
-        formFields(cfg.fileParamName.as[Array[Byte]]) { (file) =>
-          detach() {
-            complete {
-              val fileName = getFileName
-              val result = saveFile(fileName, file)
-              log.debug("File Upload >>> Upload successful. File has been uploaded to " + fileName)
-              if (result) cfg.responseData else (StatusCodes.InternalServerError, "Upload failed!!")
+    cors {
+      path(cfg.apiPath) {
+        cfg.httpMethod {
+          formFields(cfg.fileParamName.as[Array[Byte]]) { (file) =>
+            detach() {
+              complete {
+                val fileName = getFileName
+                val result = saveFile(fileName, file)
+                log.debug("File Upload >>> Upload successful. File has been uploaded to " + fileName)
+                if (result) cfg.responseData else (StatusCodes.InternalServerError, "Upload failed!!")
+              }
             }
           }
         }

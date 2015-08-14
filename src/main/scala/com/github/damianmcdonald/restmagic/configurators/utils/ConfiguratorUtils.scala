@@ -16,18 +16,17 @@
 
 package com.github.damianmcdonald.restmagic.configurators.utils
 
-import java.io.{File, FileNotFoundException}
-import java.nio.file.{Path, Paths}
+import java.io.{ File, FileNotFoundException }
 
 import akka.event.slf4j.SLF4JLogging
-import com.github.damianmcdonald.restmagic.configurators.DataMode.{DataModeType, FileStub, Inline}
+import com.github.damianmcdonald.restmagic.configurators.DataMode.{ DataModeType, FileStub, Inline }
 import com.github.damianmcdonald.restmagic.configurators.ServeMode._
 import com.github.damianmcdonald.restmagic.system.Configuration
 import spray.http.HttpMethods._
+import spray.http.{ HttpMethod, MediaType }
 import spray.http.MediaTypes._
-import spray.http.{HttpMethod, MediaType}
 import spray.routing.Directives._
-import spray.routing.{Directive0, PathMatcher1}
+import spray.routing.{ Directive0, PathMatcher1 }
 
 trait ConfiguratorUtils extends SLF4JLogging {
 
@@ -65,14 +64,13 @@ trait ConfiguratorUtils extends SLF4JLogging {
 
   private def fileToString(fileName: String): String = {
     if (Configuration.stubsDir.isEmpty) {
-      val is = this.getClass().getResourceAsStream("/stubs" + fileName)
-      try {
-        scala.io.Source.fromInputStream(is, "UTF-8").mkString
-      } catch {
-        case e: Exception => {
-          e.printStackTrace()
-          log.error("A problem has occured attempting to read file: " + fileName)
-          e.getMessage
+      val is = Option(this.getClass().getResourceAsStream("/stubs" + fileName))
+      is match {
+        case Some(stream) => scala.io.Source.fromInputStream(stream, "UTF-8").mkString
+        case None => {
+          val message = s"$fileName does not exist or is not accessible"
+          log.error(message)
+          throw new FileNotFoundException(message)
         }
       }
     } else {
@@ -112,9 +110,10 @@ trait ConfiguratorUtils extends SLF4JLogging {
   protected def fileExists(fileName: String): Boolean = {
     if (Configuration.downloadsDir.isEmpty) {
       val resourceUrl = Option(this.getClass().getResource("/downloads" + fileName))
-      val validUrl = resourceUrl.getOrElse(throw new FileNotFoundException("File: " + fileName + " not found"))
-      val resourcePath: Path = Paths.get(validUrl.toURI);
-      resourcePath.toFile.exists()
+      resourceUrl match {
+        case Some(_) => true
+        case None => false
+      }
     } else {
       new File(Configuration.downloadsDir + File.separator + fileName).exists()
     }
@@ -123,9 +122,10 @@ trait ConfiguratorUtils extends SLF4JLogging {
   protected def fileNameToFile(fileName: String): File = {
     if (Configuration.downloadsDir.isEmpty) {
       val resourceUrl = Option(this.getClass().getResource("/downloads" + fileName))
-      val validUrl = resourceUrl.getOrElse(throw new FileNotFoundException("File: " + fileName + " not found"))
-      val resourcePath: Path = Paths.get(validUrl.toURI);
-      resourcePath.toFile
+      resourceUrl match {
+        case Some(res) => new File(res.toURI)
+        case None => throw new FileNotFoundException("File: " + fileName + " not found")
+      }
     } else {
       new File(Configuration.downloadsDir + File.separator + fileName)
     }

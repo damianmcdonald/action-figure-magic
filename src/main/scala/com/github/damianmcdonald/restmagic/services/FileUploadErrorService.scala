@@ -25,12 +25,14 @@ class FileUploadErrorService(cfg: FileUploadErrorConfig)(implicit system: ActorS
     extends Directives with RootMockService with SLF4JLogging {
 
   lazy val route =
-    path(cfg.apiPath) {
-      post {
-        formFields(cfg.fileParamName.as[Array[Byte]]) { (file) =>
-          detach() {
-            complete {
-              (cfg.errorCode, cfg.errorMessage)
+    cors {
+      path(cfg.apiPath) {
+        post {
+          formFields(cfg.fileParamName.as[Array[Byte]]) { (file) =>
+            detach() {
+              complete {
+                (cfg.errorCode, cfg.errorMessage)
+              }
             }
           }
         }

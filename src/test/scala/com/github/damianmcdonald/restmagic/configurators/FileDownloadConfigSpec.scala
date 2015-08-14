@@ -16,8 +16,6 @@
 
 package com.github.damianmcdonald.restmagic.configurators
 
-import java.io.FileNotFoundException
-
 import com.github.damianmcdonald.restmagic.configurators.BinaryMode.Attachment
 import org.specs2.mutable.Specification
 import spray.http.HttpMethods._
@@ -75,7 +73,7 @@ class FileDownloadConfigSpec extends Specification {
           produces = `application/pdf`,
           filePath = "/some/path/tofile"
         )
-        fileDownloadConfig must throwA[FileNotFoundException]
+        fileDownloadConfig must throwA[AssertionError]
       }
     }
   }
@@ -109,7 +107,7 @@ class FileDownloadConfigSpec extends Specification {
           displayName = "File Download Attachment Get example",
           displayUrl = "/examples/filedownload/attachment"
         )
-        fileDownloadConfig must throwA[FileNotFoundException]
+        fileDownloadConfig must throwA[AssertionError]
       }
     }
   }

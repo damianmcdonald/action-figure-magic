@@ -83,28 +83,30 @@ class AuthenticateService(cfg: AuthenticateConfig)(implicit system: ActorSystem)
     }
 
   lazy val route =
-    pathPrefix(cfg.securePathPrefix) {
-      respondWithMediaType(cfg.produces) {
-        cfg.httpMethod {
-          authenticate(basicUserAuthenticator) { userDetails: UserDetails =>
-            path(cfg.authorizePath) {
-              complete {
-                if (isAuthorizedForSecuredPage(userDetails.userName)) {
-                  cfg.authorizeResponseData
-                } else {
-                  (StatusCodes.Forbidden, "Authorization failure")
-                }
-              }
-            } ~
-              path(cfg.authenticatePath) {
+    cors {
+      pathPrefix(cfg.securePathPrefix) {
+        respondWithMediaType(cfg.produces) {
+          cfg.httpMethod {
+            authenticate(basicUserAuthenticator) { userDetails: UserDetails =>
+              path(cfg.authorizePath) {
                 complete {
-                  if (userDetails.isAuthenticated) {
-                    cfg.authenticateResponseData
+                  if (isAuthorizedForSecuredPage(userDetails.userName)) {
+                    cfg.authorizeResponseData
                   } else {
-                    (StatusCodes.Unauthorized, "Authentication failure")
+                    (StatusCodes.Forbidden, "Authorization failure")
                   }
                 }
-              }
+              } ~
+                path(cfg.authenticatePath) {
+                  complete {
+                    if (userDetails.isAuthenticated) {
+                      cfg.authenticateResponseData
+                    } else {
+                      (StatusCodes.Unauthorized, "Authentication failure")
+                    }
+                  }
+                }
+            }
           }
         }
       }

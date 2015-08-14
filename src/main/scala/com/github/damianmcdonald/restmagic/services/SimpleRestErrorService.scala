@@ -25,9 +25,11 @@ class SimpleRestErrorService(cfg: SimpleRestErrorConfig)(implicit system: ActorS
     extends Directives with RootMockService with SLF4JLogging {
 
   lazy val route =
-    cfg.httpMethod {
-      path(cfg.apiPath) {
-        complete(cfg.errorCode, cfg.errorMessage)
+    cors {
+      cfg.httpMethod {
+        path(cfg.apiPath) {
+          complete(cfg.errorCode, cfg.errorMessage)
+        }
       }
     }
 

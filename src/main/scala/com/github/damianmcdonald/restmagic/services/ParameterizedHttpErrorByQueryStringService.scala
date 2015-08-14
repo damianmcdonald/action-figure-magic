@@ -18,7 +18,7 @@ package com.github.damianmcdonald.restmagic.services
 
 import akka.actor.ActorSystem
 import akka.event.slf4j.SLF4JLogging
-import com.github.damianmcdonald.restmagic.configurators.ServeMode.{ ByParam, Random, Singular }
+import com.github.damianmcdonald.restmagic.configurators.ServeMode.{ ByParam, CustomStrategy, Random, Singular }
 import com.github.damianmcdonald.restmagic.configurators.{ ErrorCode, ParameterizedHttpErrorConfig }
 import spray.http.StatusCodes._
 import spray.httpx.marshalling.ToResponseMarshallable.isMarshallable
@@ -30,22 +30,24 @@ class ParameterizedHttpErrorByQueryStringService(cfg: ParameterizedHttpErrorConf
     extends Directives with RootMockService with SLF4JLogging {
 
   lazy val route =
-    path(cfg.apiPath) {
-      cfg.httpMethod {
-        parameter(cfg.paramName ?) { query =>
-          complete {
-            val error = cfg.serveMode match {
-              case Singular() => serveSingularError(cfg.responseData)
-              case Random() => serveRandomError(cfg.responseData)
-              case ByParam() => {
-                query match {
-                  case Some(s) => serveByParamError(s, cfg.responseData)
-                  case None => ErrorCode(BadRequest, "Parameter: " + cfg.paramName + " is missing!")
+    cors {
+      path(cfg.apiPath) {
+        cfg.httpMethod {
+          parameter(cfg.paramName ?) { query =>
+            complete {
+              val error = cfg.serveMode match {
+                case Singular() => serveSingularError(cfg.responseData)
+                case Random() => serveRandomError(cfg.responseData)
+                case ByParam() => {
+                  query match {
+                    case Some(s) => serveByParamError(s, cfg.responseData)
+                    case None => ErrorCode(BadRequest, "Parameter: " + cfg.paramName + " is missing!")
+                  }
                 }
+                case CustomStrategy(strategy) => ErrorCode(InternalServerError, "Unknown error")
               }
-              case _ => ErrorCode(BadRequest, "Unknown error")
+              (error.errorCode, error.errorMessage)
             }
-            (error.errorCode, error.errorMessage)
           }
         }
       }

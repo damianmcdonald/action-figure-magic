@@ -20,21 +20,23 @@ import akka.actor.ActorSystem
 import akka.event.slf4j.SLF4JLogging
 import com.github.damianmcdonald.restmagic.configurators.BinaryMode.{ Attachment, BinaryModeType, Inline }
 import com.github.damianmcdonald.restmagic.configurators.FileDownloadConfig
-import org.apache.commons.io.FileUtils
 import spray.http.HttpHeaders.{ `Content-Disposition`, `Content-Type` }
 import spray.http._
 import spray.routing._
+import org.apache.commons.io.FileUtils
 
 class FileDownloadService(cfg: FileDownloadConfig)(implicit system: ActorSystem)
     extends Directives with RootMockService with SLF4JLogging {
 
   lazy val route =
-    path(cfg.apiPath) {
-      cfg.httpMethod {
-        respondWithHeaders(getBinaryHeaders(cfg.binaryMode, cfg.produces, cfg.filePath.getName)) {
-          complete {
-            val bytes: Array[Byte] = FileUtils.readFileToByteArray(cfg.filePath);
-            HttpResponse(entity = HttpEntity(cfg.produces, HttpData(bytes)))
+    cors {
+      path(cfg.apiPath) {
+        cfg.httpMethod {
+          respondWithHeaders(getBinaryHeaders(cfg.binaryMode, cfg.produces, cfg.filePath.getName)) {
+            complete {
+              val bytes: Array[Byte] = FileUtils.readFileToByteArray(cfg.filePath);
+              HttpResponse(entity = HttpEntity(cfg.produces, HttpData(bytes)))
+            }
           }
         }
       }

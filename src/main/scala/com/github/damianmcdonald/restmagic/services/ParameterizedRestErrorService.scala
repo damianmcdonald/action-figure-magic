@@ -18,25 +18,25 @@ package com.github.damianmcdonald.restmagic.services
 
 import akka.actor.ActorSystem
 import akka.event.slf4j.SLF4JLogging
-import com.github.damianmcdonald.restmagic.configurators.{ ErrorCode, ParameterizedRestErrorConfig }
+import com.github.damianmcdonald.restmagic.configurators.ParameterizedRestErrorConfig
 import com.github.damianmcdonald.restmagic.configurators.ServeMode._
-import spray.http.StatusCodes._
 import spray.routing.Directives
 
 class ParameterizedRestErrorService(cfg: ParameterizedRestErrorConfig)(implicit system: ActorSystem)
     extends Directives with RootMockService with SLF4JLogging {
 
   lazy val route =
-    path(cfg.apiPath) { param =>
-      cfg.httpMethod {
-        complete {
-          val error = cfg.serveMode match {
-            case Singular() => serveSingularError(cfg.responseData)
-            case Random() => serveRandomError(cfg.responseData)
-            case ByParam() => serveByParamError(param.toString, cfg.responseData)
-            case _ => ErrorCode(BadRequest, "Unknown error")
+    cors {
+      path(cfg.apiPath) { param =>
+        cfg.httpMethod {
+          complete {
+            val error = cfg.serveMode match {
+              case Singular() => serveSingularError(cfg.responseData)
+              case Random() => serveRandomError(cfg.responseData)
+              case ByParam() => serveByParamError(param.toString, cfg.responseData)
+            }
+            (error.errorCode, error.errorMessage)
           }
-          (error.errorCode, error.errorMessage)
         }
       }
     }

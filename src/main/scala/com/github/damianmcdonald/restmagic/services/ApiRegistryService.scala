@@ -93,46 +93,48 @@ class ApiRegistryService(apis: Map[String, List[RegisteredApi]])(implicit system
   }
 
   lazy val route =
-    path("restmagic" / "api" / "registry") {
-      get {
-        respondWithMediaType(`application/json`) {
-          complete {
-            val apiContent = apis.map({
-              case (k, v) =>
-                val directive = k.toString
-                val registeredApis = v.map(api => api.toJson).mkString(",")
-                s"""{
+    cors {
+      path("restmagic" / "api" / "registry") {
+        get {
+          respondWithMediaType(`application/json`) {
+            complete {
+              val apiContent = apis.map({
+                case (k, v) =>
+                  val directive = k.toString
+                  val registeredApis = v.map(api => api.toJson).mkString(",")
+                  s"""{
                 	|"directive":"$directive",
                 	|"registeredApis": [
                 	|$registeredApis
                 	|]
                 	|}""".stripMargin
-            }).mkString(",")
+              }).mkString(",")
 
-            if (apis.isEmpty) {
-              """{ "status": "No registered API's" }"""
-            } else {
-              import net.liftweb.json._
-              implicit val formats = net.liftweb.json.DefaultFormats
-              val json = s"""{"apis": [ $apiContent ] }"""
-              pretty(render(parse(json)))
+              if (apis.isEmpty) {
+                """{ "status": "No registered API's" }"""
+              } else {
+                import net.liftweb.json._
+                implicit val formats = net.liftweb.json.DefaultFormats
+                val json = s"""{"apis": [ $apiContent ] }"""
+                pretty(render(parse(json)))
+              }
             }
           }
         }
-      }
-    } ~
-      path("restmagic" / "api" / "registry" / "responsedata" / """\w+""".r) { param =>
-        get {
-          respondWithMediaType(`text/html`) {
-            complete {
-              val apiList = apis.map({ case (k, v) => v }).flatten.filter(_.id.equals(param))
-              val api: RegisteredApi = apiList.headOption.getOrElse(
-                throw new RuntimeException("Unable to find matching registry entry for: " + param)
-              )
-              getResponseDataTemplate(api.displayName, api.responseData, api.produces)
+      } ~
+        path("restmagic" / "api" / "registry" / "responsedata" / """\w+""".r) { param =>
+          get {
+            respondWithMediaType(`text/html`) {
+              complete {
+                val apiList = apis.map({ case (k, v) => v }).flatten.filter(_.id.equals(param))
+                val api: RegisteredApi = apiList.headOption.getOrElse(
+                  throw new RuntimeException("Unable to find matching registry entry for: " + param)
+                )
+                getResponseDataTemplate(api.displayName, api.responseData, api.produces)
+              }
             }
           }
         }
-      }
+    }
 
 }

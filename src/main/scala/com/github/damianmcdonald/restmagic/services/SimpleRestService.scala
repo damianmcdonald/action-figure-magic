@@ -25,11 +25,13 @@ class SimpleRestService(cfg: SimpleRestConfig)(implicit system: ActorSystem)
     extends Directives with RootMockService with SLF4JLogging {
 
   lazy val route =
-    path(cfg.apiPath) {
-      cfg.httpMethod {
-        respondWithMediaType(cfg.produces) {
-          complete {
-            cfg.responseData
+    cors {
+      path(cfg.apiPath) {
+        cfg.httpMethod {
+          respondWithMediaType(cfg.produces) {
+            complete {
+              cfg.responseData
+            }
           }
         }
       }

@@ -17,13 +17,14 @@
 package com.github.damianmcdonald.restmagic.services
 
 import com.github.damianmcdonald.restmagic.configurators.ErrorCode
+import com.github.damianmcdonald.restmagic.system.CORSSupport
 import spray.http.StatusCodes._
 import spray.http._
 import spray.routing._
 
 import scala.util.Random
 
-trait RootMockService {
+trait RootMockService extends Directives with CORSSupport {
 
   private def getRandomInt(x: Int, y: Int) = {
     Random.nextInt((y - x) + 1) + x

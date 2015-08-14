@@ -30,24 +30,26 @@ class ParameterizedHttpByQueryStringService(cfg: ParameterizedHttpConfig)(implic
     extends Directives with RootMockService with SLF4JLogging {
 
   lazy val route =
-    path(cfg.apiPath) {
-      cfg.httpMethod {
-        parameter(cfg.paramName?) { query =>
-          respondWithMediaType(cfg.produces) {
-            complete {
-              cfg.serveMode match {
-                case Singular() => serveSingular(cfg.responseData)
-                case Random() => serveRandom(cfg.responseData)
-                case ByParam() =>
-                  query match {
-                    case Some(s) => serveByParam(s, cfg.responseData)
-                    case None => (BadRequest, "Parameter: " + cfg.paramName + " is missing!")
-                  }
-                case CustomStrategy(strategy) =>
-                  query match {
-                    case Some(s) => serveByCustomStrategy(s, cfg.responseData, strategy)
-                    case None => (BadRequest, "Parameter: " + cfg.paramName + " is missing!")
-                  }
+    cors {
+      path(cfg.apiPath) {
+        cfg.httpMethod {
+          parameter(cfg.paramName?) { query =>
+            respondWithMediaType(cfg.produces) {
+              complete {
+                cfg.serveMode match {
+                  case Singular() => serveSingular(cfg.responseData)
+                  case Random() => serveRandom(cfg.responseData)
+                  case ByParam() =>
+                    query match {
+                      case Some(s) => serveByParam(s, cfg.responseData)
+                      case None => (BadRequest, "Parameter: " + cfg.paramName + " is missing!")
+                    }
+                  case CustomStrategy(strategy) =>
+                    query match {
+                      case Some(s) => serveByCustomStrategy(s, cfg.responseData, strategy)
+                      case None => (BadRequest, "Parameter: " + cfg.paramName + " is missing!")
+                    }
+                }
               }
             }
           }

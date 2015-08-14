@@ -26,15 +26,17 @@ class ParameterizedRestService(cfg: ParameterizedRestConfig)(implicit system: Ac
     extends Directives with RootMockService with SLF4JLogging {
 
   lazy val route =
-    path(cfg.apiPath) { param =>
-      cfg.httpMethod {
-        respondWithMediaType(cfg.produces) {
-          complete {
-            cfg.serveMode match {
-              case Singular() => serveSingular(cfg.responseData)
-              case Random() => serveRandom(cfg.responseData)
-              case ByParam() => serveByParam(param.toString, cfg.responseData)
-              case CustomStrategy(strategy) => serveByCustomStrategy(param.toString, cfg.responseData, strategy)
+    cors {
+      path(cfg.apiPath) { param =>
+        cfg.httpMethod {
+          respondWithMediaType(cfg.produces) {
+            complete {
+              cfg.serveMode match {
+                case Singular() => serveSingular(cfg.responseData)
+                case Random() => serveRandom(cfg.responseData)
+                case ByParam() => serveByParam(param.toString, cfg.responseData)
+                case CustomStrategy(strategy) => serveByCustomStrategy(param.toString, cfg.responseData, strategy)
+              }
             }
           }
         }
