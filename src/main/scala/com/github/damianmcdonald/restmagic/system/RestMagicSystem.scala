@@ -24,6 +24,8 @@ import com.github.damianmcdonald.restmagic.api.RestMagicApi
 import spray.can.Http
 import spray.routing.Directives
 
+import scala.util.Properties
+
 object RestMagicSystem extends App with RestMagicApi {
   implicit lazy val system = ActorSystem("restmagic-system")
   sys.addShutdownHook({ system.shutdown })
@@ -39,7 +41,13 @@ object Configuration extends Directives {
 
   lazy val host = config.getString("restmagic.host")
 
-  lazy val port = config.getString("restmagic.port").toInt
+  /**
+   * The port number that http requests will be served on.
+   * As this app is intended to be deployed to Heroku, we first try to
+   * use the PORT variable defined in Heroku. If that variable is not available
+   * then the port number is obtained using the restmagic.port from application.conf.
+   */
+  lazy val port = Properties.envOrElse("PORT", config.getString("restmagic.port")).toInt
 
   lazy val staticPathName = config.getString("restmagic.static.path.name")
 
