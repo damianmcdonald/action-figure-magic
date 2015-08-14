@@ -18,12 +18,11 @@ package com.github.damianmcdonald.restmagic.services
 
 import akka.actor.ActorSystem
 import akka.event.slf4j.SLF4JLogging
-import com.github.damianmcdonald.restmagic.configurators.BinaryMode.{ Attachment, BinaryModeType, Inline }
+import com.github.damianmcdonald.restmagic.configurators.BinaryMode.{Attachment, BinaryModeType, Inline}
 import com.github.damianmcdonald.restmagic.configurators.FileDownloadConfig
-import spray.http.HttpHeaders.{ `Content-Disposition`, `Content-Type` }
+import spray.http.HttpHeaders.{`Content-Disposition`, `Content-Type`}
 import spray.http._
 import spray.routing._
-import org.apache.commons.io.FileUtils
 
 class FileDownloadService(cfg: FileDownloadConfig)(implicit system: ActorSystem)
     extends Directives with RootMockService with SLF4JLogging {
@@ -32,17 +31,18 @@ class FileDownloadService(cfg: FileDownloadConfig)(implicit system: ActorSystem)
     cors {
       path(cfg.apiPath) {
         cfg.httpMethod {
-          respondWithHeaders(getBinaryHeaders(cfg.binaryMode, cfg.produces, cfg.filePath.getName)) {
+          respondWithHeaders(getBinaryHeaders(cfg.binaryMode, cfg.produces, cfg.filePath)) {
             complete {
-              val bytes: Array[Byte] = FileUtils.readFileToByteArray(cfg.filePath);
-              HttpResponse(entity = HttpEntity(cfg.produces, HttpData(bytes)))
+              HttpResponse(entity = HttpEntity(cfg.produces, HttpData(cfg.fileBytes)))
             }
           }
         }
       }
     }
 
-  def getBinaryHeaders(binaryMode: BinaryModeType, produces: MediaType, fileName: String): List[HttpHeader] = {
+  def getBinaryHeaders(binaryMode: BinaryModeType, produces: MediaType, filePath: String): List[HttpHeader] = {
+    val fileName = if (filePath.indexOf("/") > -1) filePath.substring(filePath.indexOf("/")+1, filePath.length)
+                   else throw new RuntimeException(s"filePath: $filePath must contain a / char.")
     val contentType = `Content-Type`(cfg.produces)
     val contentDisposition = {
       val binary = {

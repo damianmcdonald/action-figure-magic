@@ -34,7 +34,7 @@ object FileDownloadConfig extends ConfiguratorUtils {
     assert(!filePath.isEmpty, getEmptyFieldMessage("filePath"))
     assert(fileExists(filePath), ERROR_FILE_DOWNLOAD_NOT_EXISTS + ": " + filePath)
     val directive = httpMethodToDirective(httpMethod)
-    new FileDownloadConfig(directive, apiPath, produces, fileNameToFile(filePath), BinaryMode.Attachment())
+    new FileDownloadConfig(directive, apiPath, produces, filePath, fileNameToBytes(filePath), BinaryMode.Attachment())
   }
 
   def apply(
@@ -63,7 +63,7 @@ object FileDownloadConfig extends ConfiguratorUtils {
         )
       )
     }
-    new FileDownloadConfig(directive, apiPath, produces, fileNameToFile(filePath), binaryMode, registeredApi)
+    new FileDownloadConfig(directive, apiPath, produces, filePath, fileNameToBytes(filePath), binaryMode, registeredApi)
   }
 }
 
@@ -76,7 +76,8 @@ case class FileDownloadConfig(
   httpMethod: Directive0,
   apiPath: PathMatcher0,
   produces: MediaType,
-  filePath: File,
+  filePath: String,
+  fileBytes: Array[Byte],
   binaryMode: BinaryModeType,
   registeredApi: Option[RegisteredApi] = None
 ) extends RootApiConfig
