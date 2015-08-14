@@ -18,8 +18,9 @@ package com.github.damianmcdonald.restmagic.services
 
 import akka.actor.ActorSystem
 import akka.event.slf4j.SLF4JLogging
-import com.github.damianmcdonald.restmagic.configurators.ParameterizedRestErrorConfig
+import com.github.damianmcdonald.restmagic.configurators.{ErrorCode, ParameterizedRestErrorConfig}
 import com.github.damianmcdonald.restmagic.configurators.ServeMode._
+import spray.http.StatusCodes._
 import spray.routing.Directives
 
 class ParameterizedRestErrorService(cfg: ParameterizedRestErrorConfig)(implicit system: ActorSystem)
@@ -34,6 +35,7 @@ class ParameterizedRestErrorService(cfg: ParameterizedRestErrorConfig)(implicit 
               case Singular() => serveSingularError(cfg.responseData)
               case Random() => serveRandomError(cfg.responseData)
               case ByParam() => serveByParamError(param.toString, cfg.responseData)
+              case CustomStrategy(strategy) => ErrorCode(InternalServerError, "Unknown error")
             }
             (error.errorCode, error.errorMessage)
           }
