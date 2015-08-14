@@ -23,7 +23,6 @@ import akka.event.slf4j.SLF4JLogging
 import com.github.damianmcdonald.restmagic.configurators.DataMode.{DataModeType, FileStub, Inline}
 import com.github.damianmcdonald.restmagic.configurators.ServeMode._
 import com.github.damianmcdonald.restmagic.system.Configuration
-import org.apache.commons.io.IOUtils
 import spray.http.HttpMethods._
 import spray.http.MediaTypes._
 import spray.http.{HttpMethod, MediaType}

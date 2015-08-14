@@ -16,12 +16,10 @@
 
 package com.github.damianmcdonald.restmagic.configurators
 
-import java.io.File
-
 import com.github.damianmcdonald.restmagic.configurators.BinaryMode.BinaryModeType
 import com.github.damianmcdonald.restmagic.configurators.utils.ConfiguratorUtils
-import spray.http.{ HttpMethod, MediaType }
-import spray.routing.{ Directive0, PathMatcher0 }
+import spray.http.{HttpMethod, MediaType}
+import spray.routing.{Directive0, PathMatcher0}
 
 object FileDownloadConfig extends ConfiguratorUtils {
 

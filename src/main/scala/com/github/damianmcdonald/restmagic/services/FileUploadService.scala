@@ -29,6 +29,7 @@ import spray.routing._
 class FileUploadService(cfg: FileUploadConfig)(implicit system: ActorSystem)
     extends Directives with RootMockService with SLF4JLogging {
 
+  /*
   def getFileName(): String = {
     val name = "rest-magic-file-upload"
     if (Configuration.uploadsDir.isEmpty) {
@@ -39,6 +40,7 @@ class FileUploadService(cfg: FileUploadConfig)(implicit system: ActorSystem)
       new File(Configuration.uploadsDir + File.separator + name).getAbsolutePath
     }
   }
+  */
 
   lazy val route =
     cors {
@@ -47,10 +49,14 @@ class FileUploadService(cfg: FileUploadConfig)(implicit system: ActorSystem)
           formFields(cfg.fileParamName.as[Array[Byte]]) { (file) =>
             detach() {
               complete {
+                /*
                 val fileName = getFileName
                 val result = saveFile(fileName, file)
                 log.debug("File Upload >>> Upload successful. File has been uploaded to " + fileName)
                 if (result) cfg.responseData else (StatusCodes.InternalServerError, "Upload failed!!")
+                */
+                // On heroku, because we are using jar packaging, we only simulate the persistence of the file.
+                cfg.responseData
               }
             }
           }
@@ -58,6 +64,7 @@ class FileUploadService(cfg: FileUploadConfig)(implicit system: ActorSystem)
       }
     }
 
+  /*
   def saveFile(fileName: String, content: Array[Byte]): Boolean = {
     saveFile[Array[Byte]](fileName, content, { (is, os) => os.write(is) })
   }
@@ -72,5 +79,6 @@ class FileUploadService(cfg: FileUploadConfig)(implicit system: ActorSystem)
       case e: Exception => false
     }
   }
+  */
 
 }
