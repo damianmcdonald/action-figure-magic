@@ -16,36 +16,34 @@
 
 package com.github.damianmcdonald.restmagic.configurators
 
-import java.io.File
-
 import com.github.damianmcdonald.restmagic.configurators.BinaryMode.BinaryModeType
 import com.github.damianmcdonald.restmagic.configurators.utils.ConfiguratorUtils
-import spray.http.{ HttpMethod, MediaType }
-import spray.routing.{ Directive0, PathMatcher0 }
+import spray.http.{HttpMethod, MediaType}
+import spray.routing.{Directive0, PathMatcher0}
 
 object FileDownloadConfig extends ConfiguratorUtils {
 
   def apply(
-    httpMethod: HttpMethod,
-    apiPath: PathMatcher0,
-    produces: MediaType,
-    filePath: String
-  ): FileDownloadConfig = {
+             httpMethod: HttpMethod,
+             apiPath: PathMatcher0,
+             produces: MediaType,
+             filePath: String
+             ): FileDownloadConfig = {
     assert(!filePath.isEmpty, getEmptyFieldMessage("filePath"))
     assert(fileExists(filePath), ERROR_FILE_DOWNLOAD_NOT_EXISTS + ": " + filePath)
     val directive = httpMethodToDirective(httpMethod)
-    new FileDownloadConfig(directive, apiPath, produces, fileNameToFile(filePath), BinaryMode.Attachment())
+    new FileDownloadConfig(directive, apiPath, produces, filePath, fileNameToBytes(filePath), BinaryMode.Attachment())
   }
 
   def apply(
-    httpMethod: HttpMethod,
-    apiPath: PathMatcher0,
-    produces: MediaType,
-    filePath: String,
-    binaryMode: BinaryModeType,
-    displayName: String,
-    displayUrl: String
-  ): FileDownloadConfig = {
+             httpMethod: HttpMethod,
+             apiPath: PathMatcher0,
+             produces: MediaType,
+             filePath: String,
+             binaryMode: BinaryModeType,
+             displayName: String,
+             displayUrl: String
+             ): FileDownloadConfig = {
     assert(!filePath.isEmpty, getEmptyFieldMessage("filePath"))
     assert(fileExists(filePath), ERROR_FILE_DOWNLOAD_NOT_EXISTS + ": " + filePath)
     val directive = httpMethodToDirective(httpMethod)
@@ -63,7 +61,7 @@ object FileDownloadConfig extends ConfiguratorUtils {
         )
       )
     }
-    new FileDownloadConfig(directive, apiPath, produces, fileNameToFile(filePath), binaryMode, registeredApi)
+    new FileDownloadConfig(directive, apiPath, produces, filePath, fileNameToBytes(filePath), binaryMode, registeredApi)
   }
 }
 
@@ -73,10 +71,11 @@ object FileDownloadConfig extends ConfiguratorUtils {
  * This class should be created via it's companion object.
  */
 case class FileDownloadConfig(
-  httpMethod: Directive0,
-  apiPath: PathMatcher0,
-  produces: MediaType,
-  filePath: File,
-  binaryMode: BinaryModeType,
-  registeredApi: Option[RegisteredApi] = None
-) extends RootApiConfig
+                               httpMethod: Directive0,
+                               apiPath: PathMatcher0,
+                               produces: MediaType,
+                               filePath: String,
+                               fileBytes: Array[Byte],
+                               binaryMode: BinaryModeType,
+                               registeredApi: Option[RegisteredApi] = None
+                               ) extends RootApiConfig
